@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!Dmovie-OCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -44,7 +44,7 @@
                         <li class="nav-list"><a href="movies.html">ТВ шоу</a></li>
                         <form class="search-container">
                             <img src="images/search.png" alt="search-icon" class="search-icon">
-                            <input type="text" class="search-input" placeholder="Хайх..." aria-label="search">
+                            <inpumovie-t type="text" class="search-input" placeholder="Хайх..." aria-label="search">
                         </form>
                     </ul>
             </nav>
@@ -61,21 +61,21 @@
                         <h2>Frozen</h2>
                         <p class="rating">��6</p>
                         <p class="duration">120 мин</p>
-                        <p class="type">Хүүхдийн</p>
+                        <p classmovie-="type">Хүүхдийн</p>
                         <p class="quality">HD</p>
                     </article>
                     <article id="slider-item-2">
                         <h2>Frozen</h2>
                         <p class="rating">★6</p>
                         <p class="duration">120 мин</p>
-                        <p class="type">Хүүхдийн</p>
+                        <p classmovie-="type">Хүүхдийн</p>
                         <p class="quality">HD</p>
                     </article>
                     <article id="slider-item-3">
                         <h2>Frozen</h2>
                         <p class="rating">★6</p>
                         <p class="duration">120 мин</p>
-                        <p class="type">Хүүхдийн</p>
+                        <p classmovie-="type">Хүүхдийн</p>
                         <p class="quality">HD</p>
                     </article>
                 </div>
@@ -107,23 +107,29 @@
             <a href=""><img src="images/melbetebete.png" alt="zar" width="1325" height="160"></a>
         </section>
         <!--In uzelttei-->
-        <section id="most-viewed-movies-slider">
+        <section class="most-viewed-movies-container">
             <h2>Их үзэлттэй</h2>
-            <div>
+            <div  class="most-viewed-movies-slider">
                 <article class="movie-medium-sized">
-                    <h3 class="Name">Kung Fu Panda 4</h3>
-                    <img src="" alt="">
-                    <p class="rank">01</p>
-                    <p class="type-medium">Animation, Adventure</p>
+                    <div class="details">
+                        <h3 class="name">Kungfu Panda 4</h3>
+                        <p class="movie-type">Animation, Adventure, Action</p>
+                        <p class="rank">01</p>
+                    </div>
+                    <div class="poster">
+                        <img src="images/medium-sized-movie/invincible.png" alt="movie-medium-sized-poster">
+                    </div>
                 </article>
             </div>
         </section>
         <!--shineer nemegdsen-->
         <section class="movie-poster-12">
-            <h2>Шинээр нэмэгдсэн кинонууд</h2>
-            <div class="new-added-movie-more">
-                <a href="movies.html">бусад</a>
-                <img src="" alt="">
+            <div class="new-added-movie">
+                <h2>Шинээр нэмэгдсэн кинонууд</h2>
+                <div class="links">
+                    <a href="movies.html">бусад</a>
+                    <img src="images/more-button.png" alt="more">
+                </div>
             </div>
 
             <div  class="movies-container-12">
@@ -287,183 +293,355 @@
         </section>
         <!--shineer nemegdsen tsuwral-->
         <section class="movie-poster-12">
-            <h2>Шинээр нэмэгдсэн кинонууд</h2>
-            <div class="new-added-movie-more">
-                <a href="movies.html">бусад</a>
-                <img src="" alt="">
+            <div class="new-added-movie">
+                <h2>Шинээр нэмэгдсэн цувралууд</h2>
+                <div class="links">
+                    <a href="movies.html">бусад</a>
+                    <img src="images/more-button.png" alt="more">
+                </div>
             </div>
-            
-            <div class="movies-container-12">
+
+            <div  class="movies-container-12">
                 <article class="movie-small-sized">
-                    <h3 class="Name">Dune</h3>
-                    <p class="quality">HD</p>
-                    <p class="year-and-duration">1990 - 90 мин</p>
-                    <img src="images/Goblin.jpg" alt="movie-icon">
+                    <div class="details">
+                        <h3 class="Name">Dune</h3>
+                        <p class="year-and-duration"><img src="images/movie-icon.png" alt="movie-icon" class="movie-icon">1990 - 90 мин</p>
+                        <div class="info">
+                            <p>Directed by Jamer Cameron</p>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="images/small-sized-movie/fightclub.jpg" alt="movie-small-sized-poster">
+                    </div>
                 </article>
+                
                 <article class="movie-small-sized">
-                    <h3 class="Name">Dune</h3>
-                    <p class="quality">HD</p>
-                    <p class="year-and-duration">1990 - 90 мин</p>
-                    <img src="images/godfather.jpg" alt="movie-icon">
+                    <div class="details">
+                        <h3 class="Name">Dune</h3>
+                        <p class="year-and-duration"><img src="images/movie-icon.png" alt="movie-icon" class="movie-icon">1990 - 90 мин</p>
+                        <div class="info">
+                            <p>Directed by Jamer Cameron</p>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="images/small-sized-movie/fury.jpg" alt="movie-small-sized-poster">
+                    </div>
                 </article>
+
                 <article class="movie-small-sized">
-                    <h3 class="Name">Dune</h3>
-                    <p class="quality">HD</p>
-                    <p class="year-and-duration">1990 - 90 мин</p>
-                    <img src="images/godfather.jpg" alt="movie-icon">
+                    <div class="details">
+                        <h3 class="Name">Dune</h3>
+                        <p class="year-and-duration"><img src="images/movie-icon.png" alt="movie-icon" class="movie-icon">1990 - 90 мин</p>
+                        <div class="info">
+                            <p>Directed by Jamer Cameron</p>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="images/small-sized-movie/Goblin.jpg" alt="movie-small-sized-poster">
+                    </div>
                 </article>
+
                 <article class="movie-small-sized">
-                    <h3 class="Name">Dune</h3>
-                    <p class="quality">HD</p>
-                    <p class="year-and-duration">1990 - 90 мин</p>
-                    <img src="images/godfather.jpg" alt="movie-icon">
+                    <div class="details">
+                        <h3 class="Name">Dune</h3>
+                        <p class="year-and-duration"><img src="images/movie-icon.png" alt="movie-icon" class="movie-icon">1990 - 90 мин</p>
+                        <div class="info">
+                            <p>Directed by Jamer Cameron</p>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="images/small-sized-movie/archer.jpg" alt="movie-small-sized-poster">
+                    </div>
                 </article>
+                
                 <article class="movie-small-sized">
-                    <h3 class="Name">Dune</h3>
-                    <p class="quality">HD</p>
-                    <p class="year-and-duration">1990 - 90 мин</p>
-                    <img src="images/godfather.jpg" alt="movie-icon">
+                    <div class="details">
+                        <h3 class="Name">Dune</h3>
+                        <p class="year-and-duration"><img src="images/movie-icon.png" alt="movie-icon" class="movie-icon">1990 - 90 мин</p>
+                        <div class="info">
+                            <p>Directed by Jamer Cameron</p>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="images/small-sized-movie/godfather.jpg" alt="movie-small-sized-poster">
+                    </div>
                 </article>
+
                 <article class="movie-small-sized">
-                    <h3 class="Name">Dune</h3>
-                    <p class="quality">HD</p>
-                    <p class="year-and-duration">1990 - 90 мин</p>
-                    <img src="images/godfather.jpg" alt="movie-icon">
+                    <div class="details">
+                        <h3 class="Name">Dune</h3>
+                        <p class="year-and-duration"><img src="images/movie-icon.png" alt="movie-icon" class="movie-icon">1990 - 90 мин</p>
+                        <div class="info">
+                            <p>Directed by Jamer Cameron</p>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="images/small-sized-movie/godzilla.jpg" alt="movie-small-sized-poster">
+                    </div>
                 </article>
+
                 <article class="movie-small-sized">
-                    <h3 class="Name">Dune</h3>
-                    <p class="quality">HD</p>
-                    <p class="year-and-duration">1990 - 90 мин</p>
-                    <img src="images/godfather.jpg" alt="movie-icon">
+                    <div class="details">
+                        <h3 class="Name">Dune</h3>
+                        <p class="year-and-duration"><img src="images/movie-icon.png" alt="movie-icon" class="movie-icon">1990 - 90 мин</p>
+                        <div class="info">
+                            <p>Directed by Jamer Cameron</p>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="images/small-sized-movie/gravity.jpg" alt="movie-small-sized-poster">
+                    </div>
                 </article>
+                
                 <article class="movie-small-sized">
-                    <h3 class="Name">Dune</h3>
-                    <p class="quality">HD</p>
-                    <p class="year-and-duration">1990 - 90 мин</p>
-                    <img src="images/godfather.jpg" alt="movie-icon">
+                    <div class="details">
+                        <h3 class="Name">Dune</h3>
+                        <p class="year-and-duration"><img src="images/movie-icon.png" alt="movie-icon" class="movie-icon">1990 - 90 мин</p>
+                        <div class="info">
+                            <p>Directed by Jamer Cameron</p>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="images/small-sized-movie/img1.jpg" alt="movie-small-sized-poster">
+                    </div>
                 </article>
+
                 <article class="movie-small-sized">
-                    <h3 class="Name">Dune</h3>
-                    <p class="quality">HD</p>
-                    <p class="year-and-duration">1990 - 90 мин</p>
-                    <img src="images/godfather.jpg" alt="movie-icon">
+                    <div class="details">
+                        <h3 class="Name">Dune</h3>
+                        <p class="year-and-duration"><img src="images/movie-icon.png" alt="movie-icon" class="movie-icon">1990 - 90 мин</p>
+                        <div class="info">
+                            <p>Directed by Jamer Cameron</p>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="images/small-sized-movie/interstellar.jpg" alt="movie-small-sized-poster">
+                    </div>
                 </article>
+
                 <article class="movie-small-sized">
-                    <h3 class="Name">Dune</h3>
-                    <p class="quality">HD</p>
-                    <p class="year-and-duration">1990 - 90 мин</p>
-                    <img src="images/godfather.jpg" alt="movie-icon">
+                    <div class="details">
+                        <h3 class="Name">Dune</h3>
+                        <p class="year-and-duration"><img src="images/movie-icon.png" alt="movie-icon" class="movie-icon">1990 - 90 мин</p>
+                        <div class="info">
+                            <p>Directed by Jamer Cameron</p>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="images/small-sized-movie/king-kong-small.jpg" alt="movie-small-sized-poster">
+                    </div>
                 </article>
+                
                 <article class="movie-small-sized">
-                    <h3 class="Name">Dune</h3>
-                    <p class="quality">HD</p>
-                    <p class="year-and-duration">1990 - 90 мин</p>
-                    <img src="images/godfather.jpg" alt="movie-icon">
+                    <div class="details">
+                        <h3 class="Name">Dune</h3>
+                        <p class="year-and-duration"><img src="images/movie-icon.png" alt="movie-icon" class="movie-icon">1990 - 90 мин</p>
+                        <div class="info">
+                            <p>Directed by Jamer Cameron</p>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="images/small-sized-movie/lalaland.jpg" alt="movie-small-sized-poster">
+                    </div>
                 </article>
+
                 <article class="movie-small-sized">
-                    <h3 class="Name">Dune</h3>
-                    <p class="quality">HD</p>
-                    <p class="year-and-duration">1990 - 90 мин</p>
-                    <img src="images/godfather.jpg" alt="movie-icon">
+                    <div class="details">
+                        <h3 class="Name">Dune</h3>
+                        <p class="year-and-duration"><img src="images/movie-icon.png" alt="movie-icon" class="movie-icon">1990 - 90 мин</p>
+                        <div class="info">
+                            <p>Directed by Jamer Cameron</p>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="images/small-sized-movie/ManVsBee.jpg" alt="movie-small-sized-poster">
+                    </div>
                 </article>
             </div>
             
         </section>
 
+        <!-- Шинээр нэмэгдсэн ТВ шоу -->
+
         <section class="movie-poster-12">
-            <h2>Шинээр ТВ шоу</h2>
-            <div class="new-added-movie-more">
-                <a href="movies.html">бусад</a>
-                <img src="" alt="">
+            <div class="new-added-movie">
+                <h2>Шинээр нэмэгдсэн ТВ шоу</h2>
+                <div class="links">
+                    <a href="movies.html">бусад</a>
+                    <img src="images/more-button.png" alt="more">
+                </div>
             </div>
-            
-            <div class="movies-container-12">
+
+            <div  class="movies-container-12">
                 <article class="movie-small-sized">
-                    <h3 class="Name">Dune</h3>
-                    <p class="quality">HD</p>
-                    <p class="year-and-duration">1990 - 90 мин</p>
-                    <img src="images/godfather.jpg" alt="movie-icon">
+                    <div class="details">
+                        <h3 class="Name">Dune</h3>
+                        <p class="year-and-duration"><img src="images/movie-icon.png" alt="movie-icon" class="movie-icon">1990 - 90 мин</p>
+                        <div class="info">
+                            <p>Directed by Jamer Cameron</p>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="images/small-sized-movie/no_more.jpg" alt="movie-small-sized-poster">
+                    </div>
                 </article>
+                
                 <article class="movie-small-sized">
-                    <h3 class="Name">Dune</h3>
-                    <p class="quality">HD</p>
-                    <p class="year-and-duration">1990 - 90 мин</p>
-                    <img src="images/godfather.jpg" alt="movie-icon">
+                    <div class="details">
+                        <h3 class="Name">Dune</h3>
+                        <p class="year-and-duration"><img src="images/movie-icon.png" alt="movie-icon" class="movie-icon">1990 - 90 мин</p>
+                        <div class="info">
+                            <p>Directed by Jamer Cameron</p>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="images/small-sized-movie/OIP (1).jpg" alt="movie-small-sized-poster">
+                    </div>
                 </article>
+
                 <article class="movie-small-sized">
-                    <h3 class="Name">Dune</h3>
-                    <p class="quality">HD</p>
-                    <p class="year-and-duration">1990 - 90 мин</p>
-                    <img src="images/godfather.jpg" alt="movie-icon">
+                    <div class="details">
+                        <h3 class="Name">Dune</h3>
+                        <p class="year-and-duration"><img src="images/movie-icon.png" alt="movie-icon" class="movie-icon">1990 - 90 мин</p>
+                        <div class="info">
+                            <p>Directed by Jamer Cameron</p>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="images/small-sized-movie/OIP (2).jpg" alt="movie-small-sized-poster">
+                    </div>
                 </article>
+
                 <article class="movie-small-sized">
-                    <h3 class="Name">Dune</h3>
-                    <p class="quality">HD</p>
-                    <p class="year-and-duration">1990 - 90 мин</p>
-                    <img src="images/godfather.jpg" alt="movie-icon">
+                    <div class="details">
+                        <h3 class="Name">Dune</h3>
+                        <p class="year-and-duration"><img src="images/movie-icon.png" alt="movie-icon" class="movie-icon">1990 - 90 мин</p>
+                        <div class="info">
+                            <p>Directed by Jamer Cameron</p>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="images/small-sized-movie/OIP.jpg" alt="movie-small-sized-poster">
+                    </div>
                 </article>
+                
                 <article class="movie-small-sized">
-                    <h3 class="Name">Dune</h3>
-                    <p class="quality">HD</p>
-                    <p class="year-and-duration">1990 - 90 мин</p>
-                    <img src="images/godfather.jpg" alt="movie-icon">
+                    <div class="details">
+                        <h3 class="Name">Dune</h3>
+                        <p class="year-and-duration"><img src="images/movie-icon.png" alt="movie-icon" class="movie-icon">1990 - 90 мин</p>
+                        <div class="info">
+                            <p>Directed by Jamer Cameron</p>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="images/small-sized-movie/parasite.jpg" alt="movie-small-sized-poster">
+                    </div>
                 </article>
+
                 <article class="movie-small-sized">
-                    <h3 class="Name">Dune</h3>
-                    <p class="quality">HD</p>
-                    <p class="year-and-duration">1990 - 90 мин</p>
-                    <img src="images/godfather.jpg" alt="movie-icon">
+                    <div class="details">
+                        <h3 class="Name">Dune</h3>
+                        <p class="year-and-duration"><img src="images/movie-icon.png" alt="movie-icon" class="movie-icon">1990 - 90 мин</p>
+                        <div class="info">
+                            <p>Directed by Jamer Cameron</p>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="images/small-sized-movie/Sherlok.jpg" alt="movie-small-sized-poster">
+                    </div>
                 </article>
+
                 <article class="movie-small-sized">
-                    <h3 class="Name">Dune</h3>
-                    <p class="quality">HD</p>
-                    <p class="year-and-duration">1990 - 90 мин</p>
-                    <img src="images/godfather.jpg" alt="movie-icon">
+                    <div class="details">
+                        <h3 class="Name">Dune</h3>
+                        <p class="year-and-duration"><img src="images/movie-icon.png" alt="movie-icon" class="movie-icon">1990 - 90 мин</p>
+                        <div class="info">
+                            <p>Directed by Jamer Cameron</p>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="images/small-sized-movie/startpup.jpg" alt="movie-small-sized-poster">
+                    </div>
                 </article>
+                
                 <article class="movie-small-sized">
-                    <h3 class="Name">Dune</h3>
-                    <p class="quality">HD</p>
-                    <p class="year-and-duration">1990 - 90 мин</p>
-                    <img src="images/godfather.jpg" alt="movie-icon">
+                    <div class="details">
+                        <h3 class="Name">Dune</h3>
+                        <p class="year-and-duration"><img src="images/movie-icon.png" alt="movie-icon" class="movie-icon">1990 - 90 мин</p>
+                        <div class="info">
+                            <p>Directed by Jamer Cameron</p>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="images/small-sized-movie/TheWitcher.jpg" alt="movie-small-sized-poster">
+                    </div>
                 </article>
+
                 <article class="movie-small-sized">
-                    <h3 class="Name">Dune</h3>
-                    <p class="quality">HD</p>
-                    <p class="year-and-duration">1990 - 90 мин</p>
-                    <img src="images/godfather.jpg" alt="movie-icon">
+                    <div class="details">
+                        <h3 class="Name">Dune</h3>
+                        <p class="year-and-duration"><img src="images/movie-icon.png" alt="movie-icon" class="movie-icon">1990 - 90 мин</p>
+                        <div class="info">
+                            <p>Directed by Jamer Cameron</p>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="images/small-sized-movie/truebeauty.jpg" alt="movie-small-sized-poster">
+                    </div>
                 </article>
+
                 <article class="movie-small-sized">
-                    <h3 class="Name">Dune</h3>
-                    <p class="quality">HD</p>
-                    <p class="year-and-duration">1990 - 90 мин</p>
-                    <img src="images/godfather.jpg" alt="movie-icon">
+                    <div class="details">
+                        <h3 class="Name">Dune</h3>
+                        <p class="year-and-duration"><img src="images/movie-icon.png" alt="movie-icon" class="movie-icon">1990 - 90 мин</p>
+                        <div class="info">
+                            <p>Directed by Jamer Cameron</p>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="images/small-sized-movie/up.jpg" alt="movie-small-sized-poster">
+                    </div>
                 </article>
+                
                 <article class="movie-small-sized">
-                    <h3 class="Name">Dune</h3>
-                    <p class="quality">HD</p>
-                    <p class="year-and-duration">1990 - 90 мин</p>
-                    <img src="images/godfather.jpg" alt="movie-icon">
+                    <div class="details">
+                        <h3 class="Name">Dune</h3>
+                        <p class="year-and-duration"><img src="images/movie-icon.png" alt="movie-icon" class="movie-icon">1990 - 90 мин</p>
+                        <div class="info">
+                            <p>Directed by Jamer Cameron</p>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="images/small-sized-movie/Vagabond.jpg" alt="movie-small-sized-poster">
+                    </div>
                 </article>
+
                 <article class="movie-small-sized">
-                    <h3 class="Name">Dune</h3>
-                    <p class="quality">HD</p>
-                    <p class="year-and-duration">1990 - 90 мин</p>
-                    <img src="images/godfather.jpg" alt="movie-icon">
+                    <div class="details">
+                        <h3 class="Name">Dune</h3>
+                        <p class="year-and-duration"><img src="images/movie-icon.png" alt="movie-icon" class="movie-icon">1990 - 90 мин</p>
+                        <div class="info">
+                            <p>Directed by Jamer Cameron</p>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="images/small-sized-movie/Vincenzo.jpg" alt="movie-small-sized-poster">
+                    </div>
                 </article>
             </div>
             
         </section>
     </main>
     <!--footer-->
-    <footer>
-        <div id="footer-icons">
+    <footer class="site-footer">
+        <div class="footer-icons">
             <ul>
                 <li><img src="images/facebook-icon.png" alt=""></li>
                 <li><img src="images/instagram-icon.png" alt=""></li>
                 <li><img src="images/youtube-icon.png" alt=""></li>
             </ul>
         </div>
-        <div id="footer-links">
+        <div class="footer-links">
             <ul>
                 <li><a href="">Бидний тухай</a></li>
                 <li><a href="">Холбоо барих</a></li>

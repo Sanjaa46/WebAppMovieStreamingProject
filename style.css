@@ -10,13 +10,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--color-background);
     color: rgba(255, 255, 255);
 }
 
 body {
     justify-content: center;
     align-items: center;
+    background-color: var(--color-background);
 }
 
 header {
@@ -200,6 +200,8 @@ header {
 }
  */
 
+
+ /* slider */
 .slider {
     width: 1360px;
     height: 550px;
@@ -256,26 +258,94 @@ header {
     border-radius: 50px;
     background-color: rgba(255, 255, 255);
 }
-
+ /* advertis */
 #advertise {
     height: 157px;
     width: 1325px;
     margin: 0 auto;
 }
 
-.movie-poster-12 {
-    height: 1000px;
-    width: 1350px;
-    margin: 0 auto;
+ /* most viewed */
+ .movie-medium-sized {
+    width: 420px;
+    height: 240px;
+    border-radius: 10px;
+    overflow: hidden; /* Prevents rank from overflowing */
+    position: relative;
+    display: flex;
+    margin-bottom: 20px; /* Add space between posters */
 }
 
-.movie-container-12 {
-    max-width: 1350px;
+.movie-medium-sized .details {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align details to the bottom */
+}
+
+.movie-medium-sized .poster {
+    width: 40%; /* Adjust as needed */
+    position: relative;
+}
+
+.movie-medium-sized .poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.movie-medium-sized .details .rank {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.movie-medium-sized .details .name {
+    margin-top: 10px; /* Add spacing between movie type and name */
+}
+
+
+ /* new added */
+.new-added-movie {
+    width: 1350px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.new-added-movie h3 {
     margin-right: auto;
+}
+
+.new-added-movie .links {
+    display: flex;
+    align-items: center;
     margin-left: auto;
+}
+
+.new-added-movie .links a {
+    margin-right: 10px;
+}
+
+.movies-container-12 {
+    width: 1350px;
+    align-items: center;
+    margin: 0 auto 50px auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
-    gap: 18px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: auto;
+    gap: 20px;
+}
+
+.movies-poster-12 {
+    width: 100%;
+    height: auto;
 }
 
 .movie-small-sized {
@@ -353,4 +423,35 @@ header {
     font-size: 12px;
     margin-top: 10px;
     background: transparent;
+}
+
+footer {
+    background-color: rgba(57, 57, 57, 0.38);
+    width: 100%;
+    height: 290px;
+    margin-top: 200px;
+    padding: 30px 0 0 30px;
+    border-radius: 10px 10px 0 0;
+}
+
+footer .footer-icons {
+    justify-content: center;
+    padding: 0px;
+    display: flex;
+}
+
+footer .footer-icons li {
+    display: inline-block;
+    margin: 30px;
+}
+
+footer .footer-links {
+    justify-content: center;
+    padding: 0px;
+    display: flex;
+}
+
+footer .footer-links li {
+    display: inline-block;
+    margin: 30px;
 }
