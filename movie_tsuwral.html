@@ -9,42 +9,44 @@
 </head> 
 <body>
     <header>
-        <nav>
-            <a href="index.html" id="logo"><img src="images/logo.png" alt="logo" width="348" height="128"></a>
-                <ul>
-                    <li>
-                        <p>Төрөл</p>
-                        <ul>
-                            <li><a href="movies.html">Адал явдалт</a></li>
-                            <li><a href="movies.html">Аймшгийн</a></li>
-                            <li><a href="movies.html">Аллага</a></li>
-                            <li><a href="movies.html">Вестерн</a></li>
-                            <li><a href="movies.html">Гэмт хэрэгт</a></li>
-                            <li><a href="movies.html">Гэр бүлийн</a></li>
-                            <li><a href="movies.html">Дайны</a></li>
-                            <li><a href="movies.html">Драм</a></li>
-                            <li><a href="movies.html">Инээдмийн</a></li>
-                            <li><a href="movies.html">Мюзикл</a></li>
-                            <li><a href="movies.html">Тулаант</a></li>
-                            <li><a href="movies.html">Түүхэн</a></li>
-                            <li><a href="movies.html">Үлгэрийн</a></li>
-                            <li><a href="movies.html">Зөгнөлт</a></li>
-                            <li><a href="movies.html">Хүүхэлдэйн кино</a></li>
-                            <li><a href="movies.html">Ш/У уран зөгнөлт</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="movies.html">Кино</a></li>
-                    <li><a href="movies.html">Цуврал</a></li>
-                    <li><a href="movies.html">ТВ шоу</a></li>
-                    <li>
-                        <img src="" alt="search">
-                        <input type="text" placeholder="Хайх...">
-                    </li>
-                </ul>
-                <button id="login">Нэвтрэх
-                    <img src="" alt="">
-                </button>
-        </nav>
+        <a href="index.html" id="logo"><img src="images/logo.png" alt="logo" width="348" height="128"></a>
+            <nav>
+                    <ul class="nav-container">
+                        <li class="nav-list">
+                            <a href="#">Төрөл</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a href="movies.html">Адал явдалт</a></li>
+                                    <li><a href="movies.html">Аймшгийн</a></li>
+                                    <li><a href="movies.html">Аллага</a></li>
+                                    <li><a href="movies.html">Вестерн</a></li>
+                                    <li><a href="movies.html">Гэмт хэрэгт</a></li>
+                                    <li><a href="movies.html">Гэр бүлийн</a></li>
+                                    <li><a href="movies.html">Дайны</a></li>
+                                    <li><a href="movies.html">Драм</a></li>
+                                    <li><a href="movies.html">Инээдмийн</a></li>
+                                    <li><a href="movies.html">Мюзикл</a></li>
+                                    <li><a href="movies.html">Тулаант</a></li>
+                                    <li><a href="movies.html">Түүхэн</a></li>
+                                    <li><a href="movies.html">Үлгэрийн</a></li>
+                                    <li><a href="movies.html">Зөгнөлт</a></li>
+                                    <li><a href="movies.html">Хүүхэлдэйн кино</a></li>
+                                    <li><a href="movies.html">Ш/У уран зөгнөлт</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-list"><a href="movies.html">Кино</a></li>
+                        <li class="nav-list"><a href="movies.html">Цуврал</a></li>
+                        <li class="nav-list"><a href="movies.html">ТВ шоу</a></li>
+                        <form class="search-container">
+                            <img src="images/search.png" alt="search-icon" class="search-icon">
+                            <input type="text" class="search-input" placeholder="Хайх..." aria-label="search">
+                        </form>
+                    </ul>
+            </nav>
+            <a class="login-button">Нэвтрэх
+                <img src="images/login-image.png" alt="login" class="login-image">
+            </a>
     </header>
     <main>
         <section class="filter">

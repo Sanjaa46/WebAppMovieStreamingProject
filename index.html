@@ -5,356 +5,455 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="FREE Nice kino Website - the top free movies streaming website where you can watch latest movies, tv shows in HD for FREE. NO ADS!! WATCH NOW!!!">
     <meta name="Home page" content="main page">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Nice Kino</title>
 </head>
 <body>
     <header>
+        <a href="index.html" id="logo"><img src="images/logo.png" alt="logo" width="348" height="128"></a>
             <nav>
-                <a href="index.html" id="logo"><img src="images/logo.png" alt="logo" width="348" height="128"></a>
-                    <ul>
-                        <li>
-                            <p>Төрөл</p>
-                            <ul>
-                                <li><a href="movies.html">Адал явдалт</a></li>
-                                <li><a href="movies.html">Аймшгийн</a></li>
-                                <li><a href="movies.html">Аллага</a></li>
-                                <li><a href="movies.html">Вестерн</a></li>
-                                <li><a href="movies.html">Гэмт хэрэгт</a></li>
-                                <li><a href="movies.html">Гэр бүлийн</a></li>
-                                <li><a href="movies.html">Дайны</a></li>
-                                <li><a href="movies.html">Драм</a></li>
-                                <li><a href="movies.html">Инээдмийн</a></li>
-                                <li><a href="movies.html">Мюзикл</a></li>
-                                <li><a href="movies.html">Тулаант</a></li>
-                                <li><a href="movies.html">Түүхэн</a></li>
-                                <li><a href="movies.html">Үлгэрийн</a></li>
-                                <li><a href="movies.html">Зөгнөлт</a></li>
-                                <li><a href="movies.html">Хүүхэлдэйн кино</a></li>
-                                <li><a href="movies.html">Ш/У уран зөгнөлт</a></li>
-                            </ul>
+                    <ul class="nav-container">
+                        <li class="nav-list">
+                            <a href="#">Төрөл</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a href="movies.html">Адал явдалт</a></li>
+                                    <li><a href="movies.html">Аймшгийн</a></li>
+                                    <li><a href="movies.html">Аллага</a></li>
+                                    <li><a href="movies.html">Вестерн</a></li>
+                                    <li><a href="movies.html">Гэмт хэрэгт</a></li>
+                                    <li><a href="movies.html">Гэр бүлийн</a></li>
+                                    <li><a href="movies.html">Дайны</a></li>
+                                    <li><a href="movies.html">Драм</a></li>
+                                    <li><a href="movies.html">Инээдмийн</a></li>
+                                    <li><a href="movies.html">Мюзикл</a></li>
+                                    <li><a href="movies.html">Тулаант</a></li>
+                                    <li><a href="movies.html">Түүхэн</a></li>
+                                    <li><a href="movies.html">Үлгэрийн</a></li>
+                                    <li><a href="movies.html">Зөгнөлт</a></li>
+                                    <li><a href="movies.html">Хүүхэлдэйн кино</a></li>
+                                    <li><a href="movies.html">Ш/У уран зөгнөлт</a></li>
+                                </ul>
+                            </div>
                         </li>
-                        <li><a href="movies.html">Кино</a></li>
-                        <li><a href="movies.html">Цуврал</a></li>
-                        <li><a href="movies.html">ТВ шоу</a></li>
-                        <li>
-                            <input type="text" placeholder="Хайх...">
-                        </li>
+                        <li class="nav-list"><a href="movies.html">Кино</a></li>
+                        <li class="nav-list"><a href="movies.html">Цуврал</a></li>
+                        <li class="nav-list"><a href="movies.html">ТВ шоу</a></li>
+                        <form class="search-container">
+                            <img src="images/search.png" alt="search-icon" class="search-icon">
+                            <input type="text" class="search-input" placeholder="Хайх..." aria-label="search">
+                        </form>
                     </ul>
-                    <button id="login">Нэвтрэх
-                        <img src="" alt="">
-                    </button>
             </nav>
+            <a class="login-button">Нэвтрэх
+                <img src="images/login-image.png" alt="login" class="login-image">
+            </a>
     </header>
     <main>
-    <!--Slider-->
-    <div id="slider">
-        <article class="">
-            <h2>Frozen</h2>
-            <p class="rating">★6</p>
-            <p class="duration">120 мин</p>
-            <p class="type">Хүүхдийн</p>
-            <p class="quality">HD</p>
-            <p>R</p>
-        </article>
+        <!--Slider-->
+        <!-- <section id="slider-container">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <article id="slider-item-1">
+                        <h2>Frozen</h2>
+                        <p class="rating">��6</p>
+                        <p class="duration">120 мин</p>
+                        <p class="type">Хүүхдийн</p>
+                        <p class="quality">HD</p>
+                    </article>
+                    <article id="slider-item-2">
+                        <h2>Frozen</h2>
+                        <p class="rating">★6</p>
+                        <p class="duration">120 мин</p>
+                        <p class="type">Хүүхдийн</p>
+                        <p class="quality">HD</p>
+                    </article>
+                    <article id="slider-item-3">
+                        <h2>Frozen</h2>
+                        <p class="rating">★6</p>
+                        <p class="duration">120 мин</p>
+                        <p class="type">Хүүхдийн</p>
+                        <p class="quality">HD</p>
+                    </article>
+                </div>
+                <div class="slider-nav">
+                    <a href="#slider-item-1" class="slider-button"></a>
+                    <a href="#slider-item-2" class="slider-button"></a>
+                    <a href="#slider-item-3" class="slider-button"></a>
+                </div>
+            </div>
+        </section> -->
 
-        <article class="">
-            <h2>Frozen</h2>
-            <p class="rating">★6</p>
-            <p class="duration">120 мин</p>
-            <p class="type">Хүүхдийн</p>
-            <p>HD</p>
-            <p>R</p>
-        </article>
-
-        <article class="">
-            <h2>Frozen</h2>
-            <p class="rating">★6</p>
-            <p class="duration">120 мин</p>
-            <p class="type">Хүүхдийн</p>
-            <p>HD</p>
-            <p>R</p>
-        </article>
-    </div>
-    <!--Zar-->
-    <section>
-        <a href="zar"><img src="images/melbetebete.png" alt="zar" width="1500" height="940"></a>
-    </section>
-    <!--In uzelttei-->
-    <section id="most-viewed-movies-slider">
-        <h2>Их үзэлттэй</h2>
-        <div>
-            <article class="movie-medium-sized">
-                <h3 class="Name">Kung Fu Panda 4</h3>
+        <div class="slider">
+            <span id="slide-1"></span>
+            <span id="slide-2"></span>
+            <span id="slide-3"></span>
+            <div class="image-container">
+                <img src="images/Frozen-big.png" class="slide" width="1360" height="550" />
+                <img src="images/Frozen-big.png" class="slide" width="1360" height="550" />
+                <img src="images/Frozen-big.png" class="slide" width="1360" height="550" />
+            </div>
+            <div class="buttons">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+            </div>
+        </div>
+        <!--Zar-->
+        <section id="advertise">
+            <a href=""><img src="images/melbetebete.png" alt="zar" width="1325" height="160"></a>
+        </section>
+        <!--In uzelttei-->
+        <section id="most-viewed-movies-slider">
+            <h2>Их үзэлттэй</h2>
+            <div>
+                <article class="movie-medium-sized">
+                    <h3 class="Name">Kung Fu Panda 4</h3>
+                    <img src="" alt="">
+                    <p class="rank">01</p>
+                    <p class="type-medium">Animation, Adventure</p>
+                </article>
+            </div>
+        </section>
+        <!--shineer nemegdsen-->
+        <section class="movie-poster-12">
+            <h2>Шинээр нэмэгдсэн кинонууд</h2>
+            <div class="new-added-movie-more">
+                <a href="movies.html">бусад</a>
                 <img src="" alt="">
-                <p class="rank">01</p>
-                <p class="type-medium">Animation, Adventure</p>
-            </article>
-        </div>
-    </section>
-    <!--shineer nemegdsen-->
-    <section class="movie-poster-12">
-        <h2>Шинээр нэмэгдсэн кинонууд</h2>
-        <div class="new-added-movie-more">
-            <a href="movies.html">бусад</a>
-            <img src="" alt="">
-        </div>
+            </div>
 
-        <div  class="movies-container-12">
-            <article class="movie-small-sized">
-                <h3 class="Name">Dune</h3>
-                <img src="images/king-kong-small.jpg" alt="movie-small-sized-poster">
-                <p class="year-and-duration">1990 - 90 мин</p>
-                <img src="images/godfather.jpg" alt="movie-icon">
-            </article>
+            <div  class="movies-container-12">
+                <article class="movie-small-sized">
+                    <div class="details">
+                        <h3 class="Name">Dune</h3>
+                        <p class="year-and-duration"><img src="images/movie-icon.png" alt="movie-icon" class="movie-icon">1990 - 90 мин</p>
+                        <div class="info">
+                            <p>Directed by Jamer Cameron</p>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="images/small-sized-movie/13ReasonWhy.jpg" alt="movie-small-sized-poster">
+                    </div>
+                </article>
+                
+                <article class="movie-small-sized">
+                    <div class="details">
+                        <h3 class="Name">Dune</h3>
+                        <p class="year-and-duration"><img src="images/movie-icon.png" alt="movie-icon" class="movie-icon">1990 - 90 мин</p>
+                        <div class="info">
+                            <p>Directed by Jamer Cameron</p>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="images/small-sized-movie/1917.jpg" alt="movie-small-sized-poster">
+                    </div>
+                </article>
+
+                <article class="movie-small-sized">
+                    <div class="details">
+                        <h3 class="Name">Dune</h3>
+                        <p class="year-and-duration"><img src="images/movie-icon.png" alt="movie-icon" class="movie-icon">1990 - 90 мин</p>
+                        <div class="info">
+                            <p>Directed by Jamer Cameron</p>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="images/small-sized-movie/americanhorror.jpg" alt="movie-small-sized-poster">
+                    </div>
+                </article>
+
+                <article class="movie-small-sized">
+                    <div class="details">
+                        <h3 class="Name">Dune</h3>
+                        <p class="year-and-duration"><img src="images/movie-icon.png" alt="movie-icon" class="movie-icon">1990 - 90 мин</p>
+                        <div class="info">
+                            <p>Directed by Jamer Cameron</p>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="images/small-sized-movie/archer.jpg" alt="movie-small-sized-poster">
+                    </div>
+                </article>
+                
+                <article class="movie-small-sized">
+                    <div class="details">
+                        <h3 class="Name">Dune</h3>
+                        <p class="year-and-duration"><img src="images/movie-icon.png" alt="movie-icon" class="movie-icon">1990 - 90 мин</p>
+                        <div class="info">
+                            <p>Directed by Jamer Cameron</p>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="images/small-sized-movie/avatar.jpg" alt="movie-small-sized-poster">
+                    </div>
+                </article>
+
+                <article class="movie-small-sized">
+                    <div class="details">
+                        <h3 class="Name">Dune</h3>
+                        <p class="year-and-duration"><img src="images/movie-icon.png" alt="movie-icon" class="movie-icon">1990 - 90 мин</p>
+                        <div class="info">
+                            <p>Directed by Jamer Cameron</p>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="images/small-sized-movie/avengers.jpg" alt="movie-small-sized-poster">
+                    </div>
+                </article>
+
+                <article class="movie-small-sized">
+                    <div class="details">
+                        <h3 class="Name">Dune</h3>
+                        <p class="year-and-duration"><img src="images/movie-icon.png" alt="movie-icon" class="movie-icon">1990 - 90 мин</p>
+                        <div class="info">
+                            <p>Directed by Jamer Cameron</p>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="images/small-sized-movie/beef.jpg" alt="movie-small-sized-poster">
+                    </div>
+                </article>
+                
+                <article class="movie-small-sized">
+                    <div class="details">
+                        <h3 class="Name">Dune</h3>
+                        <p class="year-and-duration"><img src="images/movie-icon.png" alt="movie-icon" class="movie-icon">1990 - 90 мин</p>
+                        <div class="info">
+                            <p>Directed by Jamer Cameron</p>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="images/small-sized-movie/callbyyourname.jpg" alt="movie-small-sized-poster">
+                    </div>
+                </article>
+
+                <article class="movie-small-sized">
+                    <div class="details">
+                        <h3 class="Name">Dune</h3>
+                        <p class="year-and-duration"><img src="images/movie-icon.png" alt="movie-icon" class="movie-icon">1990 - 90 мин</p>
+                        <div class="info">
+                            <p>Directed by Jamer Cameron</p>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="images/small-sized-movie/collapse.jpg" alt="movie-small-sized-poster">
+                    </div>
+                </article>
+
+                <article class="movie-small-sized">
+                    <div class="details">
+                        <h3 class="Name">Dune</h3>
+                        <p class="year-and-duration"><img src="images/movie-icon.png" alt="movie-icon" class="movie-icon">1990 - 90 мин</p>
+                        <div class="info">
+                            <p>Directed by Jamer Cameron</p>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="images/small-sized-movie/download (1).jpg" alt="movie-small-sized-poster">
+                    </div>
+                </article>
+                
+                <article class="movie-small-sized">
+                    <div class="details">
+                        <h3 class="Name">Dune</h3>
+                        <p class="year-and-duration"><img src="images/movie-icon.png" alt="movie-icon" class="movie-icon">1990 - 90 мин</p>
+                        <div class="info">
+                            <p>Directed by Jamer Cameron</p>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="images/small-sized-movie/download (2).jpg" alt="movie-small-sized-poster">
+                    </div>
+                </article>
+
+                <article class="movie-small-sized">
+                    <div class="details">
+                        <h3 class="Name">Dune</h3>
+                        <p class="year-and-duration"><img src="images/movie-icon.png" alt="movie-icon" class="movie-icon">1990 - 90 мин</p>
+                        <div class="info">
+                            <p>Directed by Jamer Cameron</p>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="images/small-sized-movie/download.jpg" alt="movie-small-sized-poster">
+                    </div>
+                </article>
+            </div>
             
-            <article class="movie-small-sized">
-                <h3 class="Name">Dune</h3>
-                <img src="images/13ReasonWhy.jpg" alt="movie-small-sized-poster">
-                <p class="year-and-duration">1990 - 90 мин</p>
-                <img src="images/godfather.jpg" alt="movie-icon">
-            </article>   
-
-            <article class="movie-small-sized">
-                <h3 class="Name">Dune</h3>
-                <img src="images/1917.jpg" alt="movie-small-sized-poster">
-                <p class="year-and-duration">1990 - 90 мин</p>
-                <img src="images/godfather.jpg" alt="movie-icon">
-            </article>   
-
-            <article class="movie-small-sized">
-                <h3 class="Name">Dune</h3>
-                <img src="images/americanhorror.jpg" alt="movie-small-sized-poster">
-                <p class="year-and-duration">1990 - 90 мин</p>
-                <img src="images/godfather.jpg" alt="movie-icon">
-            </article>
-
-            <article class="movie-small-sized">
-                <h3 class="Name">Dune</h3>
-                <img src="images/avatar.jpg" alt="movie-small-sized-poster">
-                <p class="year-and-duration">1990 - 90 мин</p>
-                <img src="images/godfather.jpg" alt="movie-icon">
-            </article>
+        </section>
+        <!--shineer nemegdsen tsuwral-->
+        <section class="movie-poster-12">
+            <h2>Шинээр нэмэгдсэн кинонууд</h2>
+            <div class="new-added-movie-more">
+                <a href="movies.html">бусад</a>
+                <img src="" alt="">
+            </div>
             
-            <article class="movie-small-sized">
-                <h3 class="Name">Dune</h3>
-                <img src="images/archer.jpg" alt="movie-small-sized-poster">
-                <p class="year-and-duration">1990 - 90 мин</p>
-                <img src="images/godfather.jpg" alt="movie-icon">
-            </article>   
-
-            <article class="movie-small-sized">
-                <h3 class="Name">Dune</h3>
-                <img src="images/avengers.jpg" alt="movie-small-sized-poster">
-                <p class="year-and-duration">1990 - 90 мин</p>
-                <img src="images/godfather.jpg" alt="movie-icon">
-            </article>   
-
-            <article class="movie-small-sized">
-                <h3 class="Name">Dune</h3>
-                <img src="images/beef.jpg" alt="movie-small-sized-poster">
-                <p class="year-and-duration">1990 - 90 мин</p>
-                <img src="images/godfather.jpg" alt="movie-icon">
-            </article>
-
-            <article class="movie-small-sized">
-                <h3 class="Name">Dune</h3>
-                <img src="images/callbyyourname.jpg" alt="movie-small-sized-poster">
-                <p class="year-and-duration">1990 - 90 мин</p>
-                <img src="images/godfather.jpg" alt="movie-icon">
-            </article>
+            <div class="movies-container-12">
+                <article class="movie-small-sized">
+                    <h3 class="Name">Dune</h3>
+                    <p class="quality">HD</p>
+                    <p class="year-and-duration">1990 - 90 мин</p>
+                    <img src="images/Goblin.jpg" alt="movie-icon">
+                </article>
+                <article class="movie-small-sized">
+                    <h3 class="Name">Dune</h3>
+                    <p class="quality">HD</p>
+                    <p class="year-and-duration">1990 - 90 мин</p>
+                    <img src="images/godfather.jpg" alt="movie-icon">
+                </article>
+                <article class="movie-small-sized">
+                    <h3 class="Name">Dune</h3>
+                    <p class="quality">HD</p>
+                    <p class="year-and-duration">1990 - 90 мин</p>
+                    <img src="images/godfather.jpg" alt="movie-icon">
+                </article>
+                <article class="movie-small-sized">
+                    <h3 class="Name">Dune</h3>
+                    <p class="quality">HD</p>
+                    <p class="year-and-duration">1990 - 90 мин</p>
+                    <img src="images/godfather.jpg" alt="movie-icon">
+                </article>
+                <article class="movie-small-sized">
+                    <h3 class="Name">Dune</h3>
+                    <p class="quality">HD</p>
+                    <p class="year-and-duration">1990 - 90 мин</p>
+                    <img src="images/godfather.jpg" alt="movie-icon">
+                </article>
+                <article class="movie-small-sized">
+                    <h3 class="Name">Dune</h3>
+                    <p class="quality">HD</p>
+                    <p class="year-and-duration">1990 - 90 мин</p>
+                    <img src="images/godfather.jpg" alt="movie-icon">
+                </article>
+                <article class="movie-small-sized">
+                    <h3 class="Name">Dune</h3>
+                    <p class="quality">HD</p>
+                    <p class="year-and-duration">1990 - 90 мин</p>
+                    <img src="images/godfather.jpg" alt="movie-icon">
+                </article>
+                <article class="movie-small-sized">
+                    <h3 class="Name">Dune</h3>
+                    <p class="quality">HD</p>
+                    <p class="year-and-duration">1990 - 90 мин</p>
+                    <img src="images/godfather.jpg" alt="movie-icon">
+                </article>
+                <article class="movie-small-sized">
+                    <h3 class="Name">Dune</h3>
+                    <p class="quality">HD</p>
+                    <p class="year-and-duration">1990 - 90 мин</p>
+                    <img src="images/godfather.jpg" alt="movie-icon">
+                </article>
+                <article class="movie-small-sized">
+                    <h3 class="Name">Dune</h3>
+                    <p class="quality">HD</p>
+                    <p class="year-and-duration">1990 - 90 мин</p>
+                    <img src="images/godfather.jpg" alt="movie-icon">
+                </article>
+                <article class="movie-small-sized">
+                    <h3 class="Name">Dune</h3>
+                    <p class="quality">HD</p>
+                    <p class="year-and-duration">1990 - 90 мин</p>
+                    <img src="images/godfather.jpg" alt="movie-icon">
+                </article>
+                <article class="movie-small-sized">
+                    <h3 class="Name">Dune</h3>
+                    <p class="quality">HD</p>
+                    <p class="year-and-duration">1990 - 90 мин</p>
+                    <img src="images/godfather.jpg" alt="movie-icon">
+                </article>
+            </div>
             
-            <article class="movie-small-sized">
-                <h3 class="Name">Dune</h3>
-                <img src="images/collapse.jpg" alt="movie-small-sized-poster">
-                <p class="year-and-duration">1990 - 90 мин</p>
-                <img src="images/godfather.jpg" alt="movie-icon">
-            </article>   
+        </section>
 
-            <article class="movie-small-sized">
-                <h3 class="Name">Dune</h3>
-                <img src="images/fightclub.jpg" alt="movie-small-sized-poster">
-                <p class="year-and-duration">1990 - 90 мин</p>
-                <img src="images/godfather.jpg" alt="movie-icon">
-            </article>   
-
-            <article class="movie-small-sized">
-                <h3 class="Name">Dune</h3>
-                <img src="images/fury.jpg" alt="movie-small-sized-poster">
-                <p class="year-and-duration">1990 - 90 мин</p>
-                <img src="images/godfather.jpg" alt="movie-icon">
-            </article>
-        </div>
-        
-    </section>
-    <!--shineer nemegdsen tsuwral-->
-    <section class="movie-poster-12">
-        <h2>Шинээр нэмэгдсэн кинонууд</h2>
-        <div class="new-added-movie-more">
-            <a href="movies.html">бусад</a>
-            <img src="" alt="">
-        </div>
-        
-        <div class="movies-container-12">
-            <article class="movie-small-sized">
-                <h3 class="Name">Dune</h3>
-                <p class="quality">HD</p>
-                <p class="year-and-duration">1990 - 90 мин</p>
-                <img src="images/Goblin.jpg" alt="movie-icon">
-            </article>
-            <article class="movie-small-sized">
-                <h3 class="Name">Dune</h3>
-                <p class="quality">HD</p>
-                <p class="year-and-duration">1990 - 90 мин</p>
-                <img src="images/godfather.jpg" alt="movie-icon">
-            </article>
-            <article class="movie-small-sized">
-                <h3 class="Name">Dune</h3>
-                <p class="quality">HD</p>
-                <p class="year-and-duration">1990 - 90 мин</p>
-                <img src="images/godfather.jpg" alt="movie-icon">
-            </article>
-            <article class="movie-small-sized">
-                <h3 class="Name">Dune</h3>
-                <p class="quality">HD</p>
-                <p class="year-and-duration">1990 - 90 мин</p>
-                <img src="images/godfather.jpg" alt="movie-icon">
-            </article>
-            <article class="movie-small-sized">
-                <h3 class="Name">Dune</h3>
-                <p class="quality">HD</p>
-                <p class="year-and-duration">1990 - 90 мин</p>
-                <img src="images/godfather.jpg" alt="movie-icon">
-            </article>
-            <article class="movie-small-sized">
-                <h3 class="Name">Dune</h3>
-                <p class="quality">HD</p>
-                <p class="year-and-duration">1990 - 90 мин</p>
-                <img src="images/godfather.jpg" alt="movie-icon">
-            </article>
-            <article class="movie-small-sized">
-                <h3 class="Name">Dune</h3>
-                <p class="quality">HD</p>
-                <p class="year-and-duration">1990 - 90 мин</p>
-                <img src="images/godfather.jpg" alt="movie-icon">
-            </article>
-            <article class="movie-small-sized">
-                <h3 class="Name">Dune</h3>
-                <p class="quality">HD</p>
-                <p class="year-and-duration">1990 - 90 мин</p>
-                <img src="images/godfather.jpg" alt="movie-icon">
-            </article>
-            <article class="movie-small-sized">
-                <h3 class="Name">Dune</h3>
-                <p class="quality">HD</p>
-                <p class="year-and-duration">1990 - 90 мин</p>
-                <img src="images/godfather.jpg" alt="movie-icon">
-            </article>
-            <article class="movie-small-sized">
-                <h3 class="Name">Dune</h3>
-                <p class="quality">HD</p>
-                <p class="year-and-duration">1990 - 90 мин</p>
-                <img src="images/godfather.jpg" alt="movie-icon">
-            </article>
-            <article class="movie-small-sized">
-                <h3 class="Name">Dune</h3>
-                <p class="quality">HD</p>
-                <p class="year-and-duration">1990 - 90 мин</p>
-                <img src="images/godfather.jpg" alt="movie-icon">
-            </article>
-            <article class="movie-small-sized">
-                <h3 class="Name">Dune</h3>
-                <p class="quality">HD</p>
-                <p class="year-and-duration">1990 - 90 мин</p>
-                <img src="images/godfather.jpg" alt="movie-icon">
-            </article>
-        </div>
-        
-    </section>
-
-    <section class="movie-poster-12">
-        <h2>Шинээр ТВ шоу</h2>
-        <div class="new-added-movie-more">
-            <a href="movies.html">бусад</a>
-            <img src="" alt="">
-        </div>
-        
-        <div class="movies-container-12">
-            <article class="movie-small-sized">
-                <h3 class="Name">Dune</h3>
-                <p class="quality">HD</p>
-                <p class="year-and-duration">1990 - 90 мин</p>
-                <img src="images/godfather.jpg" alt="movie-icon">
-            </article>
-            <article class="movie-small-sized">
-                <h3 class="Name">Dune</h3>
-                <p class="quality">HD</p>
-                <p class="year-and-duration">1990 - 90 мин</p>
-                <img src="images/godfather.jpg" alt="movie-icon">
-            </article>
-            <article class="movie-small-sized">
-                <h3 class="Name">Dune</h3>
-                <p class="quality">HD</p>
-                <p class="year-and-duration">1990 - 90 мин</p>
-                <img src="images/godfather.jpg" alt="movie-icon">
-            </article>
-            <article class="movie-small-sized">
-                <h3 class="Name">Dune</h3>
-                <p class="quality">HD</p>
-                <p class="year-and-duration">1990 - 90 мин</p>
-                <img src="images/godfather.jpg" alt="movie-icon">
-            </article>
-            <article class="movie-small-sized">
-                <h3 class="Name">Dune</h3>
-                <p class="quality">HD</p>
-                <p class="year-and-duration">1990 - 90 мин</p>
-                <img src="images/godfather.jpg" alt="movie-icon">
-            </article>
-            <article class="movie-small-sized">
-                <h3 class="Name">Dune</h3>
-                <p class="quality">HD</p>
-                <p class="year-and-duration">1990 - 90 мин</p>
-                <img src="images/godfather.jpg" alt="movie-icon">
-            </article>
-            <article class="movie-small-sized">
-                <h3 class="Name">Dune</h3>
-                <p class="quality">HD</p>
-                <p class="year-and-duration">1990 - 90 мин</p>
-                <img src="images/godfather.jpg" alt="movie-icon">
-            </article>
-            <article class="movie-small-sized">
-                <h3 class="Name">Dune</h3>
-                <p class="quality">HD</p>
-                <p class="year-and-duration">1990 - 90 мин</p>
-                <img src="images/godfather.jpg" alt="movie-icon">
-            </article>
-            <article class="movie-small-sized">
-                <h3 class="Name">Dune</h3>
-                <p class="quality">HD</p>
-                <p class="year-and-duration">1990 - 90 мин</p>
-                <img src="images/godfather.jpg" alt="movie-icon">
-            </article>
-            <article class="movie-small-sized">
-                <h3 class="Name">Dune</h3>
-                <p class="quality">HD</p>
-                <p class="year-and-duration">1990 - 90 мин</p>
-                <img src="images/godfather.jpg" alt="movie-icon">
-            </article>
-            <article class="movie-small-sized">
-                <h3 class="Name">Dune</h3>
-                <p class="quality">HD</p>
-                <p class="year-and-duration">1990 - 90 мин</p>
-                <img src="images/godfather.jpg" alt="movie-icon">
-            </article>
-            <article class="movie-small-sized">
-                <h3 class="Name">Dune</h3>
-                <p class="quality">HD</p>
-                <p class="year-and-duration">1990 - 90 мин</p>
-                <img src="images/godfather.jpg" alt="movie-icon">
-            </article>
-        </div>
-        
-    </section>
-</main>
+        <section class="movie-poster-12">
+            <h2>Шинээр ТВ шоу</h2>
+            <div class="new-added-movie-more">
+                <a href="movies.html">бусад</a>
+                <img src="" alt="">
+            </div>
+            
+            <div class="movies-container-12">
+                <article class="movie-small-sized">
+                    <h3 class="Name">Dune</h3>
+                    <p class="quality">HD</p>
+                    <p class="year-and-duration">1990 - 90 мин</p>
+                    <img src="images/godfather.jpg" alt="movie-icon">
+                </article>
+                <article class="movie-small-sized">
+                    <h3 class="Name">Dune</h3>
+                    <p class="quality">HD</p>
+                    <p class="year-and-duration">1990 - 90 мин</p>
+                    <img src="images/godfather.jpg" alt="movie-icon">
+                </article>
+                <article class="movie-small-sized">
+                    <h3 class="Name">Dune</h3>
+                    <p class="quality">HD</p>
+                    <p class="year-and-duration">1990 - 90 мин</p>
+                    <img src="images/godfather.jpg" alt="movie-icon">
+                </article>
+                <article class="movie-small-sized">
+                    <h3 class="Name">Dune</h3>
+                    <p class="quality">HD</p>
+                    <p class="year-and-duration">1990 - 90 мин</p>
+                    <img src="images/godfather.jpg" alt="movie-icon">
+                </article>
+                <article class="movie-small-sized">
+                    <h3 class="Name">Dune</h3>
+                    <p class="quality">HD</p>
+                    <p class="year-and-duration">1990 - 90 мин</p>
+                    <img src="images/godfather.jpg" alt="movie-icon">
+                </article>
+                <article class="movie-small-sized">
+                    <h3 class="Name">Dune</h3>
+                    <p class="quality">HD</p>
+                    <p class="year-and-duration">1990 - 90 мин</p>
+                    <img src="images/godfather.jpg" alt="movie-icon">
+                </article>
+                <article class="movie-small-sized">
+                    <h3 class="Name">Dune</h3>
+                    <p class="quality">HD</p>
+                    <p class="year-and-duration">1990 - 90 мин</p>
+                    <img src="images/godfather.jpg" alt="movie-icon">
+                </article>
+                <article class="movie-small-sized">
+                    <h3 class="Name">Dune</h3>
+                    <p class="quality">HD</p>
+                    <p class="year-and-duration">1990 - 90 мин</p>
+                    <img src="images/godfather.jpg" alt="movie-icon">
+                </article>
+                <article class="movie-small-sized">
+                    <h3 class="Name">Dune</h3>
+                    <p class="quality">HD</p>
+                    <p class="year-and-duration">1990 - 90 мин</p>
+                    <img src="images/godfather.jpg" alt="movie-icon">
+                </article>
+                <article class="movie-small-sized">
+                    <h3 class="Name">Dune</h3>
+                    <p class="quality">HD</p>
+                    <p class="year-and-duration">1990 - 90 мин</p>
+                    <img src="images/godfather.jpg" alt="movie-icon">
+                </article>
+                <article class="movie-small-sized">
+                    <h3 class="Name">Dune</h3>
+                    <p class="quality">HD</p>
+                    <p class="year-and-duration">1990 - 90 мин</p>
+                    <img src="images/godfather.jpg" alt="movie-icon">
+                </article>
+                <article class="movie-small-sized">
+                    <h3 class="Name">Dune</h3>
+                    <p class="quality">HD</p>
+                    <p class="year-and-duration">1990 - 90 мин</p>
+                    <img src="images/godfather.jpg" alt="movie-icon">
+                </article>
+            </div>
+            
+        </section>
+    </main>
     <!--footer-->
     <footer>
         <div id="footer-icons">
