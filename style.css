@@ -270,6 +270,87 @@ header {
     display: flex;
     align-items: center;
 } 
+.most-viewed-movies-container .prev{
+    background-color: transparent;
+    position: absolute;
+    z-index: 2;
+    top: 55%;
+    left: 0;
+    cursor: pointer;
+    border: none;
+}
+.most-viewed-movies-container .next {
+    background-color: transparent;
+    position: absolute;
+    z-index: 2;
+    top: 55%;
+    right: 0%;
+    cursor: pointer;
+    border: none;
+}
+
+.movie-medium-sized {
+    width: 420px;
+    height: 240px;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.movie-medium-sized .details {
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(0deg, #0e0d0d, 80%, transparent);
+    color: white;
+    padding: 10px;
+}
+
+.movie-medium-sized .poster {
+    z-index: 1;
+    position: relative;
+}
+
+.movie-medium-sized .poster img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.movie-medium-sized .rank {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 10px;
+}
+
+
+.most-viewed-movies-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.most-viewed-movies-slider {
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    margin-left: 7.5%;
+}
+
+.movie-medium-sized {
+    width: 420px;
+    height: 240px;
+    flex: 0 0 auto;
+    margin-right: 20px;
+    scroll-snap-align: start;
+}
 
 
  /* new added */
