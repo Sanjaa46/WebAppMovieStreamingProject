@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <a href="index.html" id="logo"><img src="images/logo.png" alt="logo" width="348" height="128"></a>
+        <a href="index.html" id="logo">Logo Movie</a>
             <nav>
                     <ul class="nav-container">
                         <li class="nav-list">
@@ -44,7 +44,7 @@
                         <li class="nav-list"><a href="movies.html">ТВ шоу</a></li>
                         <form class="search-container">
                             <img src="images/search.png" alt="search-icon" class="search-icon">
-                            <inpumovie-t type="text" class="search-input" placeholder="Хайх..." aria-label="search">
+                            <input type="text" class="search-input" placeholder="Хайх...">
                         </form>
                     </ul>
             </nav>
@@ -53,55 +53,58 @@
             </a>
     </header>
     <main>
-        <!--Slider-->
-        <!-- <section id="slider-container">
+        <section id="slider-container">
             <div class="slider-wrapper">
                 <div class="slider">
-                    <article id="slider-item-1">
-                        <h2>Frozen</h2>
-                        <p class="rating">��6</p>
-                        <p class="duration">120 мин</p>
-                        <p classmovie-="type">Хүүхдийн</p>
-                        <p class="quality">HD</p>
-                    </article>
-                    <article id="slider-item-2">
-                        <h2>Frozen</h2>
-                        <p class="rating">★6</p>
-                        <p class="duration">120 мин</p>
-                        <p classmovie-="type">Хүүхдийн</p>
-                        <p class="quality">HD</p>
-                    </article>
-                    <article id="slider-item-3">
-                        <h2>Frozen</h2>
-                        <p class="rating">★6</p>
-                        <p class="duration">120 мин</p>
-                        <p classmovie-="type">Хүүхдийн</p>
-                        <p class="quality">HD</p>
-                    </article>
-                </div>
-                <div class="slider-nav">
-                    <a href="#slider-item-1" class="slider-button"></a>
-                    <a href="#slider-item-2" class="slider-button"></a>
-                    <a href="#slider-item-3" class="slider-button"></a>
-                </div>
-            </div>
-        </section> -->
 
-        <div class="slider">
-            <span id="slide-1"></span>
-            <span id="slide-2"></span>
-            <span id="slide-3"></span>
-            <div class="image-container">
-                <img src="images/Frozen-big.png" class="slide" width="1360" height="550" />
-                <img src="images/Frozen-big.png" class="slide" width="1360" height="550" />
-                <img src="images/Frozen-big.png" class="slide" width="1360" height="550" />
+                    <article id="slide-1" class="movie-big-sized">
+                        <div class="slider-item-details">
+                            <h2>Frozen</h2>
+                            <p class="rating">★6</p>
+                            <p class="duration">120 мин</p>
+                            <p class="type">Хүүхдийн</p>
+                            <div class="quality">
+                                <p>HD</p>
+                                <p>HD</p>
+                            </div>
+                        </div>
+                        <img src="images/movie-big.png" alt="slider-item-1" class="movie-big-sized-poster">
+                    </article>
+
+                    <article id="slide-2" class="movie-big-sized">
+                        <div class="slider-item-details">
+                            <h2>Frozen</h2>
+                            <p class="rating">★6</p>
+                            <p class="duration">120 мин</p>
+                            <p class="type">Хүүхдийн</p>
+                            <div class="quality">
+                                <p>HD</p>
+                                <p>HD</p>
+                            </div>
+                        </div>
+                        <img src="images/movie-big.png" alt="slider-item-1" class="movie-big-sized-poster">
+                    </article>
+
+                    <article id="slide-3" class="movie-big-sized">
+                        <div class="slider-item-details">
+                            <h2>Frozen</h2>
+                            <p class="rating">★6</p>
+                            <p class="duration">120 мин</p>
+                            <p class="type">Хүүхдийн</p>
+                            <div class="quality">
+                                <p>HD</p>
+                                <p>HD</p>
+                            </div>
+                        </div>
+                        <img src="images/movie-big.png" alt="slider-item-1" class="movie-big-sized-poster">
+                    </article>
+                    <div class="slider-nav">
+                        <a href="#slide-1" class="slider-button"></a>
+                        <a href="#slide-2" class="slider-button"></a>
+                        <a href="#slide-3" class="slider-button"></a>
+                    </div>
             </div>
-            <div class="buttons">
-                <a href="#slide-1"></a>
-                <a href="#slide-2"></a>
-                <a href="#slide-3"></a>
-            </div>
-        </div>
+        </section>
         <!--Zar-->
         <section id="advertise">
             <a href=""><img src="images/melbetebete.png" alt="zar" width="1325" height="160"></a>
