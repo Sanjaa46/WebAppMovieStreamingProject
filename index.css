@@ -19,7 +19,7 @@ body {
     background-color: var(--color-background);
 }
 
-header {
+.menu {
     height: 64px;
     width: 100%;
     display: flex;
@@ -29,8 +29,42 @@ header {
     padding: 10px 50px 10px 50px;
 }
 
-#hamburgerMenu {
-    display: none;
+.off-screen-menu {
+    background-color: rgba(117, 117, 117, 0.7);
+    width: 100px;
+    height: 120px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    transition: 0.3s ease;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.off-screen-menu.active {
+    right: 0;
+}
+
+.hamburger-header .nav {
+    padding: 5px;
+    display: flex;
+}
+
+.ham-menu {
+    width: 100%;
+    height: 40px;
+    margin-left: auto;
+    position: relative;
+}
+
+.ham-menu li {
+    
 }
 
 #logo {
@@ -508,22 +542,41 @@ footer .footer-links li {
     margin: 30px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1730px) {
+    .movies-container-12 {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .movie-small-sized {
+        width: 200px;
+        height: 270px;
+    }
+}
+
+@media (max-width: 1358px) {
     .movies-container-12 {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
     }
-} 
+    .movie-small-sized {
+        width: 170px;
+        height: 250px;
+    }
+}
 
 
-@media (max-width: 991px) {
+@media (max-width: 891px) {
     .movies-container-12 {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
+    .movie-small-sized {
+        width: 150px;
+        height: 220px;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 448px) {
     #hamburegerMenu {
         display: block;
     }
@@ -548,12 +601,7 @@ footer .footer-links li {
     }
 
     .movie-small-sized {
-        width: 150px;
-        height: 220px;
-    }
-
-    .movie-small-sized {
-        width: 159px;
+        width: 130px;
         height: 220px;
     }
 
@@ -563,6 +611,13 @@ footer .footer-links li {
 
     .movie-small-sized .details {
         bottom: -20px;
+    }
+    .movie-small-sized .details .year-and-duration {
+        font-size: 12px;
+    }
+    .movie-small-sized .details .movie-icon {
+        width: 10px;
+        height: 10px;
     }
 }
 
