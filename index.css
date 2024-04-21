@@ -29,6 +29,10 @@ header {
     padding: 10px 50px 10px 50px;
 }
 
+#hamburgerMenu {
+    display: none;
+}
+
 #logo {
     text-decoration: none;
     font-size: 30px;
@@ -261,8 +265,8 @@ header {
 
  /* advertis */
 #advertise {
-    height: 157px;
-    width: 1325px;
+    display: flex;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -358,30 +362,30 @@ header {
 
 
  /* new added */
-.new-added-movie {
-    width: 1350px;
+.header-of-movies {
+    width: 70%;
     height: 100px;
     margin: 0 auto;
     display: flex;
     align-items: center;
 }
 
-.new-added-movie h3 {
+.header-of-movies h2 {
     margin-right: auto;
 }
 
-.new-added-movie .links {
+.header-of-movies .links {
     display: flex;
     align-items: center;
     margin-left: auto;
 }
 
-.new-added-movie .links a {
+.header-of-movies .links a {
     margin-right: 10px;
 }
 
 .movies-container-12 {
-    width: 1350px;
+    width: 70%;
     align-items: center;
     margin: 0 auto 50px auto;
     display: grid;
@@ -391,8 +395,9 @@ header {
 }
 
 .movies-poster-12 {
-    width: 100%;
+    width: 70%;
     height: auto;
+    margin: 0 auto;
 }
 
 .movie-small-sized {
@@ -502,3 +507,62 @@ footer .footer-links li {
     display: inline-block;
     margin: 30px;
 }
+
+@media (max-width: 1200px) {
+    .movies-container-12 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+} 
+
+
+@media (max-width: 991px) {
+    .movies-container-12 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    #hamburegerMenu {
+        display: block;
+    }
+    .nav-container {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .movies-container-12 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .movies-poster-12 {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .header-of-movies h2 {
+        font-size: 15px;
+    }
+
+    .movie-small-sized {
+        width: 150px;
+        height: 220px;
+    }
+
+    .movie-small-sized {
+        width: 159px;
+        height: 220px;
+    }
+
+    .movie-small-sized .info {
+        display: none;
+    }
+
+    .movie-small-sized .details {
+        bottom: -20px;
+    }
+}
+
