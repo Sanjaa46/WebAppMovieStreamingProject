@@ -64,14 +64,21 @@
         </div>
 
         <nav>
-            <ul class="ham-menu">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+            <div class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
+
+        <a href="index.html" id="logo">Logo Movie</a>
+        <img src="images/search.png" alt="search-icon" class="search-icon">
+        <a class="login-button">Нэвтрэх
+            <img src="images/login-image.png" alt="login" class="login-image">
+        </a>
     </header>
+
+
     <main>
         <section id="slider-container">
             <div class="slider-wrapper">
@@ -126,12 +133,12 @@
             </div>
         </section>
         <!--Zar-->
-        <section id="advertise">
-            <a href=""><img src="images/ad.png" alt="zar"></a>
-        </section>
+        <img src="images/ad.png" alt="zar" id="advertise">
         <!--In uzelttei-->
         <section class="most-viewed-movies-container">
-            <h2>Их үзэлттэй</h2>
+            <div class="header-of-movies">
+                <h2>Их үзэлттэй</h2>
+            </div>
             <div  class="most-viewed-movies-slider">
                 <div class="most-viewed-movies-slider">
                     <article class="movie-medium-sized">
@@ -190,10 +197,10 @@
                     </article>
                 </div>
                 <button class="prev">
-                    <img src="images/button-prev.png" alt="">
+                    <img src="images/button-prev.png" alt="button-prev">
                 </button>
                 <button class="next">
-                    <img src="images/button-next.png" alt="">
+                    <img src="images/button-next.png" alt="button-next">
                 </button>
             </div>
         </section>
@@ -707,6 +714,9 @@
             
         </section>
     </main>
+
+    <!-- js -->
+    <script src="index.js"></script>
     <!--footer-->
     <footer class="site-footer">
         <div class="footer-icons">

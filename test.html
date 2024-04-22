@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Slider</title>
+<style>
+  #slider {
+    width: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  #slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  article {
+    width: 300px;
+    flex: 0 0 auto;
+  }
+</style>
+</head>
+<body>
+<div id="slider">
+  <div id="slides">
+    <article style="background-color: #f00;">Slide 1</article>
+    <article style="background-color: #0f0;">Slide 2</article>
+    <article style="background-color: #00f;">Slide 3</article>
+  </div>
+</div>
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('#slides article');
+  const totalSlides = slides.length;
+
+  function goToSlide(index) {
+    if (index < 0) {
+      currentSlide = totalSlides - 1;
+    } else if (index >= totalSlides) {
+      currentSlide = 0;
+    } else {
+      currentSlide = index;
+    }
+    const offset = -currentSlide * 300; // 300 is the width of each slide
+    document.getElementById('slides').style.transform = `translateX(${offset}px)`;
+  }
+
+  function nextSlide() {
+    goToSlide(currentSlide + 1);
+  }
+
+  function prevSlide() {
+    goToSlide(currentSlide - 1);
+  }
+
+  setInterval(nextSlide, 2000); // Auto slide every 2 seconds
+
+</script>
+</body>
+</html>
