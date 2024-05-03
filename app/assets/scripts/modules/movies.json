@@ -17,7 +17,7 @@
         "genre": ["Drama", "War"],
         "director": "Sam Mendes",
         "actors": ["Dean-Charles Chapman", "George MacKay", "Daniel Mays"],
-        "poster": "images/small-sized-movie/1917.jpg",
+        "poster": "/app/assets/images/small-sized-movie/1917.jpg",
         "trailer": "https://www.youtube.com/watch?v=YqNYrYUiMfg",
         "type": "movie"
     },
@@ -28,7 +28,7 @@
         "genre": ["Drama", "Horror", "Thriller"],
         "director": "Ryan Murphy",
         "actors": ["Lady Gaga", "Kathy Bates", "Angela Bassett"],
-        "poster": "images/small-sized-movie/AmericanHorrorStory.jpg",
+        "poster": "/app/assets/images/small-sized-movie/americanhorror.jpg",
         "trailer": "https://www.youtube.com/watch?v=-27J0pww7uE",
         "type": "series"
     },
@@ -39,7 +39,7 @@
         "genre": ["Animation", "Action", "Comedy"],
         "director": "Adam Reed",
         "actors": ["H. Jon Benjamin", "Judy Greer", "Amber Nash"],
-        "poster": "images/small-sized-movie/Archer.jpg",
+        "poster": "/app/assets/images/small-sized-movie/archer.jpg",
         "trailer": "https://www.youtube.com/watch?v=9L9M7ZFuOw0",
         "type": "series"
     },
@@ -50,7 +50,7 @@
         "genre": ["Action", "Adventure", "Fantasy"],
         "director": "James Cameron",
         "actors": ["Sam Worthington", "Zoe Saldana", "Sigourney Weaver"],
-        "poster": "images/small-sized-movie/Avatar.jpg",
+        "poster": "/app/assets/images/small-sized-movie/avatar.jpg",
         "trailer": "https://www.youtube.com/watch?v=5PSNL1qE6VY",
         "type": "movie"
     },
@@ -61,7 +61,7 @@
         "genre": ["Action", "Adventure", "Sci-Fi"],
         "director": "Joss Whedon",
         "actors": ["Robert Downey Jr.", "Chris Evans", "Scarlett Johansson"],
-        "poster": "images/small-sized-movie/Avengers.jpg",
+        "poster": "/app/assets/images/small-sized-movie/avengers.jpg",
         "trailer": "https://www.youtube.com/watch?v=eOrNdBpGMv8",
         "type": "movie"
     },
@@ -72,7 +72,7 @@
         "genre": ["Reality-TV"],
         "director": "",
         "actors": ["Honey G"],
-        "poster": "images/small-sized-movie/Beef.jpg",
+        "poster": "/app/assets/images/small-sized-movie/beef.jpg",
         "trailer": "",
         "type": "series"
     },
@@ -83,7 +83,7 @@
         "genre": ["Drama", "Romance"],
         "director": "Luca Guadagnino",
         "actors": ["Armie Hammer", "Timothée Chalamet", "Michael Stuhlbarg"],
-        "poster": "images/small-sized-movie/CallMeByYourName.jpg",
+        "poster": "/app/assets/images/small-sized-movie/callbyyourname.jpg",
         "trailer": "https://www.youtube.com/watch?v=Z9AYPxH5NTM",
         "type": "movie"
     },
@@ -94,7 +94,7 @@
         "genre": ["Documentary"],
         "director": "Chris Smith",
         "actors": ["Michael Ruppert"],
-        "poster": "images/small-sized-movie/Collapse.jpg",
+        "poster": "/app/assets/images/small-sized-movie/collapse.jpg",
         "trailer": "https://www.youtube.com/watch?v=ApB6Ul17sB4",
         "type": "movie"
     },
@@ -105,7 +105,7 @@
         "genre": ["Biography", "Drama", "Music"],
         "director": "Bryan Singer",
         "actors": ["Rami Malek", "Lucy Boynton", "Gwilym Lee"],
-        "poster": "images/small-sized-movie/BohemianRhapsody.jpg",
+        "poster": "/app/assets/images/small-sized-movie/bohemian.jpg",
         "trailer": "https://www.youtube.com/watch?v=ZQ5E7tRhbCw",
         "type": "movie"
     },
@@ -116,18 +116,18 @@
         "genre": ["Horror", "Mystery", "Thriller"],
         "director": "Jordan Peele",
         "actors": ["Lupita Nyong'o", "Winston Duke", "Elisabeth Moss"],
-        "poster": "images/small-sized-movie/Us.jpg",
+        "poster": "/app/assets/images/small-sized-movie/us.jpg",
         "trailer": "https://www.youtube.com/watch?v=hNCmb-4oXJA",
         "type": "movie"
     },
     {
         "name": "Batman",
-        "since": "1989",
-        "duration": "126",
-        "genre": ["Action", "Adventure"],
-        "director": "Tim Burton",
+        "since": "2022",
+        "duration": "176",
+        "genre": ["Action", "Adventure", "Drama"],
+        "director": "Matt Reeves",
         "actors": ["Michael Keaton", "Jack Nicholson", "Kim Basinger"],
-        "poster": "images/small-sized-movie/Batman.jpg",
+        "poster": "/app/assets/images/small-sized-movie/batman.jpg",
         "trailer": "https://www.youtube.com/watch?v=Ew75T1dDXeU",
         "type": "movie"
     },
@@ -138,7 +138,7 @@
         "genre": ["Drama"],
         "director": "David Fincher",
         "actors": ["Brad Pitt", "Edward Norton", "Meat Loaf"],
-        "poster": "images/small-sized-movie/FightClub.jpg",
+        "poster": "/app/assets/images/small-sized-movie/fightclub.jpg",
         "trailer": "https://www.youtube.com/watch?v=SUXWAEX2jlg",
         "type": "movie"
     },
@@ -149,7 +149,7 @@
         "genre": ["Drama", "Fantasy", "Horror"],
         "director": "Sam Kim",
         "actors": ["Gong Yoo", "Kim Go-eun", "Lee Dong-wook"],
-        "poster": "images/small-sized-movie/Goblin.jpg",
+        "poster": "/app/assets/images/small-sized-movie/Goblin.jpg",
         "trailer": "https://www.youtube.com/watch?v=nuKsO7K2Ldg",
         "type": "series"
     },
@@ -160,7 +160,7 @@
         "genre": ["Crime", "Drama"],
         "director": "Francis Ford Coppola",
         "actors": ["Marlon Brando", "Al Pacino", "James Caan"],
-        "poster": "images/small-sized-movie/TheGodfather.jpg",
+        "poster": "/app/assets/images/small-sized-movie/godfather.jpg",
         "trailer": "https://www.youtube.com/watch?v=sY1S34973zA",
         "type": "movie"
     },
@@ -171,7 +171,7 @@
         "genre": ["Action", "Adventure", "Sci-Fi"],
         "director": "Gareth Edwards",
         "actors": ["Aaron Taylor-Johnson", "Elizabeth Olsen", "Bryan Cranston"],
-        "poster": "images/small-sized-movie/Godzilla.jpg",
+        "poster": "/app/assets/images/small-sized-movie/godzilla.jpg",
         "trailer": "https://www.youtube.com/watch?v=vIu85WQTPRc",
         "type": "movie"
     },
@@ -182,7 +182,7 @@
         "genre": ["Drama", "Sci-Fi", "Thriller"],
         "director": "Alfonso Cuarón",
         "actors": ["Sandra Bullock", "George Clooney", "Ed Harris"],
-        "poster": "images/small-sized-movie/Gravity.jpg",
+        "poster": "/app/assets/images/small-sized-movie/gravity.jpg",
         "trailer": "https://www.youtube.com/watch?v=OiTiKOy59o4",
         "type": "movie"
     },
@@ -193,7 +193,7 @@
         "genre": ["Action", "Thriller"],
         "director": "Matthew Vaughn",
         "actors": ["Henry Cavill", "Dua Lipa", "Samuel L. Jackson"],
-        "poster": "images/small-sized-movie/Argylle.jpg",
+        "poster": "/app/assets/images/small-sized-movie/argylle.jpg",
         "trailer": "https://www.youtube.com/watch?v=1GUpXAk71SE",
         "type": "movie"
     },
@@ -204,7 +204,7 @@
         "genre": ["Adventure", "Drama", "Sci-Fi"],
         "director": "Christopher Nolan",
         "actors": ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain"],
-        "poster": "images/small-sized-movie/Interstellar.jpg",
+        "poster": "/app/assets/images/small-sized-movie/Interstellar.jpg",
         "trailer": "https://www.youtube.com/watch?v=zSWdZVtXT7E",
         "type": "movie"
     },
@@ -215,7 +215,7 @@
         "genre": ["Action", "Adventure", "Drama"],
         "director": "Peter Jackson",
         "actors": ["Naomi Watts", "Jack Black", "Adrien Brody"],
-        "poster": "images/small-sized-movie/KingKong.jpg",
+        "poster": "/app/assets/images/small-sized-movie/king-kong-small.jpg",
         "trailer": "https://www.youtube.com/watch?v=ve7XGwXSA7s",
         "type": "movie"
     },
@@ -226,7 +226,7 @@
         "genre": ["Comedy", "Drama", "Music"],
         "director": "Damien Chazelle",
         "actors": ["Ryan Gosling", "Emma Stone", "Rosemarie DeWitt"],
-        "poster": "images/small-sized-movie/LaLaLand.jpg",
+        "poster": "/app/assets/images/small-sized-movie/LaLaLand.jpg",
         "trailer": "https://www.youtube.com/watch?v=0pdqf4P9MB8",
         "type": "movie"
     },
@@ -237,18 +237,18 @@
         "genre": ["Comedy", "Reality-TV"],
         "director": "",
         "actors": ["Adam Richman", "Casey Webb"],
-        "poster": "images/small-sized-movie/ManVsBeef.jpg",
+        "poster": "/app/assets/images/small-sized-movie/ManVsBee.jpg",
         "trailer": "",
         "type": "series"
     },
     {
-        "name": "No More",
-        "since": "2009",
-        "duration": "103",
-        "genre": ["Drama", "Thriller"],
-        "director": "Pawel Pawlikowski",
-        "actors": ["Joanna Kulig", "Tomasz Kot", "Borys Szyc"],
-        "poster": "images/small-sized-movie/NoMore.jpg",
+        "name": "No Time To Die",
+        "since": "2021",
+        "duration": "163",
+        "genre": ["Adventure", "Thriller", "Action"],
+        "director": "Cary Joji Fukunaga",
+        "actors": ["Ana De Armas", "Daniel Craig", "Rami Malek"],
+        "poster": "/app/assets/images/small-sized-movie/notimetodie.jpg",
         "trailer": "https://www.youtube.com/watch?v=C2dL7LQ6b2E",
         "type": "movie"
     },
@@ -259,7 +259,7 @@
         "genre": ["Comedy", "Drama"],
         "director": "Greg Davies",
         "actors": ["Greg Davies", "Alexa Davies", "Camille Coduri"],
-        "poster": "images/small-sized-movie/Teech.jpg",
+        "poster": "/app/assets/images/small-sized-movie/Teech.jpg",
         "trailer": "",
         "type": "series"
     },
@@ -270,7 +270,7 @@
         "genre": ["Comedy", "Romance"],
         "director": "Chuck Lorre",
         "actors": ["Johnny Galecki", "Jim Parsons", "Kaley Cuoco"],
-        "poster": "images/small-sized-movie/TheBigBangTheory.jpg",
+        "poster": "/app/assets/images/small-sized-movie/TheBigBangTheory.jpg",
         "trailer": "https://www.youtube.com/watch?v=yb1b23yUn1s",
         "type": "series"
     },
@@ -281,7 +281,7 @@
         "genre": ["Biography", "Drama", "History"],
         "director": "",
         "actors": ["Claire Foy", "Olivia Colman", "Imelda Staunton"],
-        "poster": "images/small-sized-movie/TheCrown.jpg",
+        "poster": "/app/assets/images/small-sized-movie/TheCrown.jpg",
         "trailer": "https://www.youtube.com/watch?v=jWq-IwljU-c",
         "type": "series"
     },
@@ -292,7 +292,7 @@
         "genre": ["Crime", "Drama", "Thriller"],
         "director": "Martin Scorsese",
         "actors": ["Leonardo DiCaprio", "Matt Damon", "Jack Nicholson"],
-        "poster": "images/small-sized-movie/TheDeparted.jpg",
+        "poster": "/app/assets/images/small-sized-movie/TheDeparted.jpg",
         "trailer": "https://www.youtube.com/watch?v=SGWvwjZ0eDc",
         "type": "movie"
     },
@@ -303,7 +303,7 @@
         "genre": ["Action", "Sci-Fi"],
         "director": "Lana Wachowski, Lilly Wachowski",
         "actors": ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"],
-        "poster": "images/small-sized-movie/TheMatrix.jpg",
+        "poster": "/app/assets/images/small-sized-movie/TheMatrix.jpg",
         "trailer": "https://www.youtube.com/watch?v=vKQi3bBA1y8",
         "type": "movie"
     },
@@ -314,7 +314,7 @@
         "genre": ["Comedy"],
         "director": "",
         "actors": ["Steve Carell", "Jenna Fischer", "John Krasinski"],
-        "poster": "images/small-sized-movie/TheOffice.jpg",
+        "poster": "/app/assets/images/small-sized-movie/TheOffice.jpg",
         "trailer": "https://www.youtube.com/watch?v=5Dw_489KGJk",
         "type": "series"
     },
@@ -325,7 +325,7 @@
         "genre": ["Animation", "Comedy"],
         "director": "",
         "actors": ["Dan Castellaneta", "Nancy Cartwright", "Harry Shearer"],
-        "poster": "images/small-sized-movie/TheSimpsons.jpg",
+        "poster": "/app/assets/images/small-sized-movie/TheSimpsons.jpg",
         "trailer": "https://www.youtube.com/watch?v=PR6Tgj1J8Lo",
         "type": "series"
     },
@@ -336,7 +336,7 @@
         "genre": ["Action", "Adventure", "Drama"],
         "director": "",
         "actors": ["Henry Cavill", "Freya Allan", "Anya Chalotra"],
-        "poster": "images/small-sized-movie/TheWitcher.jpg",
+        "poster": "/app/assets/images/small-sized-movie/TheWitcher.jpg",
         "trailer": "https://www.youtube.com/watch?v=ndl1W4ltcmg",
         "type": "series"
     },
@@ -347,7 +347,7 @@
         "genre": ["Comedy", "Drama", "Romance"],
         "director": "",
         "actors": ["Milo Ventimiglia", "Mandy Moore", "Sterling K. Brown"],
-        "poster": "images/small-sized-movie/ThisIsUs.jpg",
+        "poster": "/app/assets/images/small-sized-movie/ThisIsUs.jpg",
         "trailer": "https://www.youtube.com/watch?v=rfUiKg28r_M",
         "type": "series"
     },
@@ -358,7 +358,7 @@
         "genre": ["Crime", "Drama", "Mystery"],
         "director": "",
         "actors": ["Kyle MacLachlan", "Michael Ontkean", "Mädchen Amick"],
-        "poster": "images/small-sized-movie/TwinPeaks.jpg",
+        "poster": "/app/assets/images/small-sized-movie/TwinPeaks.jpg",
         "trailer": "https://www.youtube.com/watch?v=2jNKjnAVaMU",
         "type": "series"
     },
@@ -369,7 +369,7 @@
         "genre": ["Mystery", "Romance", "Thriller"],
         "director": "Alfred Hitchcock",
         "actors": ["James Stewart", "Kim Novak", "Barbara Bel Geddes"],
-        "poster": "images/small-sized-movie/Vertigo.jpg",
+        "poster": "/app/assets/images/small-sized-movie/Vertigo.jpg",
         "trailer": "https://www.youtube.com/watch?v=Z5jvQwwHQNY",
         "type": "movie"
     },
@@ -380,7 +380,7 @@
         "genre": ["Action", "Adventure", "Sci-Fi"],
         "director": "Christopher Nolan",
         "actors": ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Ellen Page"],
-        "poster": "images/small-sized-movie/Inception.jpg",
+        "poster": "/app/assets/images/small-sized-movie/Inception.jpg",
         "trailer": "https://www.youtube.com/watch?v=YoHD9XEInc0",
         "type": "movie"
     },
@@ -391,7 +391,7 @@
         "genre": ["Drama"],
         "director": "Frank Darabont",
         "actors": ["Tim Robbins", "Morgan Freeman", "Bob Gunton"],
-        "poster": "images/small-sized-movie/TheShawshankRedemption.jpg",
+        "poster": "/app/assets/images/small-sized-movie/TheShawshankRedemption.jpg",
         "trailer": "https://www.youtube.com/watch?v=6hB3S9bIaco",
         "type": "movie"
     },
@@ -402,7 +402,7 @@
         "genre": ["Action", "Crime", "Drama"],
         "director": "Christopher Nolan",
         "actors": ["Christian Bale", "Heath Ledger", "Aaron Eckhart"],
-        "poster": "images/small-sized-movie/TheDarkKnight.jpg",
+        "poster": "/app/assets/images/small-sized-movie/TheDarkKnight.jpg",
         "trailer": "https://www.youtube.com/watch?v=EXeTwQWrcwY",
         "type": "movie"
     },
@@ -413,7 +413,7 @@
         "genre": ["Crime", "Drama"],
         "director": "Quentin Tarantino",
         "actors": ["John Travolta", "Uma Thurman", "Samuel L. Jackson"],
-        "poster": "images/small-sized-movie/PulpFiction.jpg",
+        "poster": "/app/assets/images/small-sized-movie/PulpFiction.jpg",
         "trailer": "https://www.youtube.com/watch?v=s7EdQ4FqbhY",
         "type": "movie"
     },
@@ -424,7 +424,7 @@
         "genre": ["Action", "Adventure", "Drama"],
         "director": "Peter Jackson",
         "actors": ["Elijah Wood", "Ian McKellen", "Orlando Bloom"],
-        "poster": "images/small-sized-movie/TheLordOfTheRingsTheFellowshipOfTheRing.jpg",
+        "poster": "/app/assets/images/small-sized-movie/TheLordOfTheRingsTheFellowshipOfTheRing.jpg",
         "trailer": "https://www.youtube.com/watch?v=Pki6jbSbXIY",
         "type": "movie"
     },
@@ -435,19 +435,8 @@
         "genre": ["Drama", "Romance"],
         "director": "Robert Zemeckis",
         "actors": ["Tom Hanks", "Robin Wright", "Gary Sinise"],
-        "poster": "images/small-sized-movie/ForrestGump.jpg",
+        "poster": "/app/assets/images/small-sized-movie/ForrestGump.jpg",
         "trailer": "https://www.youtube.com/watch?v=bLvqoHBptjg",
-        "type": "movie"
-    },
-    {
-        "name": "The Godfather",
-        "since": "1972",
-        "duration": "175",
-        "genre": ["Crime", "Drama"],
-        "director": "Francis Ford Coppola",
-        "actors": ["Marlon Brando", "Al Pacino", "James Caan"],
-        "poster": "images/small-sized-movie/TheGodfather.jpg",
-        "trailer": "https://www.youtube.com/watch?v=sY1S34973zA",
         "type": "movie"
     },
     {
@@ -457,7 +446,7 @@
         "genre": ["Action", "Drama"],
         "director": "Ridley Scott",
         "actors": ["Russell Crowe", "Joaquin Phoenix", "Connie Nielsen"],
-        "poster": "images/small-sized-movie/Gladiator.jpg",
+        "poster": "/app/assets/images/small-sized-movie/Gladiator.jpg",
         "trailer": "https://www.youtube.com/watch?v=owK1qxDselE",
         "type": "movie"
     },
@@ -468,7 +457,7 @@
         "genre": ["Action", "Sci-Fi"],
         "director": "Lana Wachowski, Lilly Wachowski",
         "actors": ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"],
-        "poster": "images/small-sized-movie/TheMatrix.jpg",
+        "poster": "/app/assets/images/small-sized-movie/TheMatrix.jpg",
         "trailer": "https://www.youtube.com/watch?v=m8e-FF8MsqU",
         "type": "movie"
     },
@@ -479,7 +468,7 @@
         "genre": ["Animation", "Adventure", "Drama"],
         "director": "Roger Allers, Rob Minkoff",
         "actors": ["Matthew Broderick", "Jeremy Irons", "James Earl Jones"],
-        "poster": "images/small-sized-movie/TheLionKing.jpg",
+        "poster": "/app/assets/images/small-sized-movie/TheLionKing.jpg",
         "trailer": "https://www.youtube.com/watch?v=4sj1MT05lAA",
         "type": "movie"
     },
@@ -489,7 +478,7 @@
         "duration": "45",
         "genre": ["Comedy", "Talk-Show"],
         "host": "Jimmy Fallon",
-        "poster": "images/small-sized-movie/TheTonightShow.jpg",
+        "poster": "/app/assets/images/small-sized-movie/TheTonightShow.jpg",
         "trailer": "https://www.youtube.com/watch?v=J5fBOJDbiyo",
         "type": "tv_show"
     },
@@ -499,7 +488,7 @@
         "duration": "22",
         "genre": ["Animation", "Comedy"],
         "creator": "Matt Groening",
-        "poster": "images/small-sized-movie/TheSimpsons.jpg",
+        "poster": "/app/assets/images/small-sized-movie/TheSimpsons.jpg",
         "trailer": "https://www.youtube.com/watch?v=T7L8u8fVKz4",
         "type": "tv_show"
     },
@@ -508,7 +497,7 @@
         "since": "1968",
         "duration": "47",
         "genre": ["Documentary", "News"],
-        "poster": "images/small-sized-movie/60Minutes.jpg",
+        "poster": "/app/assets/images/small-sized-movie/60Minutes.jpg",
         "trailer": "https://www.youtube.com/watch?v=YNNLPtxWV48",
         "type": "tv_show"
     },
@@ -518,7 +507,7 @@
         "duration": "41",
         "genre": ["Drama", "Romance"],
         "creator": "Shonda Rhimes",
-        "poster": "images/small-sized-movie/GreysAnatomy.jpg",
+        "poster": "/app/assets/images/small-sized-movie/GreysAnatomy.jpg",
         "trailer": "https://www.youtube.com/watch?v=q1pcpgREQ5c",
         "type": "tv_show"
     },
@@ -528,7 +517,7 @@
         "duration": "90",
         "genre": ["Comedy", "Music"],
         "creator": "Lorne Michaels",
-        "poster": "images/small-sized-movie/SaturdayNightLive.jpg",
+        "poster": "/app/assets/images/small-sized-movie/SaturdayNightLive.jpg",
         "trailer": "https://www.youtube.com/watch?v=AMqKSMgMU7g",
         "type": "tv_show"
     },
@@ -539,7 +528,7 @@
         "genre": ["Crime", "Drama", "Thriller"],
         "director": "Vince Gilligan",
         "actors": ["Bryan Cranston", "Aaron Paul", "Anna Gunn"],
-        "poster": "images/small-sized-movie/BreakingBad.jpg",
+        "poster": "/app/assets/images/small-sized-movie/BreakingBad.jpg",
         "trailer": "https://www.youtube.com/watch?v=HhesaQXLuRY",
         "type": "tv_show"
     },
@@ -550,7 +539,7 @@
         "genre": ["Comedy", "Romance"],
         "director": "David Crane, Marta Kauffman",
         "actors": ["Jennifer Aniston", "Courteney Cox", "Lisa Kudrow"],
-        "poster": "images/small-sized-movie/Friends.jpg",
+        "poster": "/app/assets/images/small-sized-movie/Friends.jpg",
         "trailer": "https://www.youtube.com/watch?v=hDNNmeeJs1Q",
         "type": "tv_show"
     },
@@ -561,7 +550,7 @@
         "genre": ["Action", "Adventure", "Drama"],
         "director": "",
         "actors": ["Emilia Clarke", "Peter Dinklage", "Kit Harington"],
-        "poster": "images/small-sized-movie/GameOfThrones.jpg",
+        "poster": "/app/assets/images/small-sized-movie/GameOfThrones.jpg",
         "trailer": "https://www.youtube.com/watch?v=rlR4PJn8b8I",
         "type": "tv_show"
     },
@@ -572,7 +561,7 @@
         "genre": ["Drama", "Fantasy", "Horror"],
         "director": "",
         "actors": ["Millie Bobby Brown", "Finn Wolfhard", "Winona Ryder"],
-        "poster": "images/small-sized-movie/StrangerThings.jpg",
+        "poster": "/app/assets/images/small-sized-movie/StrangerThings.jpg",
         "trailer": "https://www.youtube.com/watch?v=XWxyRG_tckY",
         "type": "tv_show"
     },
@@ -583,7 +572,7 @@
         "genre": ["Action", "Adventure", "Fantasy"],
         "director": "",
         "actors": ["Pedro Pascal", "Carl Weathers", "Gina Carano"],
-        "poster": "images/small-sized-movie/TheMandalorian.jpg",
+        "poster": "/app/assets/images/small-sized-movie/TheMandalorian.jpg",
         "trailer": "https://www.youtube.com/watch?v=XmI7WKrAtqs",
         "type": "tv_show"
     },
@@ -594,7 +583,7 @@
         "genre": ["Action", "Adventure", "Drama"],
         "director": "",
         "actors": ["Henry Cavill", "Freya Allan", "Anya Chalotra"],
-        "poster": "images/small-sized-movie/TheWitcher.jpg",
+        "poster": "/app/assets/images/small-sized-movie/TheWitcher.jpg",
         "trailer": "https://www.youtube.com/watch?v=ndl1W4ltcmg",
         "type": "tv_show"
     },
@@ -605,7 +594,7 @@
         "genre": ["Drama", "Mystery", "Sci-Fi"],
         "director": "",
         "actors": ["Evan Rachel Wood", "Jeffrey Wright", "Ed Harris"],
-        "poster": "images/small-sized-movie/Westworld.jpg",
+        "poster": "/app/assets/images/small-sized-movie/Westworld.jpg",
         "trailer": "https://www.youtube.com/watch?v=IuS5huqOND4",
         "type": "tv_show"
     }
