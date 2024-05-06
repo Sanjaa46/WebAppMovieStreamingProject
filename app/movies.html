@@ -30,6 +30,7 @@
     />
     <link rel="stylesheet" href="assets/styles/style.css" />
     <!--<script src="movie.js"></script>-->
+    <script src="assets/scripts/modules/search.js"></script>
 
     <title>Kinonuud</title>
   </head>
@@ -73,9 +74,12 @@
         <img src="webimage/search.png" alt="search-icon" class="search-icon" />
         <input
           type="text"
+          name=""
+          id="find"
           class="search-input"
           placeholder="Хайх..."
           aria-label="search"
+          onkeyup="search()"
         />
       </form>
       <a href="#" class="login-button"

@@ -12,6 +12,7 @@
 
     <script src="assets/scripts/modules/Movies.js"></script>
     <script src="assets/scripts/modules/js1.js"></script>
+    <script src="assets/scripts/modules/search.js"></script>
 
     <title>Nice Kino</title>
 </head>
@@ -47,9 +48,17 @@
                         <li class="nav-list"><a href="movies.html">Цуврал</a></li>
                         <li class="nav-list"><a href="movies.html">ТВ шоу</a></li>
                         <form class="search-container">
-                            <img src="assets/images/search.png" alt="search-icon" class="search-icon">
-                            <input type="text" class="search-input" placeholder="Хайх...">
-                        </form>
+                            <img src="webimage/search.png" alt="search-icon" class="search-icon" />
+                            <input
+                              type="text"
+                              name=""
+                              id="find"
+                              class="search-input"
+                              placeholder="Хайх..."
+                              aria-label="search"
+                              onkeyup="search()"
+                            />
+                          </form>
                     </ul>
             </nav>
             <a class="login-button">Нэвтрэх
