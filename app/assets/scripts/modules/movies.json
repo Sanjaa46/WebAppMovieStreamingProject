@@ -96,7 +96,7 @@
         "actors": ["Michael Ruppert"],
         "poster": "/app/assets/images/small-sized-movie/collapse.jpg",
         "trailer": "https://www.youtube.com/watch?v=ApB6Ul17sB4",
-        "type": "movie"
+        "type": "movie" 
     },
     {
         "name": "Bohemian Rhapsody",

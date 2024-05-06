@@ -19,6 +19,8 @@ body {
     background-color: var(--color-background);
 }
 
+/* header */
+
 .menu {
     height: 64px;
     width: 100%;
@@ -288,7 +290,7 @@ body {
 
 
 
-
+/* Footer */
 
 
 footer {
