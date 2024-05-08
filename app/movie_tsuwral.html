@@ -24,10 +24,8 @@
     <title>movie series</title>
   </head>
   <body>
-    <header>
-      <a href="index.html" id="logo"
-        ><img src="webimage/logo.png" alt="logo" width="348" height="128"
-      /></a>
+    <header class="menu">
+      <a href="index.html" id="logo">Logo Movie</a>
       <nav>
         <ul class="nav-container">
           <li class="nav-list">
@@ -54,28 +52,93 @@
             </div>
           </li>
           <li class="nav-list"><a href="movies.html">Кино</a></li>
-          <li class="nav-list"><a href="movie_tsuwral.html">Цуврал</a></li>
-          <li class="nav-list"><a href="TVshow.html">ТВ шоу</a></li>
+          <li class="nav-list"><a href="movies.html">Цуврал</a></li>
+          <li class="nav-list"><a href="movies.html">ТВ шоу</a></li>
         </ul>
       </nav>
       <form class="search-container">
-        <img src="webimage/search.png" alt="search-icon" class="search-icon" />
+        <img
+          src="assets/images/search.png"
+          alt="search-icon"
+          class="search-icon"
+        />
         <input
           type="text"
+          name=""
+          id="find"
           class="search-input"
           placeholder="Хайх..."
           aria-label="search"
+          onkeyup="search()"
         />
       </form>
-
       <a href="#" class="login-button"
         >Нэвтрэх
         <img
-          src="webimage/circled-right.png"
+          src="assets/images/login-image.png"
           alt="login"
           class="login-image"
-          width="30"
           height="30"
+          width="30"
+        />
+      </a>
+    </header>
+
+    <header class="hamburger-header">
+      <div class="off-screen-menu">
+        <ul class="nav-container-burger">
+          <li class="nav-list-burger">
+            <a href="#">Төрөл</a>
+            <div class="dropdown-menu-burger">
+              <ul>
+                <li><a href="movies.html">Адал явдалт</a></li>
+                <li><a href="movies.html">Аймшгийн</a></li>
+                <li><a href="movies.html">Аллага</a></li>
+                <li><a href="movies.html">Вестерн</a></li>
+                <li><a href="movies.html">Гэмт хэрэгт</a></li>
+                <li><a href="movies.html">Гэр бүлийн</a></li>
+                <li><a href="movies.html">Дайны</a></li>
+                <li><a href="movies.html">Драм</a></li>
+                <li><a href="movies.html">Инээдмийн</a></li>
+                <li><a href="movies.html">Мюзикл</a></li>
+                <li><a href="movies.html">Тулаант</a></li>
+                <li><a href="movies.html">Түүхэн</a></li>
+                <li><a href="movies.html">Үлгэрийн</a></li>
+                <li><a href="movies.html">Зөгнөлт</a></li>
+                <li><a href="movies.html">Хүүхэлдэйн кино</a></li>
+                <li><a href="movies.html">Ш/У уран зөгнөлт</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-list-burger"><a href="movies.html">Кино</a></li>
+          <li class="nav-list-burger">
+            <a href="movie_tsuwral.html">Цуврал</a>
+          </li>
+          <li class="nav-list-burger"><a href="Tvshow.html">ТВ шоу</a></li>
+        </ul>
+      </div>
+
+      <nav>
+        <div class="ham-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+
+      <a href="index.html" id="logo">Logo Movie</a>
+      <a id="search-mobile"
+        ><img
+          src="assets/images/search.png"
+          alt="search-icon"
+          class="search-icon"
+      /></a>
+      <a class="login-button"
+        >Нэвтрэх
+        <img
+          src="assets/images/login-image.png"
+          alt="login"
+          class="login-image"
         />
       </a>
     </header>
@@ -643,6 +706,8 @@
         <a href="" class="next">&raquo;</a>
       </section>
     </main>
+
+    <script src="assets/scripts/modules/ham-menu.js"></script>
     <!--footer-->
     <footer class="site-footer">
       <div class="footer-icons">

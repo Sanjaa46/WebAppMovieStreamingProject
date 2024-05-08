@@ -31,15 +31,16 @@
     <link rel="stylesheet" href="assets/styles/style.css" />
     <!--<script src="movie.js"></script>-->
     <script src="assets/scripts/modules/search.js"></script>
+    <script type="module" src="assets/scripts/modules/movieList.js"></script>
+    <script type="module" src="assets/scripts/modules/Movies.js"></script>
+    <script type="module" src="assets/scripts/modules/nav-option.js"></script>
 
     <title>Kinonuud</title>
   </head>
+
   <body>
-    <header>
-      <div class="bx bx-menu" id="menu-icon"></div>
-      <a href="index.html" id="logo"
-        ><img src="webimage/logo.png" alt="logo"
-      /></a>
+    <header class="menu">
+      <a href="index.html" id="logo">Logo Movie</a>
       <nav>
         <ul class="nav-container">
           <li class="nav-list">
@@ -65,13 +66,23 @@
               </ul>
             </div>
           </li>
-          <li class="nav-list"><a href="movies.html">Кино</a></li>
-          <li class="nav-list"><a href="movie_tsuwral.html">Цуврал</a></li>
-          <li class="nav-list"><a href="Tvshow.html">ТВ шоу</a></li>
+          <li class="nav-list">
+            <a href="movies.html" id="movies-option">Кино</a>
+          </li>
+          <li class="nav-list">
+            <a href="movies.html" id="series-option">Цуврал</a>
+          </li>
+          <li class="nav-list">
+            <a href="movies.html" id="tv-shows-option">ТВ шоу</a>
+          </li>
         </ul>
       </nav>
       <form class="search-container">
-        <img src="webimage/search.png" alt="search-icon" class="search-icon" />
+        <img
+          src="assets/images/search.png"
+          alt="search-icon"
+          class="search-icon"
+        />
         <input
           type="text"
           name=""
@@ -85,11 +96,70 @@
       <a href="#" class="login-button"
         >Нэвтрэх
         <img
-          src="webimage/circled-right.png"
+          src="assets/images/login-image.png"
           alt="login"
           class="login-image"
           height="30"
           width="30"
+        />
+      </a>
+    </header>
+
+    <header class="hamburger-header">
+      <div class="off-screen-menu">
+        <ul class="nav-container-burger">
+          <li class="nav-list-burger">
+            <a href="#">Төрөл</a>
+            <div class="dropdown-menu-burger">
+              <ul>
+                <li><a href="movies.html">Адал явдалт</a></li>
+                <li><a href="movies.html">Аймшгийн</a></li>
+                <li><a href="movies.html">Аллага</a></li>
+                <li><a href="movies.html">Вестерн</a></li>
+                <li><a href="movies.html">Гэмт хэрэгт</a></li>
+                <li><a href="movies.html">Гэр бүлийн</a></li>
+                <li><a href="movies.html">Дайны</a></li>
+                <li><a href="movies.html">Драм</a></li>
+                <li><a href="movies.html">Инээдмийн</a></li>
+                <li><a href="movies.html">Мюзикл</a></li>
+                <li><a href="movies.html">Тулаант</a></li>
+                <li><a href="movies.html">Түүхэн</a></li>
+                <li><a href="movies.html">Үлгэрийн</a></li>
+                <li><a href="movies.html">Зөгнөлт</a></li>
+                <li><a href="movies.html">Хүүхэлдэйн кино</a></li>
+                <li><a href="movies.html">Ш/У уран зөгнөлт</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-list-burger"><a href="movies.html">Кино</a></li>
+          <li class="nav-list-burger">
+            <a href="movie_tsuwral.html">Цуврал</a>
+          </li>
+          <li class="nav-list-burger"><a href="Tvshow.html">ТВ шоу</a></li>
+        </ul>
+      </div>
+
+      <nav>
+        <div class="ham-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+
+      <a href="index.html" id="logo">Logo Movie</a>
+      <a id="search-mobile"
+        ><img
+          src="assets/images/search.png"
+          alt="search-icon"
+          class="search-icon"
+      /></a>
+      <a class="login-button"
+        >Нэвтрэх
+        <img
+          src="assets/images/login-image.png"
+          alt="login"
+          class="login-image"
         />
       </a>
     </header>
@@ -184,565 +254,8 @@
       </section>
       <!--kinonuud-->
 
-      <section class="movie-poster-12">
-        <div class="movies-container-12" id="movies">
-          <article class="movie-small-sized">
-            <div class="details">
-              <h3 class="Name">Up</h3>
-              <p class="year-and-duration">
-                <img
-                  src="webimage/movieIcon.png"
-                  alt="movie-icon"
-                  class="movie-icon"
-                />
-                1990 - 90 мин
-              </p>
-              <div class="info">
-                <p>Directed by Jamer Cameron</p>
-              </div>
-            </div>
-            <h4 class="rank">★8</h4>
-            <div class="poster">
-              <img
-                src="webimage/movies/up.jpg"
-                alt="movie-small-sized-poster"
-              />
-            </div>
-          </article>
-
-          <article class="movie-small-sized">
-            <div class="details">
-              <h3 class="Name">1917</h3>
-              <p class="year-and-duration">
-                <img
-                  src="webimage/movieIcon.png"
-                  alt="movie-icon"
-                  class="movie-icon"
-                />1990 - 90 мин
-              </p>
-              <div class="info">
-                <p>Directed by Jamer Cameron</p>
-              </div>
-            </div>
-            <h4 class="rank">★10</h4>
-            <div class="poster">
-              <img
-                src="webimage/movies/1917.jpg"
-                alt="movie-small-sized-poster"
-              />
-            </div>
-          </article>
-
-          <article class="movie-small-sized">
-            <div class="details">
-              <h3 class="Name">Amercan horror story</h3>
-              <p class="year-and-duration">
-                <img
-                  src="webimage/movieIcon.png"
-                  alt="movie-icon"
-                  class="movie-icon"
-                />1990 - 90 мин
-              </p>
-              <div class="info">
-                <p>Directed by Jamer Cameron</p>
-              </div>
-            </div>
-            <h4 class="rank">★8</h4>
-            <div class="poster">
-              <img
-                src="webimage/movies/americanhorror.jpg"
-                alt="movie-small-sized-poster"
-              />
-            </div>
-          </article>
-
-          <article class="movie-small-sized">
-            <div class="details">
-              <h3 class="Name">avatar</h3>
-              <p class="year-and-duration">
-                <img
-                  src="webimage/movieIcon.png"
-                  alt="movie-icon"
-                  class="movie-icon"
-                />1990 - 90 мин
-              </p>
-              <div class="info">
-                <p>Directed by Jamer Cameron</p>
-              </div>
-            </div>
-            <h4 class="rank">★7</h4>
-            <div class="poster">
-              <img
-                src="webimage/movies/avatar.jpg"
-                alt="movie-small-sized-poster"
-              />
-            </div>
-          </article>
-
-          <article class="movie-small-sized">
-            <div class="details">
-              <h3 class="Name">avengers</h3>
-              <p class="year-and-duration">
-                <img
-                  src="webimage/movieIcon.png"
-                  alt="movie-icon"
-                  class="movie-icon"
-                />1990 - 90 мин
-              </p>
-              <div class="info">
-                <p>Directed by Jamer Cameron</p>
-              </div>
-            </div>
-            <h4 class="rank">★7</h4>
-            <div class="poster">
-              <img
-                src="webimage/movies/avengers.jpg"
-                alt="movie-small-sized-poster"
-              />
-            </div>
-          </article>
-
-          <article class="movie-small-sized">
-            <div class="details">
-              <h3 class="Name">Call by your name</h3>
-              <p class="year-and-duration">
-                <img
-                  src="webimage/movieIcon.png"
-                  alt="movie-icon"
-                  class="movie-icon"
-                />1990 - 90 мин
-              </p>
-              <div class="info">
-                <p>Directed by Jamer Cameron</p>
-              </div>
-            </div>
-            <h4 class="rank">★6</h4>
-            <div class="poster">
-              <img
-                src="webimage/movies/callbyyourname.jpg"
-                alt="movie-small-sized-poster"
-              />
-            </div>
-          </article>
-
-          <article class="movie-small-sized">
-            <div class="details">
-              <h3 class="Name">Collapse</h3>
-              <p class="year-and-duration">
-                <img
-                  src="webimage/movieIcon.png"
-                  alt="movie-icon"
-                  class="movie-icon"
-                />1990 - 90 мин
-              </p>
-              <div class="info">
-                <p>Directed by Jamer Cameron</p>
-              </div>
-            </div>
-            <h4 class="rank">★8</h4>
-            <div class="poster">
-              <img
-                src="webimage/movies/collapse.jpg"
-                alt="movie-small-sized-poster"
-              />
-            </div>
-          </article>
-
-          <article class="movie-small-sized">
-            <div class="details">
-              <h3 class="Name">Bohemian rhapsody</h3>
-              <p class="year-and-duration">
-                <img
-                  src="webimage/movieIcon.png"
-                  alt="movie-icon"
-                  class="movie-icon"
-                />1990 - 90 мин
-              </p>
-              <div class="info">
-                <p>Directed by Jamer Cameron</p>
-              </div>
-            </div>
-            <h4 class="rank">★6</h4>
-            <div class="poster">
-              <img
-                src="webimage/movies/bohemon.jpg"
-                alt="movie-small-sized-poster"
-              />
-            </div>
-          </article>
-
-          <article class="movie-small-sized">
-            <div class="details">
-              <h3 class="Name">Us</h3>
-              <p class="year-and-duration">
-                <img
-                  src="webimage/movieIcon.png"
-                  alt="movie-icon"
-                  class="movie-icon"
-                />1990 - 90 мин
-              </p>
-              <div class="info">
-                <p>Directed by Jamer Cameron</p>
-              </div>
-            </div>
-            <h4 class="rank">★6</h4>
-            <div class="poster">
-              <img
-                src="webimage/movies/us.jpg"
-                alt="movie-small-sized-poster"
-              />
-            </div>
-          </article>
-
-          <article class="movie-small-sized">
-            <div class="details">
-              <h3 class="Name">Fight club</h3>
-              <p class="year-and-duration">
-                <img
-                  src="webimage/movieIcon.png"
-                  alt="movie-icon"
-                  class="movie-icon"
-                />1990 - 90 мин
-              </p>
-              <div class="info">
-                <p>Directed by Jamer Cameron</p>
-              </div>
-            </div>
-            <h4 class="rank">★6</h4>
-            <div class="poster">
-              <img
-                src="webimage/movies/fightclub.jpg"
-                alt="movie-small-sized-poster"
-              />
-            </div>
-          </article>
-
-          <article class="movie-small-sized">
-            <div class="details">
-              <h3 class="Name">Fury</h3>
-              <p class="year-and-duration">
-                <img
-                  src="webimage/movieIcon.png"
-                  alt="movie-icon"
-                  class="movie-icon"
-                />1990 - 90 мин
-              </p>
-              <div class="info">
-                <p>Directed by Jamer Cameron</p>
-              </div>
-            </div>
-            <h4 class="rank">★6</h4>
-            <div class="poster">
-              <img
-                src="webimage/movies/fury.jpg"
-                alt="movie-small-sized-poster"
-              />
-            </div>
-          </article>
-
-          <article class="movie-small-sized">
-            <div class="details">
-              <h3 class="Name">The Godfather</h3>
-              <p class="year-and-duration">
-                <img
-                  src="webimage/movieIcon.png"
-                  alt="movie-icon"
-                  class="movie-icon"
-                />1990 - 90 мин
-              </p>
-              <div class="info">
-                <p>Directed by Jamer Cameron</p>
-              </div>
-            </div>
-            <h4 class="rank">★6</h4>
-            <div class="poster">
-              <img
-                src="webimage/movies/godfather.jpg"
-                alt="movie-small-sized-poster"
-              />
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="movie-poster-12">
-        <div class="movies-container-12">
-          <article class="movie-small-sized">
-            <div class="details">
-              <h3 class="Name">Batman</h3>
-              <p class="year-and-duration">
-                <img
-                  src="webimage/movieIcon.png"
-                  alt="movie-icon"
-                  class="movie-icon"
-                />1990 - 90 мин
-              </p>
-              <div class="info">
-                <p>Directed by Jamer Cameron</p>
-              </div>
-            </div>
-            <h4 class="rank">★6</h4>
-            <div class="poster">
-              <img
-                src="webimage/movies/batman.jpg"
-                alt="movie-small-sized-poster"
-              />
-            </div>
-          </article>
-
-          <article class="movie-small-sized">
-            <div class="details">
-              <h3 class="Name">Godzilla</h3>
-              <p class="year-and-duration">
-                <img
-                  src="webimage/movieIcon.png"
-                  alt="movie-icon"
-                  class="movie-icon"
-                />1990 - 90 мин
-              </p>
-              <div class="info">
-                <p>Directed by Jamer Cameron</p>
-              </div>
-            </div>
-            <h4 class="rank">★6</h4>
-            <div class="poster">
-              <img
-                src="webimage/movies/godzilla.jpg"
-                alt="movie-small-sized-poster"
-              />
-            </div>
-          </article>
-
-          <article class="movie-small-sized">
-            <div class="details">
-              <h3 class="Name">Gravity</h3>
-              <p class="year-and-duration">
-                <img
-                  src="webimage/movieIcon.png"
-                  alt="movie-icon"
-                  class="movie-icon"
-                />1990 - 90 мин
-              </p>
-              <div class="info">
-                <p>Directed by Jamer Cameron</p>
-              </div>
-            </div>
-            <h4 class="rank">★6</h4>
-            <div class="poster">
-              <img
-                src="webimage/movies/gravity.jpg"
-                alt="movie-small-sized-poster"
-              />
-            </div>
-          </article>
-
-          <article class="movie-small-sized">
-            <div class="details">
-              <h3 class="Name">Argylle</h3>
-              <p class="year-and-duration">
-                <img
-                  src="webimage/movieIcon.png"
-                  alt="movie-icon"
-                  class="movie-icon"
-                />1990 - 90 мин
-              </p>
-              <div class="info">
-                <p>Directed by Jamer Cameron</p>
-              </div>
-            </div>
-            <h4 class="rank">★6</h4>
-            <div class="poster">
-              <img
-                src="webimage/movies/archylle.jpg"
-                alt="movie-small-sized-poster"
-              />
-            </div>
-          </article>
-
-          <article class="movie-small-sized">
-            <div class="details">
-              <h3 class="Name">Intelstellar</h3>
-              <p class="year-and-duration">
-                <img
-                  src="webimage/movieIcon.png"
-                  alt="movie-icon"
-                  class="movie-icon"
-                />1990 - 90 мин
-              </p>
-              <div class="info">
-                <p>Directed by Jamer Cameron</p>
-              </div>
-            </div>
-            <h4 class="rank">★6</h4>
-            <div class="poster">
-              <img
-                src="webimage/movies/interstellar.jpg"
-                alt="movie-small-sized-poster"
-              />
-            </div>
-          </article>
-
-          <article class="movie-small-sized">
-            <div class="details">
-              <h3 class="Name">La la land</h3>
-              <p class="year-and-duration">
-                <img
-                  src="webimage/movieIcon.png"
-                  alt="movie-icon"
-                  class="movie-icon"
-                />1990 - 90 мин
-              </p>
-              <div class="info">
-                <p>Directed by Jamer Cameron</p>
-              </div>
-            </div>
-            <h4 class="rank">★6</h4>
-            <div class="poster">
-              <img
-                src="webimage/movies/lalaland.jpg"
-                alt="movie-small-sized-poster"
-              />
-            </div>
-          </article>
-
-          <article class="movie-small-sized">
-            <div class="details">
-              <h3 class="Name">No more to die</h3>
-              <p class="year-and-duration">
-                <img
-                  src="webimage/movieIcon.png"
-                  alt="movie-icon"
-                  class="movie-icon"
-                />1990 - 90 мин
-              </p>
-              <div class="info">
-                <p>Directed by Jamer Cameron</p>
-              </div>
-            </div>
-            <h4 class="rank">★6</h4>
-            <div class="poster">
-              <img
-                src="webimage/movies/no_more.jpg"
-                alt="movie-small-sized-poster"
-              />
-            </div>
-          </article>
-
-          <article class="movie-small-sized">
-            <div class="details">
-              <h3 class="Name">Teech</h3>
-              <p class="year-and-duration">
-                <img
-                  src="webimage/movieIcon.png"
-                  alt="movie-icon"
-                  class="movie-icon"
-                />1990 - 90 мин
-              </p>
-              <div class="info">
-                <p>Directed by Jamer Cameron</p>
-              </div>
-            </div>
-            <h4 class="rank">★6</h4>
-            <div class="poster">
-              <img
-                src="webimage/movies/Teech.jpg"
-                alt="movie-small-sized-poster"
-              />
-            </div>
-          </article>
-
-          <article class="movie-small-sized">
-            <div class="details">
-              <h3 class="Name">Star wars</h3>
-              <p class="year-and-duration">
-                <img
-                  src="webimage/movieIcon.png"
-                  alt="movie-icon"
-                  class="movie-icon"
-                />1990 - 90 мин
-              </p>
-              <div class="info">
-                <p>Directed by Jamer Cameron</p>
-              </div>
-            </div>
-            <h4 class="rank">★6</h4>
-            <div class="poster">
-              <img
-                src="webimage/movies/Star_wars.jpg"
-                alt="movie-small-sized-poster"
-              />
-            </div>
-          </article>
-
-          <article class="movie-small-sized">
-            <div class="details">
-              <h3 class="Name">Parasite</h3>
-              <p class="year-and-duration">
-                <img
-                  src="webimage/movieIcon.png"
-                  alt="movie-icon"
-                  class="movie-icon"
-                />1990 - 90 мин
-              </p>
-              <div class="info">
-                <p>Directed by Jamer Cameron</p>
-              </div>
-            </div>
-            <h4 class="rank">★6</h4>
-            <div class="poster">
-              <img
-                src="webimage/movies/parasite.jpg"
-                alt="movie-small-sized-poster"
-              />
-            </div>
-          </article>
-
-          <article class="movie-small-sized">
-            <div class="details">
-              <h3 class="Name">John wick</h3>
-              <p class="year-and-duration">
-                <img
-                  src="webimage/movieIcon.png"
-                  alt="movie-icon"
-                  class="movie-icon"
-                />1990 - 90 мин
-              </p>
-              <div class="info">
-                <p>Directed by Jamer Cameron</p>
-              </div>
-            </div>
-            <h4 class="rank">★6</h4>
-            <div class="poster">
-              <img
-                src="webimage/movies/john.jpg"
-                alt="movie-small-sized-poster"
-              />
-            </div>
-          </article>
-
-          <article class="movie-small-sized">
-            <div class="details">
-              <h3 class="Name">Archer</h3>
-              <p class="year-and-duration">
-                <img
-                  src="webimage/movieIcon.png"
-                  alt="movie-icon"
-                  class="movie-icon"
-                />1990 - 90 мин
-              </p>
-              <div class="info">
-                <p>Directed by Jamer Cameron</p>
-              </div>
-            </div>
-            <h4 class="rank">★6</h4>
-            <div class="poster">
-              <img
-                src="webimage/movies/archer.jpg"
-                alt="movie-small-sized-poster"
-              />
-            </div>
-          </article>
-        </div>
+      <section class="movie-poster-12" id="movie-list">
+        <div class="movies-container-12" id="movies"></div>
       </section>
       <!--pagination-->
       <section class="pagination">
@@ -753,6 +266,8 @@
         <a href="" class="next">&raquo;</a>
       </section>
     </main>
+
+    <script src="assets/scripts/modules/ham-menu.js"></script>
 
     <!--footer-->
     <footer class="site-footer">

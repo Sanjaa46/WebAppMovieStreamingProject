@@ -1,4 +1,4 @@
-class Movie {
+export default class Movie {
     constructor(movie) {
         this.name = movie.name;
         this.since = movie.since;
@@ -6,6 +6,7 @@ class Movie {
         this.director = movie.director;
         this.poster = movie.poster;
     }
+
 
     render() {
         return `
@@ -23,6 +24,7 @@ class Movie {
             </article>`;
     }
 }
+
 class Movies {
     constructor() { }
 

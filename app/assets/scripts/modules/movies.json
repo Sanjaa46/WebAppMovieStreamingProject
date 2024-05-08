@@ -8,7 +8,10 @@
         "actors": ["Dylan Minnette", "Katherine Langford", "Christian Navarro"],
         "poster": "/app/assets/images/small-sized-movie/13ReasonWhy.jpg",
         "trailer": "https://www.youtube.com/watch?v=JebwYGn5Z3E",
-        "type": "series"
+        "type": "series",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "1917",
@@ -19,7 +22,10 @@
         "actors": ["Dean-Charles Chapman", "George MacKay", "Daniel Mays"],
         "poster": "/app/assets/images/small-sized-movie/1917.jpg",
         "trailer": "https://www.youtube.com/watch?v=YqNYrYUiMfg",
-        "type": "movie"
+        "type": "movie",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "American Horror Story",
@@ -30,7 +36,10 @@
         "actors": ["Lady Gaga", "Kathy Bates", "Angela Bassett"],
         "poster": "/app/assets/images/small-sized-movie/americanhorror.jpg",
         "trailer": "https://www.youtube.com/watch?v=-27J0pww7uE",
-        "type": "series"
+        "type": "series",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "Archer",
@@ -41,7 +50,10 @@
         "actors": ["H. Jon Benjamin", "Judy Greer", "Amber Nash"],
         "poster": "/app/assets/images/small-sized-movie/archer.jpg",
         "trailer": "https://www.youtube.com/watch?v=9L9M7ZFuOw0",
-        "type": "series"
+        "type": "series",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "Avatar",
@@ -52,7 +64,10 @@
         "actors": ["Sam Worthington", "Zoe Saldana", "Sigourney Weaver"],
         "poster": "/app/assets/images/small-sized-movie/avatar.jpg",
         "trailer": "https://www.youtube.com/watch?v=5PSNL1qE6VY",
-        "type": "movie"
+        "type": "movie",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "Avengers",
@@ -63,7 +78,10 @@
         "actors": ["Robert Downey Jr.", "Chris Evans", "Scarlett Johansson"],
         "poster": "/app/assets/images/small-sized-movie/avengers.jpg",
         "trailer": "https://www.youtube.com/watch?v=eOrNdBpGMv8",
-        "type": "movie"
+        "type": "movie",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "Beef",
@@ -74,7 +92,10 @@
         "actors": ["Honey G"],
         "poster": "/app/assets/images/small-sized-movie/beef.jpg",
         "trailer": "",
-        "type": "series"
+        "type": "series",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "Call Me by Your Name",
@@ -85,7 +106,10 @@
         "actors": ["Armie Hammer", "Timothée Chalamet", "Michael Stuhlbarg"],
         "poster": "/app/assets/images/small-sized-movie/callbyyourname.jpg",
         "trailer": "https://www.youtube.com/watch?v=Z9AYPxH5NTM",
-        "type": "movie"
+        "type": "movie",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "Collapse",
@@ -96,7 +120,10 @@
         "actors": ["Michael Ruppert"],
         "poster": "/app/assets/images/small-sized-movie/collapse.jpg",
         "trailer": "https://www.youtube.com/watch?v=ApB6Ul17sB4",
-        "type": "movie" 
+        "type": "movie" ,
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "Bohemian Rhapsody",
@@ -107,7 +134,10 @@
         "actors": ["Rami Malek", "Lucy Boynton", "Gwilym Lee"],
         "poster": "/app/assets/images/small-sized-movie/bohemian.jpg",
         "trailer": "https://www.youtube.com/watch?v=ZQ5E7tRhbCw",
-        "type": "movie"
+        "type": "movie",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "Us",
@@ -118,7 +148,10 @@
         "actors": ["Lupita Nyong'o", "Winston Duke", "Elisabeth Moss"],
         "poster": "/app/assets/images/small-sized-movie/us.jpg",
         "trailer": "https://www.youtube.com/watch?v=hNCmb-4oXJA",
-        "type": "movie"
+        "type": "movie",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "Batman",
@@ -129,7 +162,10 @@
         "actors": ["Michael Keaton", "Jack Nicholson", "Kim Basinger"],
         "poster": "/app/assets/images/small-sized-movie/batman.jpg",
         "trailer": "https://www.youtube.com/watch?v=Ew75T1dDXeU",
-        "type": "movie"
+        "type": "movie",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "Fight Club",
@@ -140,7 +176,10 @@
         "actors": ["Brad Pitt", "Edward Norton", "Meat Loaf"],
         "poster": "/app/assets/images/small-sized-movie/fightclub.jpg",
         "trailer": "https://www.youtube.com/watch?v=SUXWAEX2jlg",
-        "type": "movie"
+        "type": "movie",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "Goblin",
@@ -151,7 +190,10 @@
         "actors": ["Gong Yoo", "Kim Go-eun", "Lee Dong-wook"],
         "poster": "/app/assets/images/small-sized-movie/Goblin.jpg",
         "trailer": "https://www.youtube.com/watch?v=nuKsO7K2Ldg",
-        "type": "series"
+        "type": "series",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "The Godfather",
@@ -162,7 +204,10 @@
         "actors": ["Marlon Brando", "Al Pacino", "James Caan"],
         "poster": "/app/assets/images/small-sized-movie/godfather.jpg",
         "trailer": "https://www.youtube.com/watch?v=sY1S34973zA",
-        "type": "movie"
+        "type": "movie",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "Godzilla",
@@ -173,7 +218,10 @@
         "actors": ["Aaron Taylor-Johnson", "Elizabeth Olsen", "Bryan Cranston"],
         "poster": "/app/assets/images/small-sized-movie/godzilla.jpg",
         "trailer": "https://www.youtube.com/watch?v=vIu85WQTPRc",
-        "type": "movie"
+        "type": "movie",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "Gravity",
@@ -184,7 +232,10 @@
         "actors": ["Sandra Bullock", "George Clooney", "Ed Harris"],
         "poster": "/app/assets/images/small-sized-movie/gravity.jpg",
         "trailer": "https://www.youtube.com/watch?v=OiTiKOy59o4",
-        "type": "movie"
+        "type": "movie",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "Argylle",
@@ -195,7 +246,10 @@
         "actors": ["Henry Cavill", "Dua Lipa", "Samuel L. Jackson"],
         "poster": "/app/assets/images/small-sized-movie/argylle.jpg",
         "trailer": "https://www.youtube.com/watch?v=1GUpXAk71SE",
-        "type": "movie"
+        "type": "movie",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "Interstellar",
@@ -206,7 +260,10 @@
         "actors": ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain"],
         "poster": "/app/assets/images/small-sized-movie/Interstellar.jpg",
         "trailer": "https://www.youtube.com/watch?v=zSWdZVtXT7E",
-        "type": "movie"
+        "type": "movie",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "King Kong",
@@ -217,7 +274,10 @@
         "actors": ["Naomi Watts", "Jack Black", "Adrien Brody"],
         "poster": "/app/assets/images/small-sized-movie/king-kong-small.jpg",
         "trailer": "https://www.youtube.com/watch?v=ve7XGwXSA7s",
-        "type": "movie"
+        "type": "movie",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "La La Land",
@@ -228,7 +288,10 @@
         "actors": ["Ryan Gosling", "Emma Stone", "Rosemarie DeWitt"],
         "poster": "/app/assets/images/small-sized-movie/LaLaLand.jpg",
         "trailer": "https://www.youtube.com/watch?v=0pdqf4P9MB8",
-        "type": "movie"
+        "type": "movie",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "Man vs. Beef",
@@ -239,7 +302,10 @@
         "actors": ["Adam Richman", "Casey Webb"],
         "poster": "/app/assets/images/small-sized-movie/ManVsBee.jpg",
         "trailer": "",
-        "type": "series"
+        "type": "series",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "No Time To Die",
@@ -250,7 +316,10 @@
         "actors": ["Ana De Armas", "Daniel Craig", "Rami Malek"],
         "poster": "/app/assets/images/small-sized-movie/notimetodie.jpg",
         "trailer": "https://www.youtube.com/watch?v=C2dL7LQ6b2E",
-        "type": "movie"
+        "type": "movie",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "Teech",
@@ -261,7 +330,10 @@
         "actors": ["Greg Davies", "Alexa Davies", "Camille Coduri"],
         "poster": "/app/assets/images/small-sized-movie/Teech.jpg",
         "trailer": "",
-        "type": "series"
+        "type": "series",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "The Big Bang Theory",
@@ -272,7 +344,10 @@
         "actors": ["Johnny Galecki", "Jim Parsons", "Kaley Cuoco"],
         "poster": "/app/assets/images/small-sized-movie/TheBigBangTheory.jpg",
         "trailer": "https://www.youtube.com/watch?v=yb1b23yUn1s",
-        "type": "series"
+        "type": "series",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "The Crown",
@@ -283,7 +358,10 @@
         "actors": ["Claire Foy", "Olivia Colman", "Imelda Staunton"],
         "poster": "/app/assets/images/small-sized-movie/TheCrown.jpg",
         "trailer": "https://www.youtube.com/watch?v=jWq-IwljU-c",
-        "type": "series"
+        "type": "series",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "The Departed",
@@ -294,7 +372,10 @@
         "actors": ["Leonardo DiCaprio", "Matt Damon", "Jack Nicholson"],
         "poster": "/app/assets/images/small-sized-movie/TheDeparted.jpg",
         "trailer": "https://www.youtube.com/watch?v=SGWvwjZ0eDc",
-        "type": "movie"
+        "type": "movie",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "The Matrix",
@@ -305,7 +386,10 @@
         "actors": ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"],
         "poster": "/app/assets/images/small-sized-movie/TheMatrix.jpg",
         "trailer": "https://www.youtube.com/watch?v=vKQi3bBA1y8",
-        "type": "movie"
+        "type": "movie",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "The Office",
@@ -316,7 +400,10 @@
         "actors": ["Steve Carell", "Jenna Fischer", "John Krasinski"],
         "poster": "/app/assets/images/small-sized-movie/TheOffice.jpg",
         "trailer": "https://www.youtube.com/watch?v=5Dw_489KGJk",
-        "type": "series"
+        "type": "series",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "The Simpsons",
@@ -327,7 +414,10 @@
         "actors": ["Dan Castellaneta", "Nancy Cartwright", "Harry Shearer"],
         "poster": "/app/assets/images/small-sized-movie/TheSimpsons.jpg",
         "trailer": "https://www.youtube.com/watch?v=PR6Tgj1J8Lo",
-        "type": "series"
+        "type": "series",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "The Witcher",
@@ -338,7 +428,10 @@
         "actors": ["Henry Cavill", "Freya Allan", "Anya Chalotra"],
         "poster": "/app/assets/images/small-sized-movie/TheWitcher.jpg",
         "trailer": "https://www.youtube.com/watch?v=ndl1W4ltcmg",
-        "type": "series"
+        "type": "series",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "This Is Us",
@@ -349,7 +442,10 @@
         "actors": ["Milo Ventimiglia", "Mandy Moore", "Sterling K. Brown"],
         "poster": "/app/assets/images/small-sized-movie/ThisIsUs.jpg",
         "trailer": "https://www.youtube.com/watch?v=rfUiKg28r_M",
-        "type": "series"
+        "type": "series",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "Twin Peaks",
@@ -360,7 +456,10 @@
         "actors": ["Kyle MacLachlan", "Michael Ontkean", "Mädchen Amick"],
         "poster": "/app/assets/images/small-sized-movie/TwinPeaks.jpg",
         "trailer": "https://www.youtube.com/watch?v=2jNKjnAVaMU",
-        "type": "series"
+        "type": "series",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "Vertigo",
@@ -371,7 +470,10 @@
         "actors": ["James Stewart", "Kim Novak", "Barbara Bel Geddes"],
         "poster": "/app/assets/images/small-sized-movie/Vertigo.jpg",
         "trailer": "https://www.youtube.com/watch?v=Z5jvQwwHQNY",
-        "type": "movie"
+        "type": "movie",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "Inception",
@@ -382,7 +484,10 @@
         "actors": ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Ellen Page"],
         "poster": "/app/assets/images/small-sized-movie/Inception.jpg",
         "trailer": "https://www.youtube.com/watch?v=YoHD9XEInc0",
-        "type": "movie"
+        "type": "movie",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "The Shawshank Redemption",
@@ -393,7 +498,10 @@
         "actors": ["Tim Robbins", "Morgan Freeman", "Bob Gunton"],
         "poster": "/app/assets/images/small-sized-movie/TheShawshankRedemption.jpg",
         "trailer": "https://www.youtube.com/watch?v=6hB3S9bIaco",
-        "type": "movie"
+        "type": "movie",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "The Dark Knight",
@@ -404,7 +512,10 @@
         "actors": ["Christian Bale", "Heath Ledger", "Aaron Eckhart"],
         "poster": "/app/assets/images/small-sized-movie/TheDarkKnight.jpg",
         "trailer": "https://www.youtube.com/watch?v=EXeTwQWrcwY",
-        "type": "movie"
+        "type": "movie",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "Pulp Fiction",
@@ -415,7 +526,10 @@
         "actors": ["John Travolta", "Uma Thurman", "Samuel L. Jackson"],
         "poster": "/app/assets/images/small-sized-movie/PulpFiction.jpg",
         "trailer": "https://www.youtube.com/watch?v=s7EdQ4FqbhY",
-        "type": "movie"
+        "type": "movie",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "The Lord of the Rings: The Fellowship of the Ring",
@@ -426,7 +540,10 @@
         "actors": ["Elijah Wood", "Ian McKellen", "Orlando Bloom"],
         "poster": "/app/assets/images/small-sized-movie/TheLordOfTheRingsTheFellowshipOfTheRing.jpg",
         "trailer": "https://www.youtube.com/watch?v=Pki6jbSbXIY",
-        "type": "movie"
+        "type": "movie",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "Forrest Gump",
@@ -437,7 +554,10 @@
         "actors": ["Tom Hanks", "Robin Wright", "Gary Sinise"],
         "poster": "/app/assets/images/small-sized-movie/ForrestGump.jpg",
         "trailer": "https://www.youtube.com/watch?v=bLvqoHBptjg",
-        "type": "movie"
+        "type": "movie",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "Gladiator",
@@ -448,7 +568,10 @@
         "actors": ["Russell Crowe", "Joaquin Phoenix", "Connie Nielsen"],
         "poster": "/app/assets/images/small-sized-movie/Gladiator.jpg",
         "trailer": "https://www.youtube.com/watch?v=owK1qxDselE",
-        "type": "movie"
+        "type": "movie",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "The Matrix",
@@ -459,7 +582,10 @@
         "actors": ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"],
         "poster": "/app/assets/images/small-sized-movie/TheMatrix.jpg",
         "trailer": "https://www.youtube.com/watch?v=m8e-FF8MsqU",
-        "type": "movie"
+        "type": "movie",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "The Lion King",
@@ -470,7 +596,10 @@
         "actors": ["Matthew Broderick", "Jeremy Irons", "James Earl Jones"],
         "poster": "/app/assets/images/small-sized-movie/TheLionKing.jpg",
         "trailer": "https://www.youtube.com/watch?v=4sj1MT05lAA",
-        "type": "movie"
+        "type": "movie",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "The Tonight Show Starring Jimmy Fallon",
@@ -480,7 +609,10 @@
         "host": "Jimmy Fallon",
         "poster": "/app/assets/images/small-sized-movie/TheTonightShow.jpg",
         "trailer": "https://www.youtube.com/watch?v=J5fBOJDbiyo",
-        "type": "tv_show"
+        "type": "tv_show",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "The Simpsons",
@@ -490,7 +622,10 @@
         "creator": "Matt Groening",
         "poster": "/app/assets/images/small-sized-movie/TheSimpsons.jpg",
         "trailer": "https://www.youtube.com/watch?v=T7L8u8fVKz4",
-        "type": "tv_show"
+        "type": "tv_show",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "60 Minutes",
@@ -499,7 +634,10 @@
         "genre": ["Documentary", "News"],
         "poster": "/app/assets/images/small-sized-movie/60Minutes.jpg",
         "trailer": "https://www.youtube.com/watch?v=YNNLPtxWV48",
-        "type": "tv_show"
+        "type": "tv_show",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "Grey's Anatomy",
@@ -509,7 +647,10 @@
         "creator": "Shonda Rhimes",
         "poster": "/app/assets/images/small-sized-movie/GreysAnatomy.jpg",
         "trailer": "https://www.youtube.com/watch?v=q1pcpgREQ5c",
-        "type": "tv_show"
+        "type": "tv_show",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "Saturday Night Live",
@@ -519,7 +660,10 @@
         "creator": "Lorne Michaels",
         "poster": "/app/assets/images/small-sized-movie/SaturdayNightLive.jpg",
         "trailer": "https://www.youtube.com/watch?v=AMqKSMgMU7g",
-        "type": "tv_show"
+        "type": "tv_show",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "Breaking Bad",
@@ -530,7 +674,10 @@
         "actors": ["Bryan Cranston", "Aaron Paul", "Anna Gunn"],
         "poster": "/app/assets/images/small-sized-movie/BreakingBad.jpg",
         "trailer": "https://www.youtube.com/watch?v=HhesaQXLuRY",
-        "type": "tv_show"
+        "type": "tv_show",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "Friends",
@@ -541,7 +688,10 @@
         "actors": ["Jennifer Aniston", "Courteney Cox", "Lisa Kudrow"],
         "poster": "/app/assets/images/small-sized-movie/Friends.jpg",
         "trailer": "https://www.youtube.com/watch?v=hDNNmeeJs1Q",
-        "type": "tv_show"
+        "type": "tv_show",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "Game of Thrones",
@@ -552,7 +702,10 @@
         "actors": ["Emilia Clarke", "Peter Dinklage", "Kit Harington"],
         "poster": "/app/assets/images/small-sized-movie/GameOfThrones.jpg",
         "trailer": "https://www.youtube.com/watch?v=rlR4PJn8b8I",
-        "type": "tv_show"
+        "type": "tv_show",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "Stranger Things",
@@ -563,7 +716,10 @@
         "actors": ["Millie Bobby Brown", "Finn Wolfhard", "Winona Ryder"],
         "poster": "/app/assets/images/small-sized-movie/StrangerThings.jpg",
         "trailer": "https://www.youtube.com/watch?v=XWxyRG_tckY",
-        "type": "tv_show"
+        "type": "tv_show",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "The Mandalorian",
@@ -574,7 +730,10 @@
         "actors": ["Pedro Pascal", "Carl Weathers", "Gina Carano"],
         "poster": "/app/assets/images/small-sized-movie/TheMandalorian.jpg",
         "trailer": "https://www.youtube.com/watch?v=XmI7WKrAtqs",
-        "type": "tv_show"
+        "type": "tv_show",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "The Witcher",
@@ -585,7 +744,10 @@
         "actors": ["Henry Cavill", "Freya Allan", "Anya Chalotra"],
         "poster": "/app/assets/images/small-sized-movie/TheWitcher.jpg",
         "trailer": "https://www.youtube.com/watch?v=ndl1W4ltcmg",
-        "type": "tv_show"
+        "type": "tv_show",
+        "rating": "",
+        "age": "",
+        "views": ""
     },
     {
         "name": "Westworld",
@@ -596,6 +758,9 @@
         "actors": ["Evan Rachel Wood", "Jeffrey Wright", "Ed Harris"],
         "poster": "/app/assets/images/small-sized-movie/Westworld.jpg",
         "trailer": "https://www.youtube.com/watch?v=IuS5huqOND4",
-        "type": "tv_show"
+        "type": "tv_show",
+        "rating": "",
+        "age": "",
+        "views": ""
     }
 ]
