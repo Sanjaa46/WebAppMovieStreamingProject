@@ -1,5 +1,6 @@
 import Movie from './Movies.js';
 
+
 async function fetchMovies() {
     try {
         const response = await fetch('/app/assets/scripts/modules/movies.json');
@@ -13,10 +14,13 @@ async function fetchMovies() {
 }
 
 
+
 // Filter movies based on the selected option
-function filterMoviesByType(type) {
-    return movies.filter(movie => movie.type === type);
+async function filterMoviesByType(type1) {
+    const movies = await fetchMovies();
+    return movies.filter(movie => movie.type === type1);
 }
+
 
 // Render movies to the UI
 function renderMovies(movies) {
@@ -26,21 +30,26 @@ function renderMovies(movies) {
         const mov = new Movie(movie);
         moviesData += mov.render();
     });
-    document.getElementById('movie-list').querySelector(".movies-container-12").insertAdjacentHTML("beforeend", moviesData);
+    const movieContainer = document.getElementById('movie-list').querySelector(".movies-container-12");
+    movieContainer.innerHTML = moviesData;
 }
 
 // Event listener for each option
-document.getElementById('movies-option').addEventListener('click', function () {
-    const filteredMovies = filterMoviesByType('movie');
+document.getElementById('movies-option').addEventListener('click', async function (event) {
+    event.preventDefault();
+    const filteredMovies = await filterMoviesByType('movie');
     renderMovies(filteredMovies);
 });
 
-document.getElementById('series-option').addEventListener('click', function () {
-    const filteredMovies = filterMoviesByType('series');
+document.getElementById('series-option').addEventListener('click', async function (event) {
+    event.preventDefault();
+    const filteredMovies = await filterMoviesByType('series');
     renderMovies(filteredMovies);
 });
 
-document.getElementById('tv-shows-option').addEventListener('click', function () {
-    const filteredMovies = filterMoviesByType('tv_show');
+document.getElementById('tv-shows-option').addEventListener('click', async function (event) {
+    event.preventDefault();
+    const filteredMovies = await filterMoviesByType('tv_show');
     renderMovies(filteredMovies);
 });
+
