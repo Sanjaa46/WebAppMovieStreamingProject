@@ -3,6 +3,11 @@
   --color-button: #ff770b;
   --color-gray-button: #1c1c1c;
   --color-gray: #6c6c6c;
+  --height-header: 64px;
+  --color-gray-font: #808080;
+  --color-white-font: #ffffff;
+  --color-filter-gray: #3333338d;
+  --color-footer: ;
 }
 
 * {
@@ -197,6 +202,7 @@ header {
 
 .nav-list {
   padding: 10px 30px;
+  cursor: pointer;
 }
 
 .nav-list a {

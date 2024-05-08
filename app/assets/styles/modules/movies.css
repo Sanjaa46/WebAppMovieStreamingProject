@@ -1,28 +1,9 @@
-:root {
-  --height-header: 64px;
-  --color-background: #0a0a0a;
-  --color-button: #595959;
-  --color-gray-button: #1c1c1c;
-  --color-gray: #6c6c6c;
-  --color-gray-font: #808080;
-  --color-white-font: #ffffff;
-  --color-filter-gray: #3333338d;
-  --color-footer: ;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: rgba(255, 255, 255);
-}
-
-body {
-  justify-content: center;
-  align-items: center;
-  background-color: var(--color-background);
-}
-
 /* Filter */
+.filter {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .filter > div {
   display: flex;
   justify-content: space-between;
