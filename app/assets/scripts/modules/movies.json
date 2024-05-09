@@ -9,9 +9,10 @@
         "poster": "/app/assets/images/small-sized-movie/13ReasonWhy.jpg",
         "trailer": "https://www.youtube.com/watch?v=JebwYGn5Z3E",
         "type": "series",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "7.5",
+        "age": "16+",
+        "country": "United States",
+        "views": "1500000"
     },
     {
         "name": "1917",
@@ -23,9 +24,10 @@
         "poster": "/app/assets/images/small-sized-movie/1917.jpg",
         "trailer": "https://www.youtube.com/watch?v=YqNYrYUiMfg",
         "type": "movie",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "8.2",
+        "age": "18+",
+        "country": "United Kingdom",
+        "views": "2300000"
     },
     {
         "name": "American Horror Story",
@@ -37,9 +39,10 @@
         "poster": "/app/assets/images/small-sized-movie/americanhorror.jpg",
         "trailer": "https://www.youtube.com/watch?v=-27J0pww7uE",
         "type": "series",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "8.0",
+        "age": "18+",
+        "country": "United States",
+        "views": "1800000"
     },
     {
         "name": "Archer",
@@ -51,9 +54,10 @@
         "poster": "/app/assets/images/small-sized-movie/archer.jpg",
         "trailer": "https://www.youtube.com/watch?v=9L9M7ZFuOw0",
         "type": "series",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "8.5",
+        "age": "18+",
+        "country": "United States",
+        "views": "2100000"
     },
     {
         "name": "Avatar",
@@ -65,9 +69,10 @@
         "poster": "/app/assets/images/small-sized-movie/avatar.jpg",
         "trailer": "https://www.youtube.com/watch?v=5PSNL1qE6VY",
         "type": "movie",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "7.8",
+        "age": "PG-13",
+        "country": "United States",
+        "views": "3000000"
     },
     {
         "name": "Avengers",
@@ -79,23 +84,25 @@
         "poster": "/app/assets/images/small-sized-movie/avengers.jpg",
         "trailer": "https://www.youtube.com/watch?v=eOrNdBpGMv8",
         "type": "movie",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "8.0",
+        "age": "PG-13",
+        "country": "United States",
+        "views": "3200000"
     },
     {
         "name": "Beef",
         "since": "2018",
         "duration": "60",
-        "genre": ["Reality-TV"],
+        "genre": ["Reality-TV", "Comedy", "Drama"],
         "director": "",
         "actors": ["Honey G"],
         "poster": "/app/assets/images/small-sized-movie/beef.jpg",
         "trailer": "",
         "type": "series",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "6.5",
+        "age": "PG",
+        "country": "United Kingdom",
+        "views": "1200000"
     },
     {
         "name": "Call Me by Your Name",
@@ -107,9 +114,10 @@
         "poster": "/app/assets/images/small-sized-movie/callbyyourname.jpg",
         "trailer": "https://www.youtube.com/watch?v=Z9AYPxH5NTM",
         "type": "movie",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "8.5",
+        "age": "R",
+        "country": "Italy",
+        "views": "2500000"
     },
     {
         "name": "Collapse",
@@ -120,10 +128,11 @@
         "actors": ["Michael Ruppert"],
         "poster": "/app/assets/images/small-sized-movie/collapse.jpg",
         "trailer": "https://www.youtube.com/watch?v=ApB6Ul17sB4",
-        "type": "movie" ,
-        "rating": "",
-        "age": "",
-        "views": ""
+        "type": "movie",
+        "rating": "7.3",
+        "age": "PG-13",
+        "country": "United States",
+        "views": "900000"
     },
     {
         "name": "Bohemian Rhapsody",
@@ -135,9 +144,10 @@
         "poster": "/app/assets/images/small-sized-movie/bohemian.jpg",
         "trailer": "https://www.youtube.com/watch?v=ZQ5E7tRhbCw",
         "type": "movie",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "8.0",
+        "age": "PG-13",
+        "country": "United Kingdom",
+        "views": "2700000"
     },
     {
         "name": "Us",
@@ -149,9 +159,10 @@
         "poster": "/app/assets/images/small-sized-movie/us.jpg",
         "trailer": "https://www.youtube.com/watch?v=hNCmb-4oXJA",
         "type": "movie",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "6.8",
+        "age": "18+",
+        "country": "United States",
+        "views": "1400000"
     },
     {
         "name": "Batman",
@@ -163,9 +174,10 @@
         "poster": "/app/assets/images/small-sized-movie/batman.jpg",
         "trailer": "https://www.youtube.com/watch?v=Ew75T1dDXeU",
         "type": "movie",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "8.5",
+        "age": "PG-13",
+        "country": "United States",
+        "views": "55000"
     },
     {
         "name": "Fight Club",
@@ -177,9 +189,10 @@
         "poster": "/app/assets/images/small-sized-movie/fightclub.jpg",
         "trailer": "https://www.youtube.com/watch?v=SUXWAEX2jlg",
         "type": "movie",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "9.0",
+        "age": "R",
+        "country": "United States",
+        "views": "72000"
     },
     {
         "name": "Goblin",
@@ -191,9 +204,10 @@
         "poster": "/app/assets/images/small-sized-movie/Goblin.jpg",
         "trailer": "https://www.youtube.com/watch?v=nuKsO7K2Ldg",
         "type": "series",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "8.3",
+        "age": "16+",
+        "country": "South Korea",
+        "views": "43000"
     },
     {
         "name": "The Godfather",
@@ -205,9 +219,10 @@
         "poster": "/app/assets/images/small-sized-movie/godfather.jpg",
         "trailer": "https://www.youtube.com/watch?v=sY1S34973zA",
         "type": "movie",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "9.2",
+        "age": "18+",
+        "country": "United States",
+        "views": "96000"
     },
     {
         "name": "Godzilla",
@@ -219,9 +234,10 @@
         "poster": "/app/assets/images/small-sized-movie/godzilla.jpg",
         "trailer": "https://www.youtube.com/watch?v=vIu85WQTPRc",
         "type": "movie",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "7.8",
+        "age": "PG-13",
+        "country": "Japan",
+        "views": "82000"
     },
     {
         "name": "Gravity",
@@ -233,9 +249,10 @@
         "poster": "/app/assets/images/small-sized-movie/gravity.jpg",
         "trailer": "https://www.youtube.com/watch?v=OiTiKOy59o4",
         "type": "movie",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "8.1",
+        "age": "PG-13",
+        "country": "United Kingdom",
+        "views": "67000"
     },
     {
         "name": "Argylle",
@@ -247,9 +264,10 @@
         "poster": "/app/assets/images/small-sized-movie/argylle.jpg",
         "trailer": "https://www.youtube.com/watch?v=1GUpXAk71SE",
         "type": "movie",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "7.5",
+        "age": "PG-13",
+        "country": "United States",
+        "views": "41000"
     },
     {
         "name": "Interstellar",
@@ -261,9 +279,10 @@
         "poster": "/app/assets/images/small-sized-movie/Interstellar.jpg",
         "trailer": "https://www.youtube.com/watch?v=zSWdZVtXT7E",
         "type": "movie",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "8.6",
+        "age": "PG-13",
+        "country": "United States",
+        "views": "87000"
     },
     {
         "name": "King Kong",
@@ -275,9 +294,10 @@
         "poster": "/app/assets/images/small-sized-movie/king-kong-small.jpg",
         "trailer": "https://www.youtube.com/watch?v=ve7XGwXSA7s",
         "type": "movie",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "7.9",
+        "age": "PG-13",
+        "country": "United States",
+        "views": "63000"
     },
     {
         "name": "La La Land",
@@ -289,9 +309,10 @@
         "poster": "/app/assets/images/small-sized-movie/LaLaLand.jpg",
         "trailer": "https://www.youtube.com/watch?v=0pdqf4P9MB8",
         "type": "movie",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "8.4",
+        "age": "PG-13",
+        "country": "United States",
+        "views": "57000"
     },
     {
         "name": "Man vs. Beef",
@@ -303,9 +324,10 @@
         "poster": "/app/assets/images/small-sized-movie/ManVsBee.jpg",
         "trailer": "",
         "type": "series",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "7.2",
+        "age": "PG",
+        "country": "United States",
+        "views": "38000"
     },
     {
         "name": "No Time To Die",
@@ -317,9 +339,10 @@
         "poster": "/app/assets/images/small-sized-movie/notimetodie.jpg",
         "trailer": "https://www.youtube.com/watch?v=C2dL7LQ6b2E",
         "type": "movie",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "8.2",
+        "age": "PG-13",
+        "country": "United States",
+        "views": "71000"
     },
     {
         "name": "Teech",
@@ -331,9 +354,10 @@
         "poster": "/app/assets/images/small-sized-movie/Teech.jpg",
         "trailer": "",
         "type": "series",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "8.0",
+        "age": "PG",
+        "country": "United Kingdom",
+        "views": "49000"
     },
     {
         "name": "The Big Bang Theory",
@@ -345,9 +369,10 @@
         "poster": "/app/assets/images/small-sized-movie/TheBigBangTheory.jpg",
         "trailer": "https://www.youtube.com/watch?v=yb1b23yUn1s",
         "type": "series",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "8.1",
+        "age": "PG",
+        "country": "United States",
+        "views": "52000"
     },
     {
         "name": "The Crown",
@@ -359,9 +384,10 @@
         "poster": "/app/assets/images/small-sized-movie/TheCrown.jpg",
         "trailer": "https://www.youtube.com/watch?v=jWq-IwljU-c",
         "type": "series",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "8.5",
+        "age": "PG-13",
+        "country": "United Kingdom",
+        "views": "68000"
     },
     {
         "name": "The Departed",
@@ -373,9 +399,10 @@
         "poster": "/app/assets/images/small-sized-movie/TheDeparted.jpg",
         "trailer": "https://www.youtube.com/watch?v=SGWvwjZ0eDc",
         "type": "movie",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "8.7",
+        "age": "R",
+        "country": "United States",
+        "views": "78000"
     },
     {
         "name": "The Matrix",
@@ -387,9 +414,10 @@
         "poster": "/app/assets/images/small-sized-movie/TheMatrix.jpg",
         "trailer": "https://www.youtube.com/watch?v=vKQi3bBA1y8",
         "type": "movie",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "8.9",
+        "age": "R",
+        "country": "United States",
+        "views": "88000"
     },
     {
         "name": "The Office",
@@ -401,9 +429,10 @@
         "poster": "/app/assets/images/small-sized-movie/TheOffice.jpg",
         "trailer": "https://www.youtube.com/watch?v=5Dw_489KGJk",
         "type": "series",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "8.8",
+        "age": "PG",
+        "country": "United States",
+        "views": "76000"
     },
     {
         "name": "The Simpsons",
@@ -415,9 +444,10 @@
         "poster": "/app/assets/images/small-sized-movie/TheSimpsons.jpg",
         "trailer": "https://www.youtube.com/watch?v=PR6Tgj1J8Lo",
         "type": "series",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "8.7",
+        "age": "PG",
+        "country": "United States",
+        "views": "68000"
     },
     {
         "name": "The Witcher",
@@ -429,9 +459,10 @@
         "poster": "/app/assets/images/small-sized-movie/TheWitcher.jpg",
         "trailer": "https://www.youtube.com/watch?v=ndl1W4ltcmg",
         "type": "series",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "9.2",
+        "age": "18+",
+        "country": "Poland",
+        "views": "96000"
     },
     {
         "name": "This Is Us",
@@ -443,9 +474,10 @@
         "poster": "/app/assets/images/small-sized-movie/ThisIsUs.jpg",
         "trailer": "https://www.youtube.com/watch?v=rfUiKg28r_M",
         "type": "series",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "8.5",
+        "age": "PG-13",
+        "country": "United States",
+        "views": "72000"
     },
     {
         "name": "Twin Peaks",
@@ -457,9 +489,10 @@
         "poster": "/app/assets/images/small-sized-movie/TwinPeaks.jpg",
         "trailer": "https://www.youtube.com/watch?v=2jNKjnAVaMU",
         "type": "series",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "8.1",
+        "age": "PG",
+        "country": "United States",
+        "views": "52000"
     },
     {
         "name": "Vertigo",
@@ -471,9 +504,10 @@
         "poster": "/app/assets/images/small-sized-movie/Vertigo.jpg",
         "trailer": "https://www.youtube.com/watch?v=Z5jvQwwHQNY",
         "type": "movie",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "8.9",
+        "age": "PG-13",
+        "country": "United States",
+        "views": "87000"
     },
     {
         "name": "Inception",
@@ -485,9 +519,10 @@
         "poster": "/app/assets/images/small-sized-movie/Inception.jpg",
         "trailer": "https://www.youtube.com/watch?v=YoHD9XEInc0",
         "type": "movie",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "9.0",
+        "age": "PG-13",
+        "country": "United States",
+        "views": "82000"
     },
     {
         "name": "The Shawshank Redemption",
@@ -499,9 +534,10 @@
         "poster": "/app/assets/images/small-sized-movie/TheShawshankRedemption.jpg",
         "trailer": "https://www.youtube.com/watch?v=6hB3S9bIaco",
         "type": "movie",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "9.2",
+        "age": "18+",
+        "country": "United States",
+        "views": "96000"
     },
     {
         "name": "The Dark Knight",
@@ -513,9 +549,10 @@
         "poster": "/app/assets/images/small-sized-movie/TheDarkKnight.jpg",
         "trailer": "https://www.youtube.com/watch?v=EXeTwQWrcwY",
         "type": "movie",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "9.0",
+        "age": "PG-13",
+        "country": "United States",
+        "views": "82000"
     },
     {
         "name": "Pulp Fiction",
@@ -527,9 +564,10 @@
         "poster": "/app/assets/images/small-sized-movie/PulpFiction.jpg",
         "trailer": "https://www.youtube.com/watch?v=s7EdQ4FqbhY",
         "type": "movie",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "9.1",
+        "age": "18+",
+        "country": "United States",
+        "views": "93000"
     },
     {
         "name": "The Lord of the Rings: The Fellowship of the Ring",
@@ -541,9 +579,10 @@
         "poster": "/app/assets/images/small-sized-movie/TheLordOfTheRingsTheFellowshipOfTheRing.jpg",
         "trailer": "https://www.youtube.com/watch?v=Pki6jbSbXIY",
         "type": "movie",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "9.0",
+        "age": "PG-13",
+        "country": "New Zealand",
+        "views": "82000"
     },
     {
         "name": "Forrest Gump",
@@ -555,9 +594,10 @@
         "poster": "/app/assets/images/small-sized-movie/ForrestGump.jpg",
         "trailer": "https://www.youtube.com/watch?v=bLvqoHBptjg",
         "type": "movie",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "8.9",
+        "age": "PG-13",
+        "country": "United States",
+        "views": "89000"
     },
     {
         "name": "Gladiator",
@@ -569,9 +609,10 @@
         "poster": "/app/assets/images/small-sized-movie/Gladiator.jpg",
         "trailer": "https://www.youtube.com/watch?v=owK1qxDselE",
         "type": "movie",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "8.8",
+        "age": "PG-13",
+        "country": "United States",
+        "views": "78000"
     },
     {
         "name": "The Matrix",
@@ -583,9 +624,10 @@
         "poster": "/app/assets/images/small-sized-movie/TheMatrix.jpg",
         "trailer": "https://www.youtube.com/watch?v=m8e-FF8MsqU",
         "type": "movie",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "8.9",
+        "age": "R",
+        "country": "United States",
+        "views": "82000"
     },
     {
         "name": "The Lion King",
@@ -597,9 +639,10 @@
         "poster": "/app/assets/images/small-sized-movie/TheLionKing.jpg",
         "trailer": "https://www.youtube.com/watch?v=4sj1MT05lAA",
         "type": "movie",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "8.7",
+        "age": "PG",
+        "country": "United States",
+        "views": "72000"
     },
     {
         "name": "The Tonight Show Starring Jimmy Fallon",
@@ -610,9 +653,10 @@
         "poster": "/app/assets/images/small-sized-movie/TheTonightShow.jpg",
         "trailer": "https://www.youtube.com/watch?v=J5fBOJDbiyo",
         "type": "tv_show",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "7.8",
+        "age": "PG-13",
+        "country": "United States",
+        "views": "55000"
     },
     {
         "name": "The Simpsons",
@@ -623,9 +667,10 @@
         "poster": "/app/assets/images/small-sized-movie/TheSimpsons.jpg",
         "trailer": "https://www.youtube.com/watch?v=T7L8u8fVKz4",
         "type": "tv_show",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "8.5",
+        "age": "PG",
+        "country": "United States",
+        "views": "67000"
     },
     {
         "name": "60 Minutes",
@@ -635,9 +680,10 @@
         "poster": "/app/assets/images/small-sized-movie/60Minutes.jpg",
         "trailer": "https://www.youtube.com/watch?v=YNNLPtxWV48",
         "type": "tv_show",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "8.2",
+        "age": "PG-13",
+        "country": "United States",
+        "views": "48000"
     },
     {
         "name": "Grey's Anatomy",
@@ -648,9 +694,10 @@
         "poster": "/app/assets/images/small-sized-movie/GreysAnatomy.jpg",
         "trailer": "https://www.youtube.com/watch?v=q1pcpgREQ5c",
         "type": "tv_show",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "8.7",
+        "age": "PG-13",
+        "country": "United States",
+        "views": "70000"
     },
     {
         "name": "Saturday Night Live",
@@ -661,9 +708,10 @@
         "poster": "/app/assets/images/small-sized-movie/SaturdayNightLive.jpg",
         "trailer": "https://www.youtube.com/watch?v=AMqKSMgMU7g",
         "type": "tv_show",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "8.4",
+        "age": "PG-13",
+        "country": "United States",
+        "views": "62000"
     },
     {
         "name": "Breaking Bad",
@@ -675,9 +723,10 @@
         "poster": "/app/assets/images/small-sized-movie/BreakingBad.jpg",
         "trailer": "https://www.youtube.com/watch?v=HhesaQXLuRY",
         "type": "tv_show",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "9.1",
+        "age": "18+",
+        "country": "United States",
+        "views": "93000"
     },
     {
         "name": "Friends",
@@ -689,9 +738,10 @@
         "poster": "/app/assets/images/small-sized-movie/Friends.jpg",
         "trailer": "https://www.youtube.com/watch?v=hDNNmeeJs1Q",
         "type": "tv_show",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "9.0",
+        "age": "PG",
+        "country": "United States",
+        "views": "89000"
     },
     {
         "name": "Game of Thrones",
@@ -703,9 +753,10 @@
         "poster": "/app/assets/images/small-sized-movie/GameOfThrones.jpg",
         "trailer": "https://www.youtube.com/watch?v=rlR4PJn8b8I",
         "type": "tv_show",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "9.2",
+        "age": "18+",
+        "country": "United States",
+        "views": "96000"
     },
     {
         "name": "Stranger Things",
@@ -717,9 +768,10 @@
         "poster": "/app/assets/images/small-sized-movie/StrangerThings.jpg",
         "trailer": "https://www.youtube.com/watch?v=XWxyRG_tckY",
         "type": "tv_show",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "9.0",
+        "age": "16+",
+        "country": "United States",
+        "views": "84000"
     },
     {
         "name": "The Mandalorian",
@@ -731,9 +783,10 @@
         "poster": "/app/assets/images/small-sized-movie/TheMandalorian.jpg",
         "trailer": "https://www.youtube.com/watch?v=XmI7WKrAtqs",
         "type": "tv_show",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "8.9",
+        "age": "16+",
+        "country": "United States",
+        "views": "81000"
     },
     {
         "name": "The Witcher",
@@ -745,9 +798,10 @@
         "poster": "/app/assets/images/small-sized-movie/TheWitcher.jpg",
         "trailer": "https://www.youtube.com/watch?v=ndl1W4ltcmg",
         "type": "tv_show",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "8.8",
+        "age": "16+",
+        "country": "United States",
+        "views": "78000"
     },
     {
         "name": "Westworld",
@@ -759,8 +813,9 @@
         "poster": "/app/assets/images/small-sized-movie/Westworld.jpg",
         "trailer": "https://www.youtube.com/watch?v=IuS5huqOND4",
         "type": "tv_show",
-        "rating": "",
-        "age": "",
-        "views": ""
+        "rating": "8.7",
+        "age": "16+",
+        "country": "United States",
+        "views": "75000"
     }
 ]

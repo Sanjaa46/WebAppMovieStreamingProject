@@ -4,7 +4,6 @@ async function fetchMovies() {
     try {
         const response = await fetch('/app/assets/scripts/modules/movies.json');
         const data = await response.json();
-        console.log(data.length);
         return data;
     } catch (error) {
         console.error('Error fetching data:', error);
@@ -15,9 +14,14 @@ async function fetchMovies() {
 
 
 // Filter movies based on the selected option
-async function filterMoviesByType(type1) {
+async function filterMoviesByType(type) {
     const movies = await fetchMovies();
-    return movies.filter(movie => movie.type === type1);
+    return movies.filter(movie => movie.type === type);
+}
+
+async function filterMoviesByGenre(genre) {
+    const movies = await fetchMovies();
+    return movies.filter(movie => movie.genre.includes(genre));
 }
 
 
@@ -59,6 +63,36 @@ document.getElementById('tv-shows-option').addEventListener('click', async funct
 });
 
 
+document.getElementById('filterForm').addEventListener('submit', async function (event) {
+    event.preventDefault();
+
+    const type = document.getElementById('type').value;
+    const country = document.getElementById('country').value;
+    const age = document.getElementById('age').value;
+    const genre = document.getElementById('genre').value;
+    const rating = document.getElementById('rating').value;
+
+    const filteredMovies = await filterMovies(type, country, age, genre, rating);
+    renderMovies(filteredMovies);
+});
+
+// Function to filter movies based on multiple criteria
+async function filterMovies(type, country, age, genre, rating) {
+    const movies = await fetchMovies();
+    return movies.filter(movie => {
+        if (type !== 'all' && movie.type !== type) return false;
+        if (country !== 'all' && movie.country !== country) return false;
+        if (age !== 'all' && movie.age !== age) return false;
+        if (genre !== 'all' && !movie.genre.includes(genre)) return false;
+        if (rating !== 'all') {
+            const [minRating, maxRating] = rating.split('-');
+            if (movie.rating < parseInt(minRating) || movie.rating > parseInt(maxRating)) return false;
+        }
+        return true;
+    });
+
+}
+
 // eventlistener for index page
 // Read the URL parameter to determine the movie type
 function getMovieTypeFromUrl() {
@@ -66,11 +100,24 @@ function getMovieTypeFromUrl() {
     return urlParams.get('type');
 }
 
+function getMovieGenreFromUrl() {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get('genre');
+}
+
 // Event listener for rendering movies based on the movie type
 document.addEventListener('DOMContentLoaded', async function () {
     const movieType = getMovieTypeFromUrl();
     if (movieType) {
         const filteredMovies = await filterMoviesByType(movieType);
+        renderMovies(filteredMovies);
+    }
+});
+
+document.addEventListener('DOMContentLoaded', async function () {
+    const movieGenre = getMovieGenreFromUrl();
+    if (movieGenre) {
+        const filteredMovies = await filterMoviesByGenre(movieGenre);
         renderMovies(filteredMovies);
     }
 });
