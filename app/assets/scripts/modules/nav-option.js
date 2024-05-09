@@ -71,13 +71,13 @@ document.getElementById('filterForm').addEventListener('submit', async function 
     const age = document.getElementById('age').value;
     const genre = document.getElementById('genre').value;
     const rating = document.getElementById('rating').value;
+    const name = document.getElementById('name').value;
 
-    const filteredMovies = await filterMovies(type, country, age, genre, rating);
+    const filteredMovies = await filterMovies(type, country, age, genre, rating, name);
     renderMovies(filteredMovies);
 });
 
-// Function to filter movies based on multiple criteria
-async function filterMovies(type, country, age, genre, rating) {
+async function filterMovies(type, country, age, genre, rating, name) {
     const movies = await fetchMovies();
     return movies.filter(movie => {
         if (type !== 'all' && movie.type !== type) return false;
@@ -88,10 +88,11 @@ async function filterMovies(type, country, age, genre, rating) {
             const [minRating, maxRating] = rating.split('-');
             if (movie.rating < parseInt(minRating) || movie.rating > parseInt(maxRating)) return false;
         }
+        if (name && !movie.name.toLowerCase().includes(name.toLowerCase())) return false;
         return true;
     });
-
 }
+
 
 // eventlistener for index page
 // Read the URL parameter to determine the movie type

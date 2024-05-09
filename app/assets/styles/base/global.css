@@ -307,6 +307,24 @@ header {
   background-color: transparent;
 }
 
+/* Advertisement */
+#advertise {
+  width: 80%;
+  padding-top: 100px;
+  padding-bottom: 40px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#advertise img {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  width: 100%;
+  height: 80px;
+  margin: 0 auto;
+}
+
 /* small sized movies poster */
 .header-of-movies {
   width: 70%;

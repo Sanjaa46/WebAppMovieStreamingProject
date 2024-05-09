@@ -66,7 +66,7 @@ class MovieMediumSized {
         const paddedRank = (this.rank + 1).toString().padStart(2, '0'); // Ensure rank is displayed as '01', '02', etc.
         const genres = this.genre.join(', ');
         return `
-        <article class="movie-medium-sized">
+        <article class="movie-medium-sized"><a href="intro.html">
         <p class="rank">${paddedRank}</p>
         <div class="details">
             <h3 class="name">${this.name}</h3>
@@ -74,7 +74,7 @@ class MovieMediumSized {
         </div>
         <div class="poster">
             <img src="${this.poster}" alt="movie-medium-sized-poster">
-        </div>
+        </div></a>
     </article>`;
     }
 }
