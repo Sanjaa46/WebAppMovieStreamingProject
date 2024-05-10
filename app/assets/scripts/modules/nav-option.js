@@ -24,6 +24,13 @@ async function filterMoviesByGenre(genre) {
     return movies.filter(movie => movie.genre.includes(genre));
 }
 
+// Search movies by name
+async function searchMoviesByName(name) {
+    const movies = await fetchMovies();
+    return movies.filter(movie => movie.name.toLowerCase().includes(name.toLowerCase()));
+}
+
+
 
 // Render movies to the UI
 function renderMovies(movies) {
@@ -106,6 +113,11 @@ function getMovieGenreFromUrl() {
     return urlParams.get('genre');
 }
 
+function getSearchQueryFromUrl() {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get('name');
+}
+
 // Event listener for rendering movies based on the movie type
 document.addEventListener('DOMContentLoaded', async function () {
     const movieType = getMovieTypeFromUrl();
@@ -116,10 +128,26 @@ document.addEventListener('DOMContentLoaded', async function () {
 });
 
 document.addEventListener('DOMContentLoaded', async function () {
+
     const movieGenre = getMovieGenreFromUrl();
     if (movieGenre) {
         const filteredMovies = await filterMoviesByGenre(movieGenre);
+        console.log(filteredMovies);
         renderMovies(filteredMovies);
+    }
+});
+
+document.addEventListener('DOMContentLoaded', async function () {
+    const searchQuery = getSearchQueryFromUrl();
+    if (searchQuery) {
+        const filteredMovies = await searchMoviesByName(searchQuery);
+        renderMovies(filteredMovies);
+        document.getElementById('number-of-movies').textContent = filteredMovies.length + ' кинонууд';
+    } else {
+        // If no search query is provided, render all movies
+        const allMovies = await fetchMovies();
+        renderMovies(allMovies);
+        document.getElementById('number-of-movies').textContent = allMovies.length + ' кинонууд';
     }
 });
 

@@ -132,3 +132,19 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+
+// Event listener for the search form on index.html
+document.querySelector('.search-container').addEventListener('submit', async function (event) {
+    event.preventDefault();
+    const searchInput = document.querySelector('.search-container input[name="name"]');
+    const searchQuery = searchInput.value.trim();
+
+    if (searchQuery) {
+        // Redirect to movies.html with the search query as a URL parameter
+        window.location.href = `movies.html?name=${encodeURIComponent(searchQuery)}`;
+    } else {
+        // If the search query is empty, redirect to movies.html without any parameters
+        window.location.href = 'movies.html';
+    }
+});

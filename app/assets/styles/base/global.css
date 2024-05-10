@@ -24,7 +24,7 @@ body {
 }
 
 /* header */
-header {
+/* header {
   margin-top: 20px;
 }
 
@@ -305,7 +305,7 @@ header {
 
 .login-image {
   background-color: transparent;
-}
+} */
 
 /* Advertisement */
 #advertise {
@@ -453,16 +453,16 @@ header {
 
 /* Footer */
 
-footer {
+/* footer {
   background-color: rgba(57, 57, 57, 0.38);
   width: 100%;
   height: 290px;
   margin-top: 200px;
   padding: 30px 0 0 30px;
   border-radius: 10px 10px 0 0;
-}
+} */
 
-footer .footer-links a {
+/* footer .footer-links a {
   text-decoration: none;
   color: white;
 }
@@ -488,7 +488,7 @@ footer .footer-links a {
 .copy-right {
   color: white;
   margin-top: 30px;
-}
+} */
 
 /* --------------------- */
 

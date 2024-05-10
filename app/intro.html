@@ -39,7 +39,8 @@
     <title>Kinonuud</title>
   </head>
   <body>
-    <header class="menu">
+    <header-component></header-component>
+    <!-- <header class="menu">
       <a href="index.html" id="logo">Logo Movie</a>
       <nav>
         <ul class="nav-container">
@@ -68,10 +69,14 @@
               </ul>
             </div>
           </li>
-          <li class="nav-list"><a href="movies.html?type=movie">Кино</a></li>
-          <li class="nav-list"><a href="movies.html?type=series">Цуврал</a></li>
           <li class="nav-list">
-            <a href="movies.html?type=tv_show">ТВ шоу</a>
+            <a id="movies-option">Кино</a>
+          </li>
+          <li class="nav-list">
+            <a id="series-option">Цуврал</a>
+          </li>
+          <li class="nav-list">
+            <a id="tv-shows-option">ТВ шоу</a>
           </li>
         </ul>
       </nav>
@@ -83,12 +88,10 @@
         />
         <input
           type="text"
-          name=""
-          id="find"
+          name="name"
+          id=""
           class="search-input"
           placeholder="Хайх..."
-          aria-label="search"
-          onkeyup="search()"
         />
       </form>
       <a href="#" class="login-button"
@@ -131,15 +134,11 @@
               </ul>
             </div>
           </li>
+          <li class="nav-list-burger"><a href="movies.html">Кино</a></li>
           <li class="nav-list-burger">
-            <a href="movies.html?type=movie">Кино</a>
+            <a href="movie_tsuwral.html">Цуврал</a>
           </li>
-          <li class="nav-list-burger">
-            <a href="movies.html?type=series">Цуврал</a>
-          </li>
-          <li class="nav-list-burger">
-            <a href="movies.html?type=tv_show">ТВ шоу</a>
-          </li>
+          <li class="nav-list-burger"><a href="Tvshow.html">ТВ шоу</a></li>
         </ul>
       </div>
 
@@ -166,7 +165,7 @@
           class="login-image"
         />
       </a>
-    </header>
+    </header> -->
 
     <!--intro-movie-->
     <main>
@@ -370,52 +369,9 @@
     </main>
 
     <!--footer-->
-    <footer class="site-footer">
-      <div class="footer-icons">
-        <ul>
-          <li>
-            <a
-              href="https://www.facebook.com/"
-              aria-label="Facebook"
-              title="Facebook"
-            >
-              <i class="fab fa-facebook-f"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.youtube.com/"
-              aria-label="YouTube"
-              title="YouTube"
-            >
-              <i class="fab fa-youtube"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/"
-              aria-label="Instagram"
-              title="Instagram"
-            >
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-links">
-        <ul>
-          <li><strong>Бидний тухай</strong></li>
-          <li><strong>Холбоо барих</strong></li>
-          <li><strong>Заавар</strong></li>
-          <li><strong>Үйлчилгээний нөхцөл</strong></li>
-        </ul>
-      </div>
-      <div class="copy-right">
-        <p>
-          Copyright &copy; 2024 All right reserved by:
-          <strong>nice kino</strong>
-        </p>
-      </div>
-    </footer>
+    <footer-component></footer-component>
+    <script src="assets/scripts/modules/ham-menu.js"></script>
+    <script type="module" src="assets/scripts/component/footer.js"></script>
+    <script type="module" src="assets/scripts/component/header.js"></script>
   </body>
 </html>

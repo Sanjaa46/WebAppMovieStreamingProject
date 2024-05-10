@@ -15,14 +15,14 @@
 
     <script type="module" src="assets/scripts/modules/Movies.js"></script>
     <script type="module" src="assets/scripts/modules/nav-option.js"></script>
-    <script src="assets/scripts/modules/search.js"></script>
     <script type="module" src="assets/scripts/modules/index.js"></script>
 
     <title>Nice Kino</title>
 </head>
 
 <body>
-    <header class="menu">
+    <header-component></header-component>
+    <!-- <header class="menu">
         <a href="index.html" id="logo">Logo Movie</a>
         <nav>
             <ul class="nav-container">
@@ -58,10 +58,19 @@
             </ul>
         </nav>
         <form class="search-container">
-            <img src="assets/images/search.png" alt="search-icon" class="search-icon" />
-            <input type="text" name="" id="find" class="search-input" placeholder="Хайх..." aria-label="search"
-                onkeyup="search()" />
-        </form>
+            <img
+              src="assets/images/search.png"
+              alt="search-icon"
+              class="search-icon"
+            />
+            <input
+              type="text"
+              name="name"
+              id=""
+              class="search-input"
+              placeholder="Хайх..."
+            />
+          </form>
         <a href="#" class="login-button">Нэвтрэх
             <img src="assets/images/login-image.png" alt="login" class="login-image" height="30" width="30" />
         </a>
@@ -114,7 +123,7 @@
         <a class="login-button">Нэвтрэх
             <img src="assets/images/login-image.png" alt="login" class="login-image">
         </a>
-    </header>
+    </header> -->
 
 
     <main>
@@ -240,8 +249,7 @@
 
     <script src="assets/scripts/modules/ham-menu.js"></script>
 
-    <!--footer-->
-    <footer class="site-footer">
+    <!-- <footer class="site-footer">
         <div class="footer-icons">
             <ul>
                 <li><a href="https://www.facebook.com/" target="_blank"><img src="assets/images/facebook-icon.png"
@@ -266,5 +274,8 @@
                 <strong>nice kino</strong>
             </p>
         </div>
-    </footer>
+    </footer> -->
+    <footer-component></footer-component>
+    <script type="module" src="assets/scripts/component/footer.js"></script>
+    <script type="module" src="assets/scripts/component/header.js"></script>
 </body>

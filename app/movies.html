@@ -29,16 +29,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/styles/style.css" />
-    <script src="assets/scripts/modules/search.js"></script>
-    <script src="assets/scripts/modules/search.js"></script>
-    <script type="module" src="assets/scripts/modules/Movies.js"></script>
-    <script type="module" src="assets/scripts/modules/nav-option.js"></script>
 
     <title>Kinonuud</title>
   </head>
 
   <body>
-    <header class="menu">
+    <header-component></header-component>
+    <!-- <header class="menu">
       <a href="index.html" id="logo">Logo Movie</a>
       <nav>
         <ul class="nav-container">
@@ -86,12 +83,10 @@
         />
         <input
           type="text"
-          name=""
-          id="find"
+          name="name"
+          id=""
           class="search-input"
           placeholder="Хайх..."
-          aria-label="search"
-          onkeyup="search()"
         />
       </form>
       <a href="#" class="login-button"
@@ -165,9 +160,10 @@
           class="login-image"
         />
       </a>
-    </header>
+    </header> -->
 
     <main>
+      <!-- <filter-component></filter-component> -->
       <section class="filter">
         <div>
           <p><strong class="title"></strong></p>
@@ -181,7 +177,13 @@
                 alt="search-icon"
                 class="search-icon"
               />
-              <input type="text" name="name" id="name" placeholder="Хайх..." />
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="search-input"
+                placeholder="Хайх..."
+              />
             </li>
             <li class="filter-dropdown">
               <select id="type" name="type">
@@ -270,56 +272,14 @@
         <a href="" class="next">&raquo;</a>
       </section>
     </main>
-
-    <script src="assets/scripts/modules/ham-menu.js"></script>
-
     <!--footer-->
-    <footer class="site-footer">
-      <div class="footer-icons">
-        <ul>
-          <li>
-            <a
-              href="https://www.facebook.com/"
-              aria-label="Facebook"
-              title="Facebook"
-            >
-              <i class="fab fa-facebook-f"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.youtube.com/"
-              aria-label="YouTube"
-              title="YouTube"
-            >
-              <i class="fab fa-youtube"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/"
-              aria-label="Instagram"
-              title="Instagram"
-            >
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-links">
-        <ul>
-          <li><strong>Бидний тухай</strong></li>
-          <li><strong>Холбоо барих</strong></li>
-          <li><strong>Заавар</strong></li>
-          <li><strong>Үйлчилгээний нөхцөл</strong></li>
-        </ul>
-      </div>
-      <div class="copy-right">
-        <p>
-          Copyright &copy; 2024 All right reserved by:
-          <strong>nice kino</strong>
-        </p>
-      </div>
-    </footer>
+    <footer-component></footer-component>
+
+    <!-- <script type="module" src="assets/scripts/component/filter.js"></script> -->
+    <script src="assets/scripts/modules/ham-menu.js"></script>
+    <script type="module" src="assets/scripts/component/footer.js"></script>
+    <script type="module" src="assets/scripts/modules/Movies.js"></script>
+    <script type="module" src="assets/scripts/modules/nav-option.js"></script>
+    <script type="module" src="assets/scripts/component/header.js"></script>
   </body>
 </html>

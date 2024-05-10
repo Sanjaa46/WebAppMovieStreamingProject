@@ -54,6 +54,23 @@
   color: var(--color-button);
 }
 
+.filter li > button.filter-button {
+  background-color: var(--color-button);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 105px;
+  height: 35px;
+}
+
+.filter li > button.filter-button:hover {
+  background-color: white;
+  color: #595959;
+}
+
 .filter #name {
   background-color: transparent;
   border: none;
