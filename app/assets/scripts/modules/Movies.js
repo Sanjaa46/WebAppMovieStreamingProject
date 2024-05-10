@@ -5,12 +5,13 @@ export default class Movie {
         this.duration = movie.duration;
         this.director = movie.director;
         this.poster = movie.poster;
+        this.genre = movie.genre;
     }
 
 
     render() {
         return `
-            <article class="movie-small-sized">
+            <article class="movie-small-sized"><a href="intro.html?name=${this.name}&genre=${this.genre}">
                 <div class="details">
                     <h3 class="Name">${this.name}</h3>
                     <p class="year-and-duration"><img src="webimage/movieIcon.png" alt="movie-icon" class="movie-icon"> ${this.since} - ${this.duration} мин</p>
@@ -20,7 +21,7 @@ export default class Movie {
                 </div>
                 <div class="poster">
                     <img src="${this.poster}" alt="movie-small-sized-poster">
-                </div>
+                </div></a>
             </article>`;
     }
 }

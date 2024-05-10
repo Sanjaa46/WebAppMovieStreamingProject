@@ -1,7 +1,7 @@
 /*intro-movie*/
 
 .intro-movie {
-  background-image: url(/app/assets/images/cover.jpg);
+  /* background-image: url(/app/assets/images/cover.jpg); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -9,14 +9,22 @@
   width: 100%;
   height: 800px;
 }
+
 .intro-movie:before {
   content: "";
   position: absolute;
   left: 0;
-  width: 80%;
+  width: 100%;
   height: 800px;
 
-  background: linear-gradient(to right, rgb(0, 100, 230), transparent);
+  background: linear-gradient(to right, rgb(0, 100, 230) 35%, transparent);
+}
+
+.intro-movie video {
+  position: absolute;
+  z-index: -1;
+  bottom: 59px;
+  right: -346px;
 }
 
 .intro-movie .studio-name {
