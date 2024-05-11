@@ -1,12 +1,23 @@
 class HeaderComponent extends HTMLElement {
-    constructor() {
-        super();
+  constructor() {
+    super();
+  }
 
-        const shadow = this.attachShadow({ mode: "open" });
+  connectedCallback() {
+    this.render();
+    const hamMenu = document.querySelector('.ham-menu');
+    const offScreenMenu = document.querySelector('.off-screen-menu');
 
-        const template = document.createElement("template");
-        template.innerHTML = `
-        <style>
+
+    hamMenu.addEventListener('click', () => {
+      hamMenu.classList.toggle('active');
+      offScreenMenu.classList.toggle('active');
+    });
+  }
+
+  render() {
+    this.innerHTML = `
+    <style>
         :root {
             --color-background: #0a0a0a;
             --color-button: #ff770b;
@@ -307,6 +318,24 @@ class HeaderComponent extends HTMLElement {
           .login-image {
             background-color: transparent;
           }
+          
+          @media (max-width: 891px) {
+            .menu {
+              display: none;
+            }
+            .hamburger-header {
+              display: flex;
+            }
+          }
+          
+          @media (max-width: 448px) {
+            .menu {
+              display: none;
+            }
+            .hamburger-header {
+              display: flex;
+            }
+          }
         </style>
         <header class="menu">
         <a href="index.html" id="logo">Logo Movie</a>
@@ -337,9 +366,9 @@ class HeaderComponent extends HTMLElement {
                         </ul>
                     </div>
                 </li>
-                <li class="nav-list"><a href="movies.html?type=movie">Кино</a></li>
-                <li class="nav-list"><a href="movies.html?type=series">Цуврал</a></li>
-                <li class="nav-list"><a href="movies.html?type=tv_show">ТВ шоу</a></li>
+                <li class="nav-list"><a id="movies-option" href="movies.html?type=movie">Кино</a></li>
+                <li class="nav-list"><a id="series-option" href="movies.html?type=series">Цуврал</a></li>
+                <li class="nav-list"><a id="tv-shows-option" href="movies.html?type=tv_show">ТВ шоу</a></li>
 
             </ul>
         </nav>
@@ -390,9 +419,9 @@ class HeaderComponent extends HTMLElement {
                         </ul>
                     </div>
                 </li>
-                <li class="nav-list-burger"><a href="movies.html?type=movie">Кино</a></li>
-                <li class="nav-list-burger"><a href="movies.html?type=series">Цуврал</a></li>
-                <li class="nav-list-burger"><a href="movies.html?type=tv_show">ТВ шоу</a></li>
+                <li class="nav-list-burger"><a id="movies-option" href="movies.html?type=movie">Кино</a></li>
+                <li class="nav-list-burger"><a id="series-option" href="movies.html?type=series">Цуврал</a></li>
+                <li class="nav-list-burger"><a id="tv-shows-option" href="movies.html?type=tv_show">ТВ шоу</a></li>
             </ul>
         </div>
 
@@ -409,11 +438,25 @@ class HeaderComponent extends HTMLElement {
         <a class="login-button">Нэвтрэх
             <img src="assets/images/login-image.png" alt="login" class="login-image">
         </a>
-    </header>
-        `;
+    </header>`
+  };
 
-        shadow.appendChild(template.content.cloneNode(true));
-    }
 }
 
 customElements.define("header-component", HeaderComponent);
+
+
+// Event listener for the search form on index.html
+document.querySelector('.search-container').addEventListener('submit', async function (event) {
+  event.preventDefault();
+  const searchInput = document.querySelector('.search-container input[name="name"]');
+  const searchQuery = searchInput.value.trim();
+
+  if (searchQuery) {
+    // Redirect to movies.html with the search query as a URL parameter
+    window.location.href = `movies.html?name=${encodeURIComponent(searchQuery)}`;
+  } else {
+    // If the search query is empty, redirect to movies.html without any parameters
+    window.location.href = 'movies.html';
+  }
+});

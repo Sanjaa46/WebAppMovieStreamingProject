@@ -1,46 +1,38 @@
 /*intro-movie*/
 
-.intro-movie {
-  background-image: url(/app/assets/images/cover.jpg);
+.intro-movie .cover-image {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin-top: 50px;
   width: 100%;
-  height: 800px;
+  height: 600px;
 }
-
 .intro-movie:before {
   content: "";
   position: absolute;
+  top: 8%;
   left: 0;
-  width: 100%;
-  height: 800px;
-  border-radius: 10px 0px 0px 10px;
-  background: linear-gradient(to right, var(--color-button) 35%, transparent);
-}
+  width: 80%;
+  height: 605px;
 
-.intro-movie video {
-  position: absolute;
-  z-index: -1;
-  bottom: 0px;
-  right: 0px;
+  background: linear-gradient(to right, rgb(0, 0, 0), transparent);
 }
 
 .intro-movie .studio-name {
   display: flex;
   justify-content: flex-start;
-  font-size: 30px;
-  padding-left: 40px;
-  padding-top: 50px;
-  position: relative;
-}
+  font-size: 20px;
 
+  position: absolute;
+  top: 12%;
+  left: 5%;
+}
 .intro-movie .poster {
-  position: relative;
-  margin-left: 100px;
-  margin-top: 70px;
-  width: 290px;
+  position: absolute;
+  top: 32%;
+  left: 7%;
+  width: 190px;
+  height: 290x;
 }
 
 .intro-movie .poster img {
@@ -58,8 +50,8 @@
 
 .intro-details {
   position: absolute;
-  top: 300px;
-  left: 450px;
+  top: 20%;
+  left: 30%;
   display: flex;
   flex-direction: column;
 }
@@ -67,7 +59,7 @@
 .intro-details h2 {
   font-family: "Libre Baskerville", sans-serif;
   color: #fff;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .intro-details .movie-rating {
@@ -76,8 +68,8 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 20px;
-  font-size: 18px;
+  gap: 15px;
+  font-size: 15px;
 }
 
 .intro-details .movie-rating .age {
@@ -94,8 +86,8 @@
 }
 
 .intro-details .introduction {
-  width: 50%;
-  font-size: 20px;
+  width: 60%;
+  font-size: 18px;
   font-family: "Libre Baskerville", sans-serif;
 }
 
@@ -130,8 +122,8 @@
   width: 105px;
   height: 35px;
   position: absolute;
-  bottom: 100px;
-  right: 30px;
+  bottom: 35%;
+  right: 1%;
 }
 
 .intro-details .buttons .show-button:hover,
@@ -159,4 +151,337 @@
 
 .buttons .glyphicon {
   color: rgb(255, 255, 255);
+}
+
+@media (max-width: 1358px) {
+  .intro-movie .studio-name {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 20px;
+    position: absolute;
+    top: 12%;
+    left: 5%;
+  }
+}
+
+@media (max-width: 891px) {
+  .intro-movie .cover-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+    margin-top: 5%;
+  }
+
+  .intro-movie:before {
+    content: "";
+    position: absolute;
+    top: 9%;
+    left: 0;
+    width: 80%;
+    height: 605px;
+
+    background: linear-gradient(to right, rgb(0, 0, 0), transparent);
+  }
+
+  .intro-movie .studio-name {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 20px;
+    position: absolute;
+    top: 12%;
+    left: 5%;
+  }
+  .intro-movie .poster {
+    position: absolute;
+    top: 20%;
+    left: 7%;
+    width: 120px;
+    height: 220px;
+  }
+
+  .intro-movie .poster .procuder-actor-name {
+    font-size: 12px;
+  }
+
+  .intro-movie .poster img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .intro-movie .poster p {
+    width: 500px;
+    font-size: 20px;
+    color: rgb(197, 197, 197);
+    font-family: "Libre Baskerville", sans-serif;
+    padding-top: 10px;
+  }
+
+  .intro-details {
+    position: absolute;
+    top: 12%;
+    left: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intro-details h2 {
+    font-family: "Libre Baskerville", sans-serif;
+    color: #fff;
+    font-size: 40px;
+  }
+
+  .intro-details .movie-rating {
+    padding-top: 25px;
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    font-size: 15px;
+  }
+
+  .intro-details .movie-rating .age {
+    border: 1px solid rgb(41, 38, 38);
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(41, 38, 38);
+  }
+
+  .intro-details .movie-genre {
+    padding-top: 8px;
+    font-size: 18px;
+    color: rgb(181, 181, 181);
+  }
+
+  .intro-details .introduction {
+    width: 60%;
+    font-size: 15px;
+    font-family: "Libre Baskerville", sans-serif;
+  }
+
+  .intro-details .buttons {
+    padding-top: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .intro-details .buttons .show-button {
+    background-color: var(--color-button);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100px;
+    height: 30px;
+  }
+
+  .intro-movie .report {
+    background-color: var(--color-button);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    bottom: 35%;
+    right: 1%;
+  }
+
+  .intro-details .buttons .show-button:hover,
+  .intro-movie .report:hover {
+    background-color: white;
+    color: #595959;
+    border: 1px solid #595959;
+  }
+
+  .intro-details .buttons .show-button:hover span,
+  .buttons .glyphicon:hover {
+    color: #595959;
+  }
+
+  .intro-details .buttons .other-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 22px;
+    font-size: 20px;
+    position: absolute;
+    bottom: -10px;
+    left: 130px;
+  }
+
+  .buttons .glyphicon {
+    color: rgb(255, 255, 255);
+  }
+}
+
+@media (max-width: 448px) {
+  .intro-movie .cover-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 730px;
+  }
+  .intro-movie:before {
+    content: "";
+    position: absolute;
+    top: 7%;
+    left: 0;
+    width: 100%;
+    height: 730px;
+    background: linear-gradient(
+      135deg,
+      rgba(71, 71, 71, 0),
+      rgba(17, 17, 17, 0.862)
+    );
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    box-shadow: 0 8px 32px 0 rgb(0, 0, 0);
+  }
+
+  .intro-movie .studio-name {
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+  }
+  .intro-movie .poster {
+    position: absolute;
+    width: 150px;
+    height: 250x;
+    top: 14%;
+    left: 31%;
+  }
+
+  .intro-movie .poster img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .intro-movie .poster p {
+    width: 500px;
+    font-size: 20px;
+    color: rgb(197, 197, 197);
+    font-family: "Libre Baskerville", sans-serif;
+    padding-top: 10px;
+  }
+
+  .intro-details {
+    position: absolute;
+    top: 38%;
+    left: 25%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intro-details h2 {
+    font-family: "Libre Baskerville", sans-serif;
+    color: #fff;
+    font-size: 30px;
+    margin-left: 20%;
+  }
+
+  .intro-details .movie-rating {
+    padding-top: 5px;
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    font-size: 8px;
+  }
+
+  .intro-details .movie-rating .age {
+    border: 1px solid rgb(41, 38, 38);
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(41, 38, 38);
+  }
+
+  .intro-details .movie-genre {
+    font-size: 10px;
+    color: rgb(181, 181, 181);
+  }
+
+  .intro-details .introduction {
+    width: 65%;
+    font-size: 10px;
+    font-family: "Libre Baskerville", sans-serif;
+  }
+
+  .intro-details .buttons {
+    padding-top: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .intro-details .buttons .show-button {
+    background-color: var(--color-button);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 200px;
+    height: 25px;
+  }
+
+  .intro-movie .report {
+    background-color: var(--color-button);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 50px;
+    height: 20px;
+    position: absolute;
+    bottom: 25%;
+    right: 5%;
+    font-size: 8px;
+  }
+
+  .intro-details .buttons .show-button:hover,
+  .intro-movie .report:hover {
+    background-color: white;
+    color: #595959;
+    border: 1px solid #595959;
+  }
+
+  .intro-details .buttons .show-button:hover span,
+  .buttons .glyphicon:hover {
+    color: #595959;
+  }
+
+  .intro-details .buttons .other-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 22px;
+    font-size: 15px;
+    position: absolute;
+    top: 110%;
+    left: 18%;
+  }
+
+  .buttons .glyphicon {
+    color: rgb(255, 255, 255);
+  }
 }

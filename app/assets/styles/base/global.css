@@ -24,7 +24,7 @@ body {
 }
 
 /* header */
-/* header {
+header {
   margin-top: 20px;
 }
 
@@ -305,7 +305,7 @@ body {
 
 .login-image {
   background-color: transparent;
-} */
+}
 
 /* Advertisement */
 #advertise {
