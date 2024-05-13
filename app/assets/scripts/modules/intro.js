@@ -1,3 +1,5 @@
+import Movie from './Movies.js';
+
 export default class Intro {
     constructor(movie) {
         this.poster = movie.poster
@@ -12,10 +14,14 @@ export default class Intro {
         this.country = movie.country;
         this.duration = movie.duration;
         this.genre = movie.genre;
+        this.trailer = movie.trailer;
     }
 
     render() {
         const genres = this.genre.join('/');
+        // <div class="trailer">
+        //     <iframe width="560" height="315" src="${this.trailer}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        // </div>
         return `
         <img src="assets/images/cover.jpg" class="cover-image" />
         <div class="studio-name">
@@ -72,6 +78,18 @@ async function renderMovie() {
     moviesData = mov.render();
     const movieContainer = document.querySelector(".intro-movie");
     movieContainer.innerHTML = moviesData;
+    //-------------------------------------//
+    const recommendations = await filterMoviesByGenres();
+    recommendations.sort((a, b) => b.since - a.since);
+
+    let recommendationsData = '';
+    let i = 0;
+    while (i < 12) {
+        const rec = new Movie(recommendations[i]);
+        recommendationsData += rec.render();
+        i++;
+    }
+    document.querySelector(".movies-container-12").insertAdjacentHTML("beforeend", recommendationsData);
 }
 
 async function fetchMovies() {
@@ -94,3 +112,18 @@ async function searchMovies() {
 }
 
 renderMovie();
+
+async function filterMoviesByGenres() {
+    const movies = await fetchMovies();
+    const urlParams = new URLSearchParams(window.location.search);
+    const genreParam = urlParams.get('genre');
+    const genres = genreParam ? genreParam.split(',') : [];
+    console.log(genres);
+    const filteredMovies = movies.filter(movie => {
+        return genres.some(genre => movie.genre.includes(genre.trim()));
+    });
+    console.log(filteredMovies);
+    return filteredMovies;
+}
+
+
