@@ -102,3 +102,42 @@ class MostViewed {
 
 const mostViewed = new MostViewed();
 mostViewed.list();
+
+document.addEventListener('DOMContentLoaded', function () {
+    const headerComponent = document.querySelector('header-component');
+
+    const loginButton = headerComponent.querySelector('.login-button');
+    const closeButton = document.querySelector('.close-btn');
+
+    const profileButton = headerComponent.querySelector('.profile');
+    const profilePopup = document.querySelector('.profile-popup');
+    let isLoggedIn = !false;
+
+    loginButton.addEventListener('click', function () {
+        document.querySelector('.popup').style.display = "flex";
+    });
+    closeButton.addEventListener('click', function () {
+        document.querySelector('.popup').style.display = "none";
+    });
+
+    profileButton.addEventListener('click', function () {
+        document.querySelector('.profile-popup').style.display = "flex";
+    });
+
+    document.addEventListener('click', function (event) {
+        if (!profilePopup.contains(event.target) && !profileButton.contains(event.target)) {
+            profilePopup.style.display = "none";
+        }
+    });
+
+    if (isLoggedIn) {
+        headerComponent.querySelector('.login-button').style.display = "none";
+        headerComponent.querySelector('.profile').style.display = "flex";
+    }
+    else {
+        headerComponent.querySelector('.login-button').style.display = "flex";
+        headerComponent.querySelector('.profile').style.display = "none";
+    }
+
+});
+

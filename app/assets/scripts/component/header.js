@@ -73,12 +73,16 @@ class HeaderComponent extends HTMLElement {
             height: 45px;
             width: 100px;
             border-radius: 15px;
+            text-decoration: none;
           }
           
           .hamburger-header .login-button .login-image {
-            background-color: transparent;
+            display: none;
           }
-          
+          .logged-in {
+            background-color: none;
+          }
+
           .off-screen-menu {
             background-color: rgba(117, 117, 117, 0.7);
             width: fit-content;
@@ -389,6 +393,7 @@ class HeaderComponent extends HTMLElement {
         <a href="#" class="login-button">Нэвтрэх
             <img src="assets/images/login-image.png" alt="login" class="login-image" height="30" width="30" />
         </a>
+        <img src="assets/images/profile.png" alt="login" class="profile" height="30" width="30" />
     </header>
 
     <header class="hamburger-header">
@@ -435,8 +440,11 @@ class HeaderComponent extends HTMLElement {
 
         <a href="index.html" id="logo">Logo Movie</a>
         <a id="search-mobile"><img src="assets/images/search.png" alt="search-icon" class="search-icon"></a>
-        <a class="login-button">Нэвтрэх
-            <img src="assets/images/login-image.png" alt="login" class="login-image">
+        <a href="#" class="login-button">Нэвтрэх
+            <img src="assets/images/login-image.png" alt="login" class="login-image" height="30" width="30" />
+        </a>
+        <a href="#" class="profile">
+          <img src="assets/images/profile.png" alt="login" height="30" width="30" />
         </a>
     </header>`
   };

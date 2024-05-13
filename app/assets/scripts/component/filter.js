@@ -1,13 +1,13 @@
 
 
 class FilterComponent extends HTMLElement {
-    constructor() {
-        super();
+  constructor() {
+    super();
 
-        const shadow = this.attachShadow({ mode: "open" });
+    const shadow = this.attachShadow({ mode: "open" });
 
-        const template = document.createElement("template");
-        template.innerHTML = `
+    const template = document.createElement("template");
+    template.innerHTML = `
         <style>
         :root {
             --color-background: #0a0a0a;
@@ -39,17 +39,6 @@ class FilterComponent extends HTMLElement {
             padding: 20px 70px 5px;
             font-size: 18px;
             align-items: center;
-          }
-          
-          .filter > div {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 60px;
-            border-bottom: 1px solid white;
-            width: 100%;
-            max-width: 1350px;
-            margin: 0 auto;
           }
           
           .filter .title {
@@ -198,8 +187,8 @@ class FilterComponent extends HTMLElement {
       
         `;
 
-        shadow.appendChild(template.content.cloneNode(true));
-    }
+    shadow.appendChild(template.content.cloneNode(true));
+  }
 
 
 }
