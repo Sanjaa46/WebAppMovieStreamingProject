@@ -1,5 +1,5 @@
-/*intro-movie*/
 
+/*intro-movie*/
 .intro-movie .cover-image {
   background-size: cover;
   background-position: center;
@@ -29,8 +29,8 @@
 }
 .intro-movie .poster {
   position: absolute;
-  top: 32%;
-  left: 7%;
+  top: 25%;
+  left: 10%;
   width: 190px;
   height: 290x;
 }
