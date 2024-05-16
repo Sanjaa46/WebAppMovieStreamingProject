@@ -1,13 +1,31 @@
 export default class BookmarkedComponent extends HTMLElement {
+    // Define movies as a class property
+    movies = new Array();
+
     constructor() {
         super();
-        const movies = new Array();
+        this.movies = [];
     }
+
+
     connectedCallback() {
         this.render();
-        document.getElementById('bookmarked').addEventListener('click', function () {
-            console.log('checking');
-        });
+        this.handleBookmarkClick = this.handleBookmarkClick.bind(this);
+        this.addEventListener('click', this.handleBookmarkClick);
+    }
+
+
+    disconnectedCallback() {
+        // Remove event listener when the component is removed from the DOM
+        this.removeEventListener('click', this.handleBookmarkClick);
+    }
+
+    handleBookmarkClick(event) {
+        // Check if the clicked element is #bookmarked
+        if (event.target.id === 'bookmarked') {
+            console.log('Bookmark clicked');
+            // Add your bookmarking logic here
+        }
     }
 
     render() {
