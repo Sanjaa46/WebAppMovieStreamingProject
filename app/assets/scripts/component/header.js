@@ -1,17 +1,67 @@
+import BookmarkedComponent from "./bookmark.js";
+window.customElements.define('bookmarked-component', BookmarkedComponent);
+
 class HeaderComponent extends HTMLElement {
   constructor() {
     super();
+    this.isLoggedIn = true;
   }
 
   connectedCallback() {
     this.render();
-    const hamMenu = document.querySelector('.ham-menu');
-    const offScreenMenu = document.querySelector('.off-screen-menu');
+    this.setupEventListeners();
+  }
 
+  setupEventListeners() {
+    const hamMenu = this.querySelector('.ham-menu');
+    const offScreenMenu = this.querySelector('.off-screen-menu');
 
     hamMenu.addEventListener('click', () => {
       hamMenu.classList.toggle('active');
       offScreenMenu.classList.toggle('active');
+    });
+
+    const loginButton = this.querySelector('.login-button');
+    const closeButton = this.querySelector('.close-btn');
+    const profileButton = this.querySelector('.profile');
+    const profilePopup = this.querySelector('.profile-popup');
+
+    loginButton.addEventListener('click', () => {
+      this.querySelector('.popup').style.display = "flex";
+    });
+
+    closeButton.addEventListener('click', () => {
+      this.querySelector('.popup').style.display = "none";
+    });
+
+    profileButton.addEventListener('click', () => {
+      profilePopup.style.display = "flex";
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!profilePopup.contains(event.target) && !profileButton.contains(event.target)) {
+        profilePopup.style.display = "none";
+      }
+    });
+
+    if (this.isLoggedIn) {
+      this.querySelector('.login-button').style.display = "none";
+      this.querySelector('.profile').style.display = "flex";
+    } else {
+      this.querySelector('.login-button').style.display = "flex";
+      this.querySelector('.profile').style.display = "none";
+    }
+
+    this.querySelector('.search-container').addEventListener('submit', (event) => {
+      event.preventDefault();
+      const searchInput = this.querySelector('.search-container input[name="name"]');
+      const searchQuery = searchInput.value.trim();
+
+      if (searchQuery) {
+        window.location.href = `movies.html?name=${encodeURIComponent(searchQuery)}`;
+      } else {
+        window.location.href = 'movies.html';
+      }
     });
   }
 
@@ -446,7 +496,40 @@ class HeaderComponent extends HTMLElement {
         <a href="#" class="profile">
           <img src="assets/images/profile.png" alt="login" height="30" width="30" />
         </a>
-    </header>`
+    </header>
+    <div class="popup">
+        <section class="login-popup">
+            <div class="close-btn">
+                <img src="assets/images/Cancel.png" alt="close-btn">
+            </div>
+            <article class="form">
+                <h2>Нэвтрэх</h2>
+                <div class="form-element">
+                    <input type="text" id="email" placeholder="Email-ээ оруулна уу">
+                </div>
+                <div class="form-element">
+                    <input type="password" id="password" placeholder="Нууц үгээ оруулна уу">
+                </div>
+                <div class="form-element">
+                    <a href="#">Нууц үгээ мартсан уу?</a>
+                </div>
+                <div class="form-element">
+                    <button>Нэвтрэх</button>
+                </div>
+                <div class="form-element">
+                    <a href="#" id="toggle-signup">Бүртгүүлэх</a>
+                </div>
+            </article>
+        </section>
+    </div>
+    <div class="profile-popup">
+        <ul>
+            <li class="profile-option"><a href="intro.html"><img src="assets/images/continue.png" alt="continue">Үргэлжлүүлэн үзэх</a></li>
+            <bookmarked-component></bookmarked-component>
+            <li class="profile-option"><a href="movies.html"><img src="assets/images/History.png" alt="History">Үзсэн</a></li>
+            <li class="profile-option"><a href="#"><img src="assets/images/logout.png" alt="logout">Гарах</a></li>
+        </ul>
+    </div>`;
   };
 
 }

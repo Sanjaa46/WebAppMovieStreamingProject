@@ -1,28 +1,29 @@
 import Movie from './Movies.js';
+import BookmarkedComponent from "../component/bookmark.js";
 
 export default class Intro {
-    constructor(movie) {
-        this.poster = movie.poster
-        this.cover = movie.cover;
-        this.studio = movie.studio;
-        this.director = movie.director;
-        this.actor = movie.actors[1];
-        this.name = movie.name;
-        this.age = movie.age;
-        this.rating = movie.rating;
-        this.since = movie.since;
-        this.country = movie.country;
-        this.duration = movie.duration;
-        this.genre = movie.genre;
-        this.trailer = movie.trailer;
-    }
+  constructor(movie) {
+    this.poster = movie.poster
+    this.cover = movie.cover;
+    this.studio = movie.studio;
+    this.director = movie.director;
+    this.actor = movie.actors[1];
+    this.name = movie.name;
+    this.age = movie.age;
+    this.rating = movie.rating;
+    this.since = movie.since;
+    this.country = movie.country;
+    this.duration = movie.duration;
+    this.genre = movie.genre;
+    this.trailer = movie.trailer;
+  }
 
-    render() {
-        const genres = this.genre.join('/');
-        // <div class="trailer">
-        //     <iframe width="560" height="315" src="${this.trailer}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        // </div>
-        return `
+  render() {
+    const genres = this.genre.join('/');
+    // <div class="trailer">
+    //     <iframe width="560" height="315" src="${this.trailer}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    // </div>
+    return `
         <img src="assets/images/cover.jpg" class="cover-image" />
         <div class="studio-name">
           <p><strong>Studio:Warner bros</strong></p>
@@ -58,72 +59,69 @@ export default class Intro {
               <span class="glyphicon glyphicon-play"></span> Үзэх
             </button>
             <div class="other-icons">
-              <p><span class="glyphicon glyphicon-bookmark"></span></p>
-              <p><span class="glyphicon glyphicon-comment"></span></p>
-              <p><span class="glyphicon glyphicon-film"></span></p>
+              <a><span class="glyphicon glyphicon-bookmark" id="bookmark"></span></a>
+              <a><span class="glyphicon glyphicon-comment" id="comment"></span></a>
+              <a><span class="glyphicon glyphicon-film" id="trailer"></span></a>
             </div>
           </div>
         </div>
         <div>
           <button class="report">report</button>
         </div>`;
-    }
+  }
 };
 
 async function renderMovie() {
-    let moviesData = '';
-    const movie = await searchMovies();
+  let moviesData = '';
+  const movie = await searchMovies();
 
-    const mov = new Intro(movie);
-    moviesData = mov.render();
-    const movieContainer = document.querySelector(".intro-movie");
-    movieContainer.innerHTML = moviesData;
-    //-------------------------------------//
-    const recommendations = await filterMoviesByGenres();
-    recommendations.sort((a, b) => b.since - a.since);
+  const mov = new Intro(movie);
+  moviesData = mov.render();
+  const movieContainer = document.querySelector(".intro-movie");
+  movieContainer.innerHTML = moviesData;
+  //-------------------------------------//
+  const recommendations = await filterMoviesByGenres();
+  recommendations.sort((a, b) => b.since - a.since);
 
-    let recommendationsData = '';
-    let i = 0;
-    while (i < 12) {
-        const rec = new Movie(recommendations[i]);
-        recommendationsData += rec.render();
-        i++;
-    }
-    document.querySelector(".movies-container-12").insertAdjacentHTML("beforeend", recommendationsData);
+  let recommendationsData = '';
+  let i = 0;
+  while (i < 12) {
+    const rec = new Movie(recommendations[i]);
+    recommendationsData += rec.render();
+    i++;
+  }
+  document.querySelector(".movies-container-12").insertAdjacentHTML("beforeend", recommendationsData);
 }
 
 async function fetchMovies() {
-    try {
-        const response = await fetch('/app/assets/scripts/modules/movies.json');
-        const data = await response.json();
-        return data;
-    } catch (error) {
-        console.error('Error fetching data:', error);
-        return [];
-    }
+  try {
+    const response = await fetch('/app/assets/scripts/modules/movies.json');
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Error fetching data:', error);
+    return [];
+  }
 }
 
 async function searchMovies() {
-    const movies = await fetchMovies();
-    const urlParams = new URLSearchParams(window.location.search);
-    const name = urlParams.get('name');
-    const searchedMovie = movies.find(movie => movie.name.toLowerCase() === name.toLowerCase());
-    return searchedMovie;
+  const movies = await fetchMovies();
+  const urlParams = new URLSearchParams(window.location.search);
+  const name = urlParams.get('name');
+  const searchedMovie = movies.find(movie => movie.name.toLowerCase() === name.toLowerCase());
+  return searchedMovie;
 }
 
 renderMovie();
 
 async function filterMoviesByGenres() {
-    const movies = await fetchMovies();
-    const urlParams = new URLSearchParams(window.location.search);
-    const genreParam = urlParams.get('genre');
-    const genres = genreParam ? genreParam.split(',') : [];
-    console.log(genres);
-    const filteredMovies = movies.filter(movie => {
-        return genres.some(genre => movie.genre.includes(genre.trim()));
-    });
-    console.log(filteredMovies);
-    return filteredMovies;
+  const movies = await fetchMovies();
+  const urlParams = new URLSearchParams(window.location.search);
+  const genreParam = urlParams.get('genre');
+  const genres = genreParam ? genreParam.split(',') : [];
+  const filteredMovies = movies.filter(movie => {
+    return genres.some(genre => movie.genre.includes(genre.trim()));
+  });
+  return filteredMovies;
 }
-
 
