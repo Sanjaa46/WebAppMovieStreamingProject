@@ -1,4 +1,3 @@
-
 /*intro-movie*/
 .intro-movie .cover-image {
   background-size: cover;
@@ -10,7 +9,7 @@
 .intro-movie:before {
   content: "";
   position: absolute;
-  top: 8%;
+  top: 9%;
   left: 0;
   width: 80%;
   height: 605px;

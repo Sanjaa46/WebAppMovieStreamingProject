@@ -420,10 +420,9 @@ class HeaderComponent extends HTMLElement {
                         </ul>
                     </div>
                 </li>
-                <li class="nav-list"><a id="movies-option" href="movies.html?type=movie">Кино</a></li>
-                <li class="nav-list"><a id="series-option" href="movies.html?type=series">Цуврал</a></li>
-                <li class="nav-list"><a id="tv-shows-option" href="movies.html?type=tv_show">ТВ шоу</a></li>
-
+                <li class="nav-list"><a id="movies-option" href="movies.html?type=movie" data-type="movie">Кино</a></li>
+                <li class="nav-list"><a id="series-option" href="movies.html?type=series" data-type="series">Цуврал</a></li>
+                <li class="nav-list"><a id="tv-shows-option" href="movies.html?type="tv_show" data-type="tv_show">ТВ шоу</a></li>
             </ul>
         </nav>
         <form class="search-container">
@@ -474,9 +473,9 @@ class HeaderComponent extends HTMLElement {
                         </ul>
                     </div>
                 </li>
-                <li class="nav-list-burger"><a id="movies-option" href="movies.html?type=movie">Кино</a></li>
-                <li class="nav-list-burger"><a id="series-option" href="movies.html?type=series">Цуврал</a></li>
-                <li class="nav-list-burger"><a id="tv-shows-option" href="movies.html?type=tv_show">ТВ шоу</a></li>
+                <li class="nav-list"><a id="movies-option" href="movies.html" data-type="movie">Кино</a></li>
+                <li class="nav-list"><a id="series-option" href="movies.html" data-type="series">Цуврал</a></li>
+                <li class="nav-list"><a id="tv-shows-option" href="movies.html" data-type="tv_show">ТВ шоу</a></li>
             </ul>
         </div>
 
@@ -544,7 +543,6 @@ document.querySelector('.search-container').addEventListener('submit', async fun
   const searchQuery = searchInput.value.trim();
 
   if (searchQuery) {
-    // Redirect to movies.html with the search query as a URL parameter
     window.location.href = `movies.html?name=${encodeURIComponent(searchQuery)}`;
   } else {
     // If the search query is empty, redirect to movies.html without any parameters
