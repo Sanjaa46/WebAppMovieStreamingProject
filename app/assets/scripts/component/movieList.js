@@ -1,18 +1,18 @@
 import Movie from '../modules/Movies.js'
 
 export default class MovieListComponent extends HTMLElement {
-    static get observedAttributes() {
-        return ['movies'];
-    }
+  static get observedAttributes() {
+    return ['movies'];
+  }
 
-    constructor() {
-        super();
+  constructor() {
+    super();
 
-        const shadowRoot = this.attachShadow({ mode: 'open' });
+    const shadowRoot = this.attachShadow({ mode: 'open' });
 
-        this.movies = [];
+    this.movies = [];
 
-        shadowRoot.innerHTML = `
+    shadowRoot.innerHTML = `
         <style>
         :root {
             --color-background: #0a0a0a;
@@ -258,38 +258,49 @@ export default class MovieListComponent extends HTMLElement {
           <slot></slot>
         </div>
       `;
+  }
+
+  connectedCallback() {
+    this.renderMovies();
+    this.addEventListener('bookmarked', this.handleBookmark.bind(this));
+  }
+
+  disconnectedCallback() {
+    this.removeEventListener('bookmarked', this.handleBookmark.bind(this));
+  }
+
+  attributeChangedCallback(name, oldValue, newValue) {
+    if (name === 'movies' && oldValue !== newValue) {
+      this.movies = JSON.parse(newValue);
+      this.renderMovies();
     }
+  }
 
-    connectedCallback() {
-        this.renderMovies();
-    }
+  renderMovies() {
+    const movieContainer = this.shadowRoot.getElementById('movie-list');
+    let moviesData = '';
 
-    attributeChangedCallback(name, oldValue, newValue) {
-        if (oldValue !== newValue) {
-            this[name] = JSON.parse(newValue);
-            this.renderMovies();
-        }
-    }
+    this.movies.forEach(movie => {
+      const mov = new Movie(movie);
+      moviesData += mov.render();
+    });
 
-    renderMovies() {
-        const movieContainer = this.shadowRoot.getElementById('movie-list');
-        let moviesData = '';
+    movieContainer.innerHTML = moviesData;
+  }
 
-        this.movies.forEach(movie => {
-            const mov = new Movie(movie);
-            moviesData += mov.render();
-        });
+  set movies(value) {
+    this.setAttribute('movies', JSON.stringify(value));
+  }
 
-        movieContainer.innerHTML = moviesData;
-    }
+  get movies() {
+    return JSON.parse(this.getAttribute('movies')) || [];
+  }
 
-    set movies(value) {
-        this.setAttribute('movies', JSON.stringify(value));
-    }
-
-    get movies() {
-        return JSON.parse(this.getAttribute('movies')) || [];
-    }
+  handleBookmark(event) {
+    const bookmarkedMovieNames = event.detail.movies;
+    const bookmarkedMovies = this.movies.filter(movie => bookmarkedMovieNames.includes(movie.name));
+    this.renderMovies(bookmarkedMovies);
+  }
 }
 
 customElements.define('movie-list', MovieListComponent);

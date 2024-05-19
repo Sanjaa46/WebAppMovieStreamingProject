@@ -3,7 +3,7 @@ import BookmarkedComponent from "../component/bookmark.js";
 
 export default class Intro {
   constructor(movie) {
-    this.poster = movie.poster
+    this.poster = movie.poster;
     this.cover = movie.cover;
     this.studio = movie.studio;
     this.director = movie.director;
@@ -16,15 +16,38 @@ export default class Intro {
     this.duration = movie.duration;
     this.genre = movie.genre;
     this.trailer = movie.trailer;
+    this.cover = this.cover;
+  }
+
+  init() {
+    const bookmarkElement = this.bookmarkElement;
+    if (bookmarkElement) {
+      bookmarkElement.addEventListener('click', this.bookmark.bind(this));
+    }
+  }
+
+  get bookmarkElement() {
+    return document.getElementById('bookmark');
+  }
+
+  bookmark() {
+    this.saveToLocalStorage(this.name);
+    const bookmarks = JSON.parse(localStorage.getItem('bookmarkedMovies')) || [];
+    console.log('Bookmarked Movies:', bookmarks);
+  }
+
+  saveToLocalStorage(movieName) {
+    let bookmarks = JSON.parse(localStorage.getItem('bookmarkedMovies')) || [];
+    if (!bookmarks.includes(movieName)) {
+      bookmarks.push(movieName);
+      localStorage.setItem('bookmarkedMovies', JSON.stringify(bookmarks));
+    }
   }
 
   render() {
     const genres = this.genre.join('/');
-    // <div class="trailer">
-    //     <iframe width="560" height="315" src="${this.trailer}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    // </div>
     return `
-        <img src="assets/images/cover.jpg" class="cover-image" />
+        <img src="${this.cover}" class="cover-image" />
         <div class="studio-name">
           <p><strong>Studio:Warner bros</strong></p>
         </div>
@@ -69,7 +92,7 @@ export default class Intro {
           <button class="report">report</button>
         </div>`;
   }
-};
+}
 
 async function renderMovie() {
   let moviesData = '';
@@ -79,6 +102,9 @@ async function renderMovie() {
   moviesData = mov.render();
   const movieContainer = document.querySelector(".intro-movie");
   movieContainer.innerHTML = moviesData;
+
+  mov.init(); // Initialize event listeners after rendering
+
   //-------------------------------------//
   const recommendations = await filterMoviesByGenres();
   recommendations.sort((a, b) => b.since - a.since);
@@ -124,4 +150,3 @@ async function filterMoviesByGenres() {
   });
   return filteredMovies;
 }
-

@@ -7,13 +7,11 @@ export default class BookmarkedComponent extends HTMLElement {
         this.movies = [];
     }
 
-
     connectedCallback() {
         this.render();
         this.handleBookmarkClick = this.handleBookmarkClick.bind(this);
         this.addEventListener('click', this.handleBookmarkClick);
     }
-
 
     disconnectedCallback() {
         // Remove event listener when the component is removed from the DOM
@@ -21,11 +19,16 @@ export default class BookmarkedComponent extends HTMLElement {
     }
 
     handleBookmarkClick(event) {
-        // Check if the clicked element is #bookmarked
         if (event.target.id === 'bookmarked') {
-            console.log('Bookmark clicked');
-            // Add your bookmarking logic here
+            const movieNames = this.movies.map(movie => movie.name);
+            this.storeBookmarkedMovies(movieNames);
         }
+    }
+
+
+    storeBookmarkedMovies(movies) {
+        this.movies.push(movies);
+        console.log(movies);
     }
 
     render() {
