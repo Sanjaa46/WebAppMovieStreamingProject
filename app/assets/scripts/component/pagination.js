@@ -1,14 +1,48 @@
 class Pagination extends HTMLElement {
     constructor() {
         super();
-        this.currentPage = 1;
-        this.moviesPerPage = 24;
-        this.movies = [];
     }
 
-    async connectedCallback() {
-        await this.fetchMoviesFromJSON();
-        this.render();
+    connectedCallback() {
+        this.innerHTML = `
+        <style>
+            .pagination {
+                padding-top: 20px;
+                text-align: center;
+            }
+
+            .pagination a {
+                color: white;
+                text-decoration: none;
+                padding: 10px;
+                display: inline-block;
+            }
+
+            .pagination a.active {
+                background-color: grey;
+                font-weight: bold;
+                border-radius: 5px;
+            }
+
+            .pagination a:hover:not(.active) {
+                background-color: #555;
+                border-radius: 5px;
+            }
+        </style>
+        <section class="pagination">
+            <a href="#" class="prev">&laquo;</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#" class="next">&raquo;</a>
+        </section>
+        <ul id="movie-list"></ul>
+        `;
+
+        // Fetch movies data and setup pagination
+        this.fetchMoviesFromJSON().then(() => {
+            this.setupPagination();
+        });
     }
 
     async fetchMoviesFromJSON() {
@@ -20,111 +54,64 @@ class Pagination extends HTMLElement {
         }
     }
 
-    render() {
-        // Clear previous pagination buttons
-        this.innerHTML = '';
+    setupPagination() {
+        var movieList = document.getElementById('movie-list');
+        var moviesPerPage = 3; // Adjust the number of movies per page as needed
+        var currentPage = 1;
 
-        // Calculate total number of pages
-        const totalPages = Math.ceil(this.movies.length / this.moviesPerPage);
-
-        // Create and append pagination buttons
-        const paginationContainer = document.createElement('div');
-        paginationContainer.classList.add('pagination');
-        
-        const prevButton = document.createElement('a');
-        prevButton.href = '#';
-        prevButton.classList.add('prev');
-        prevButton.innerHTML = '&laquo;';
-        prevButton.addEventListener('click', (event) => {
-            event.preventDefault();
-            this.goToPage(this.currentPage - 1);
-        });
-        paginationContainer.appendChild(prevButton);
-
-        for (let i = 1; i <= totalPages; i++) {
-            const button = document.createElement('a');
-            button.href = '#';
-            button.textContent = i;
-            button.classList.add('pagination-link');
-            if (i === this.currentPage) {
-                button.classList.add('active');
+        function showPage(page) {
+            for (var i = 0; i < this.movies.length; i++) {
+                movieList.children[i].style.display = i >= (page - 1) * moviesPerPage && i < page * moviesPerPage ? 'block' : 'none';
             }
-            button.addEventListener('click', (event) => {
-                event.preventDefault();
-                this.goToPage(i);
-            });
-            paginationContainer.appendChild(button);
         }
 
-        const nextButton = document.createElement('a');
-        nextButton.href = '#';
-        nextButton.classList.add('next');
-        nextButton.innerHTML = '&raquo;';
-        nextButton.addEventListener('click', (event) => {
-            event.preventDefault();
-            this.goToPage(this.currentPage + 1);
-        });
-        paginationContainer.appendChild(nextButton);
+        function updatePaginationButtons() {
+            var paginationContainer = document.querySelector('.pagination');
+            paginationContainer.innerHTML = '';
 
-        this.appendChild(paginationContainer);
+            var totalPages = Math.ceil(this.movies.length / moviesPerPage);
 
-        // Show the current page
-        this.showPage(this.currentPage);
-    }
+            for (var i = 1; i <= totalPages; i++) {
+                var a = document.createElement('a');
+                a.textContent = i;
+                a.href = '#';
+                a.addEventListener('click', function () {
+                    currentPage = parseInt(this.textContent);
+                    showPage(currentPage);
+                    updatePaginationButtons();
+                });
 
-    goToPage(pageNumber) {
-        // Ensure page number is within valid range
-        const totalPages = Math.ceil(this.movies.length / this.moviesPerPage);
-        if (pageNumber < 1) pageNumber = 1;
-        if (pageNumber > totalPages) pageNumber = totalPages;
+                if (i === currentPage) {
+                    a.classList.add('active');
+                }
 
-        // Update current page
-        this.currentPage = pageNumber;
-
-        // Update active pagination link
-        const links = this.querySelectorAll('.pagination-link');
-        links.forEach(link => link.classList.remove('active'));
-        if (links[pageNumber - 1]) {
-            links[pageNumber - 1].classList.add('active');
+                paginationContainer.appendChild(a);
+            }
         }
 
-        // Show movies for the selected page
-        this.showPage(pageNumber);
-    }
-
-    showPage(pageNumber) {
-        // Calculate start and end indices for movies to display
-        const startIndex = (pageNumber - 1) * this.moviesPerPage;
-        const endIndex = pageNumber * this.moviesPerPage;
-
-        // Display movies for the selected page
-        const moviesContainer = document.getElementById('movies');
-        moviesContainer.innerHTML = ''; // Clear previous movies
-        for (let i = startIndex; i < endIndex && i < this.movies.length; i++) {
-            const movieElement = this.createMovieElement(this.movies[i]);
-            moviesContainer.appendChild(movieElement);
+        function prevPage() {
+            if (currentPage > 1) {
+                currentPage--;
+                showPage(currentPage);
+                updatePaginationButtons();
+            }
         }
-    }
 
-    createMovieElement(movie) {
-        const article = document.createElement('article');
-        article.classList.add('movie-small-sized');
-        article.innerHTML = `
-            <a href="intro.html?name=${movie.name}&genre=${movie.genre}">
-                <div class="details">
-                    <h3 class="Name">${movie.name}</h3>
-                    <p class="year-and-duration"><img src="webimage/movieIcon.png" alt="movie-icon" class="movie-icon"> ${movie.since} - ${movie.duration} мин</p>
-                    <div class="info">
-                        <p>Directed by ${movie.director}</p>
-                    </div>
-                </div>
-                <div class="poster">
-                    <img src="${movie.poster}" alt="movie-small-sized-poster">
-                </div>
-            </a>
-        `;
-        return article;
+        function nextPage() {
+            if (currentPage < Math.ceil(this.movies.length / moviesPerPage)) {
+                currentPage++;
+                showPage(currentPage);
+                updatePaginationButtons();
+            }
+        }
+
+        document.querySelector('.prev').addEventListener('click', prevPage);
+        document.querySelector('.next').addEventListener('click', nextPage);
+
+        // Initial page display
+        showPage(currentPage);
+        updatePaginationButtons();
     }
 }
 
-window.customElements.define('pagination-component', Pagination);
+window.customElements.define('wc-pagination', Pagination);

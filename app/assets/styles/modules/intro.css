@@ -9,12 +9,12 @@
 .intro-movie:before {
   content: "";
   position: absolute;
-  top: 9%;
+  top: 8%;
   left: 0;
   width: 80%;
   height: 605px;
 
-  background: linear-gradient(to right, rgb(0, 0, 0), transparent);
+  background: linear-gradient(to right, rgb(69, 69, 69), transparent);
 }
 
 .intro-movie .studio-name {
