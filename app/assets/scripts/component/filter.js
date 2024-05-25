@@ -1,5 +1,3 @@
-import Movie from '../modules/Movies.js';
-
 export default class FilterComponent extends HTMLElement {
   movies = [];
   filteredMovies = [];
@@ -29,6 +27,8 @@ export default class FilterComponent extends HTMLElement {
     const rating = urlParams.get('rating') || 'all';
     const name = urlParams.get('name') || '';
 
+    console.log(type);
+
     this.filteredMovies = this.filterMovies(type, country, age, genre, rating, name);
     this.renderMovies();
     this.updateTitle();
@@ -36,8 +36,9 @@ export default class FilterComponent extends HTMLElement {
 
   async fetchMovies() {
     try {
-      const response = await fetch('/app/assets/scripts/modules/movies.json');
+      const response = await fetch('https://api.jsonbin.io/v3/b/6645bc42e41b4d34e4f48a87');
       this.movies = await response.json();
+      this.movies = this.movies.record;
       this.filteredMovies = [...this.movies];
     } catch (error) {
       console.error('Error fetching data:', error);
