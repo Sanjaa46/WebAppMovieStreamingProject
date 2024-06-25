@@ -422,7 +422,7 @@ class HeaderComponent extends HTMLElement {
                 </li>
                 <li class="nav-list"><a id="movies-option" href="movies.html?type=movie" data-type="movie">Кино</a></li>
                 <li class="nav-list"><a id="series-option" href="movies.html?type=series" data-type="series">Цуврал</a></li>
-                <li class="nav-list"><a id="tv-shows-option" href="movies.html?type="tv_show" data-type="tv_show">ТВ шоу</a></li>
+                <li class="nav-list"><a id="tv-shows-option" href="movies.html?type=tv_show" data-type="tv_show">ТВ шоу</a></li>
             </ul>
         </nav>
         <form class="search-container">

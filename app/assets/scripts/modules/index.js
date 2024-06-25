@@ -82,8 +82,10 @@ class MovieMediumSized {
 class MostViewed {
     async list() {
         try {
-            const response = await fetch('/app/assets/scripts/modules/movies.json');
-            const data = await response.json();
+            const response = await fetch('https://api.jsonbin.io/v3/b/6645bc42e41b4d34e4f48a87');
+            const jsonResponse = await response.json();
+            const data = jsonResponse.record;
+
 
             // Sort movies by 'since' year in descending order
             data.sort((a, b) => b.views - a.views);
