@@ -9,15 +9,37 @@ export default class FilterComponent extends HTMLElement {
 
   connectedCallback() {
     this.render();
-    this.addEventListener('submit', this.handleFormSubmit.bind(this));
+    const form = this.querySelector('#filterForm');
+    if (form) {
+      form.addEventListener('submit', this.handleFormSubmit.bind(this));
+    }
+    this.fetchMovies().then(() => {
+      this.applyUrlFilters();
+    });
+  }
+
+  applyUrlFilters() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const type = urlParams.get('type') || 'all';
+    const country = urlParams.get('country') || 'all';
+    const age = urlParams.get('age') || 'all';
+    const genre = urlParams.get('genre') || 'all';
+    const rating = urlParams.get('rating') || 'all';
+    const name = urlParams.get('name') || '';
+
+    console.log(type);
+
+    this.filteredMovies = this.filterMovies(type, country, age, genre, rating, name);
+    this.renderMovies();
+    this.updateTitle();
   }
 
   async fetchMovies() {
     try {
-      const response = await fetch('/app/assets/scripts/modules/movies.json');
+      const response = await fetch('https://api.jsonbin.io/v3/b/6645bc42e41b4d34e4f48a87');
       this.movies = await response.json();
+      this.movies = this.movies.record;
       this.filteredMovies = [...this.movies];
-      this.updatePagination();
     } catch (error) {
       console.error('Error fetching data:', error);
       this.movies = [];
@@ -27,24 +49,21 @@ export default class FilterComponent extends HTMLElement {
 
   renderMovies() {
     const movieList = document.querySelector('movie-list');
-
     if (!movieList) return;
-
-    movieList.movies = this.filteredMovies.slice(0, 24);  // Display first page of movies
+    movieList.movies = this.filteredMovies;
   }
 
   async handleFormSubmit(event) {
     event.preventDefault();
 
-    const type = document.getElementById('type').value;
-    const country = document.getElementById('country').value;
-    const age = document.getElementById('age').value;
-    const genre = document.getElementById('genre').value;
-    const rating = document.getElementById('rating').value;
-    const name = document.getElementById('name').value;
+    const type = this.querySelector('#type').value;
+    const country = this.querySelector('#country').value;
+    const age = this.querySelector('#age').value;
+    const genre = this.querySelector('#genre').value;
+    const rating = this.querySelector('#rating').value;
+    const name = this.querySelector('#name').value;
 
     this.filteredMovies = this.filterMovies(type, country, age, genre, rating, name);
-    this.updatePagination();
     this.renderMovies();
     this.updateUrlParams({ type, country, age, genre, rating, name });
     this.updateTitle();
@@ -65,13 +84,6 @@ export default class FilterComponent extends HTMLElement {
     });
   }
 
-  updatePagination() {
-    const pagination = document.querySelector('pagination-component');
-    if (pagination) {
-      pagination.updateMovies(this.filteredMovies);
-    }
-  }
-
   updateUrlParams(params) {
     const urlParams = new URLSearchParams(window.location.search);
     for (const key in params) {
@@ -86,11 +98,11 @@ export default class FilterComponent extends HTMLElement {
   }
 
   updateTitle() {
-    const titleOfMovies = document.querySelector('.filter').querySelector('.title');
+    const titleOfMovies = this.querySelector('.filter .title');
     const urlParams = new URLSearchParams(window.location.search);
     const type = urlParams.get('type') || 'all';
 
-    document.getElementById('number-of-movies').textContent = this.filteredMovies.length + ' кинонууд';
+    this.querySelector('#number-of-movies').textContent = `${this.filteredMovies.length} кинонууд`;
 
     switch (type) {
       case 'movie':
@@ -110,91 +122,132 @@ export default class FilterComponent extends HTMLElement {
 
   render() {
     this.innerHTML = `<style>
-      :root {
-        --color-background: #0a0a0a;
-        --color-button: #ff770b;
-        --color-gray-button: #1c1c1c;
-        --color-gray: #6c6c6c;
-        --height-header: 64px;
-        --color-gray-font: #808080;
-        --color-white-font: #ffffff;
-        --color-filter-gray: #3333338d;
-        --color-footer: ;
-      }
- 
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        color: rgba(255, 255, 255);
-      }
-      .filter {
-        width: 80%;
-        margin: 0 auto;
-      }
- 
+    .filter {
+      width: 80%;
+      margin: 0 auto;
+    }
+    
+    .filter ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      padding: 20px 70px 5px;
+      font-size: 18px;
+      align-items: center;
+    }
+    
+    .filter > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 60px;
+      border-bottom: 1px solid white;
+      width: 100%;
+      max-width: 1350px;
+      margin: 0 auto;
+    }
+    
+    .filter .title {
+      font-size: 20px;
+    }
+    .search-middle {
+      display: flex;
+      width: 300px;
+      height: 33px;
+      padding: 5px 10px;
+      align-items: center;
+      background-color: var(--color-gray);
+      border-radius: 20px;
+    }
+    
+    .filter-dropdown option {
+      background-color: rgba(108, 108, 108);
+      font-size: 20px;
+    }
+    
+    .filter-dropdown select {
+      background-color: transparent;
+      width: 200px;
+      height: 40px;
+      border-radius: 10px;
+      border: none;
+    }
+    
+    .filter ul button {
+      color: var(--color-button);
+    }
+    
+    .filter li > button.filter-button {
+      background-color: var(--color-button);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 15px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 105px;
+      height: 35px;
+    }
+    
+    .filter li > button.filter-button:hover {
+      background-color: white;
+      color: #595959;
+    }
+    
+    .filter #name {
+      background-color: transparent;
+      border: none;
+    }
+    
+    /* Pagination */
+    .pagination {
+      padding-top: 20px;
+      text-align: center;
+    }
+    
+    .pagination a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      display: inline-block;
+    }
+    
+    .pagination a.active {
+      background-color: grey;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    
+    .pagination a:hover:not(.active) {
+      background-color: #555;
+      border-radius: 5px;
+    }
+    
+    @media (max-width: 480px) {
       .filter ul {
-        list-style: none;
-        display: flex;
-        gap: 30px;
-        padding: 20px 70px 5px;
-        font-size: 18px;
-        align-items: center;
-      }
- 
-      .filter .title {
-        font-size: 20px;
+        gap: 5px;
+        display: grid;
+        grid-template-columns: 160px 160px;
+        grid-template-rows: auto;
+        grid-template-areas:
+          ".search-middle .filter-dropdown-1"
+          ".filter-dropdown-2 .filter-dropdown-3"
+          "filter-dropdown-4 .filter-dropdown-5"
+          ".filter-button.filter-button ";
+        justify-items: stretch;
       }
       .search-middle {
         display: flex;
-        width: 300px;
+        width: 160px;
         height: 33px;
         padding: 5px 10px;
         align-items: center;
         background-color: var(--color-gray);
-        border-radius: 20px;
-      }
- 
-      .filter-dropdown option {
-        background-color: rgba(108, 108, 108);
-        font-size: 20px;
-      }
- 
-      .filter-dropdown select {
-        background-color: transparent;
-        width: 200px;
-        height: 40px;
-        border-radius: 10px;
-        border: none;
-      }
- 
-      .filter ul button {
-        color: var(--color-button);
-      }
- 
-      .filter li > button.filter-button {
-        background-color: var(--color-button);
-        color: white;
-        border: none;
         border-radius: 5px;
-        padding: 5px 15px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        width: 105px;
-        height: 35px;
       }
- 
-      .filter li > button.filter-button:hover {
-        background-color: white;
-        color: #595959;
-      }
- 
-      .filter #name {
-        background-color: transparent;
-        border: none;
-      }
+    }
     </style>
- 
+    
     <section class="filter">
       <div>
         <p><strong class="title"></strong></p>
@@ -203,18 +256,8 @@ export default class FilterComponent extends HTMLElement {
       <form id="filterForm">
         <ul>
           <li class="search-middle">
-            <img
-              src="assets/images/search.png"
-              alt="search-icon"
-              class="search-icon"
-            />
-            <input
-              type="text"
-              name="name"
-              id="name"
-              class="search-input"
-              placeholder="Хайх..."
-            />
+            <img src="assets/images/search.png" alt="search-icon" class="search-icon" />
+            <input type="text" name="name" id="name" class="search-input" placeholder="Хайх..." />
           </li>
           <li class="filter-dropdown">
             <select id="type" name="type">
@@ -261,32 +304,30 @@ export default class FilterComponent extends HTMLElement {
               <option value="Drama">Драм</option>
               <option value="Comedy">Инээдмийн</option>
               <option value="Music">Мюзикл</option>
-              <option value="Science Fiction">Шинжлэх ухааны</option>
-              <option value="History">Түүх</option>
-              <option value="Romance">Романтик</option>
-              <option value="Detective">Детектив</option>
-              <option value="Fantasy">Уран зөгнөлт</option>
-              <option value="Action">Экшн</option>
-              <option value="Anime">Анимэ</option>
-              <option value="Cartoon">Хүүхэлдэйн кино</option>
+              <option value="Action">Тулаант</option>
+              <option value="History">Түүхэн</option>
+              <option value="Fairy">Үлгэрийн</option>
+              <option value="Fantasy">Зөгнөлт</option>
+              <option value="Animation">Хүүхэлдэйн кино</option>
+              <option value="Sci-Fi">Ш/У уран зөгнөлт</option>
             </select>
           </li>
           <li class="filter-dropdown">
             <select id="rating" name="rating">
               <option value="all">Үнэлгээ</option>
-              <option value="1-2">1-2</option>
-              <option value="2-3">2-3</option>
-              <option value="3-4">3-4</option>
-              <option value="4-5">4-5</option>
+              <option value="8-10">8-10</option>
+              <option value="6-8">6-8</option>
+              <option value="4-6">4-6</option>
+              <option value="2-4">2-4</option>
+              <option value="0-2">0-2</option>
             </select>
           </li>
           <li>
-            <button type="submit" class="filter-button">Шүүх</button>
+            <button type="submit" class="filter-button">Хайх</button>
           </li>
         </ul>
       </form>
-    </section>
-    `;
+    </section>`;
   }
 }
 
